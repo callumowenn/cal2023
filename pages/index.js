@@ -1,21 +1,13 @@
-import Head from "next/head";
-import Header from "@components/Header";
-import Footer from "@components/Footer";
+const { default: Header } = require("@components/Header");
+const { default: Opener } = require("@components/home/Opener");
 
-export default function Home() {
+function Home() {
 	return (
-		<div className="container">
-			<Head>
-				<title>Next.js Starter!</title>
-				<link rel="icon" href="/favicon.ico" />
-			</Head>
-
-			<main>
-				<Header title="Welcome to my app!" />
-				<p className="description">My name's Cal.</p>
-			</main>
-
-			<Footer />
+		<div>
+			<Header />
+			<Opener />
 		</div>
 	);
 }
+
+export default Home;

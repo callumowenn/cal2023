@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "Helios";
+	src: url("./fonts/heliosBlack.woff2") format("woff2"),
+		url("./fonts/heliosBlack.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Helios";
+	src: url("./fonts/helios.woff2") format("woff2"),
+		url("./fonts/helios.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Helios";
+	src: url("./fonts/heliosBold.woff2") format("woff2"),
+		url("./fonts/heliosBold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Helios";
+	src: url("./fonts/heliosBoldItalic.woff2") format("woff2"),
+		url("./fonts/heliosBoldItalic.woff") format("woff");
+	font-weight: 700;
+	font-style: italic;
+}
+@font-face {
+	font-family: "Helios";
+	src: url("./fonts/heliosItalic.woff2") format("woff2"),
+		url("./fonts/heliosItalic.woff") format("woff");
+	font-weight: 400;
+	font-style: italic;
+}
+
+* {
+	box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	@apply font-serif;
+	color: white;
+}
+html {
+	background: #111;
+}
+
+#highlights a:last-child {
+	border-right: 0;
+}
