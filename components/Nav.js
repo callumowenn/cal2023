@@ -4,7 +4,7 @@ import Socials from "./Socials";
 function Nav() {
 	return (
 		<nav
-			style={{ width: "100px" }}
+			style={{ width: "80px" }}
 			className=" bg-white flex flex-shrink-0 flex-grow-0 flex-col justify-between pt-5 pb-7 px-3 sticky top-0 h-screen sm:hidden"
 		>
 			<div className="flex flex-col">

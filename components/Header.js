@@ -8,7 +8,7 @@ function Header() {
 					alt="me"
 				/>
 				<div className="flex flex-col">
-					<p className="font-serif opacity-50 text-xl italic">
+					<p className="font-serif opacity-50 text-2xl italic">
 						Hi, i'm
 					</p>
 					<h1 className="font-serif text-6xl font-bold">

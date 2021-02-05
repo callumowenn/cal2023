@@ -1,23 +1,21 @@
 import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 
 function Highlights() {
 	let highlights = [
 		{
-			title: "working at BBC",
 			images: ["./assets/bbc.png"],
 			heading: "Engineering Apprentice",
 			date: "2019 -",
 			link: "/bbc",
 		},
 		{
-			title: "working at CNN",
 			images: ["./assets/cnn.png"],
 			heading: "Engineering Placement",
 			date: "2020",
 			link: "/cnn",
 		},
 		{
-			title: "my websites",
 			images: [
 				"./assets/projects/watchwhere/watchwhere-alt.png",
 				"./assets/projects/lightbulb/lightbulb-alt.png",
@@ -28,20 +26,62 @@ function Highlights() {
 			link: "/projects",
 		},
 		{
-			title: "my life",
 			images: ["👋🏼"],
 			heading: "Human Being",
 			date: "2000 -",
 			link: "/about",
 		},
 	];
+
+	const floaty = useRef(null);
+	const highlightDiv = useRef(null);
+	const [divX, setDivX] = useState(null);
+	const [divY, setDivY] = useState(null);
+
+	useEffect(() => {
+		console.log(navigator.userAgent);
+		const { x, y } = highlightDiv.current.getBoundingClientRect();
+		setDivX(x);
+		setDivY(y);
+
+		window.onresize = () => {
+			const {
+				x: newX,
+				y: newY,
+			} = highlightDiv.current.getBoundingClientRect();
+			setDivX(newX);
+			setDivY(newY);
+		};
+
+		highlightDiv.current.addEventListener("mouseenter", () => {
+			floaty.current.style.opacity = 1;
+		});
+
+		highlightDiv.current.addEventListener("mousemove", (e) => {
+			const { clientX: mouseX, clientY: mouseY, target } = e;
+
+			floaty.current.style.transform = `translate3d(${mouseX - divX}px, ${
+				mouseY - divY
+			}px, 0)`;
+		});
+
+		highlightDiv.current.addEventListener("mouseleave", () => {
+			floaty.current.style.opacity = 0;
+		});
+	});
+
 	return (
-		<div id="highlights" className="grid grid-cols-4">
+		<div id="highlights" ref={highlightDiv} className="grid grid-cols-4">
+			<div
+				ref={floaty}
+				className="fixed z-10 rounded-full opacity-0 pointer-events-none transition ease-linear flex items-center justify-center sm:hidden"
+			>
+				<p className="animate-rotate text-9xl">📰</p>
+			</div>
 			{highlights.map((highlight) => (
 				<Link href={highlight.link}>
 					<a
 						key={highlight.link}
-						title={`Read about ${highlight.title}`}
 						className="flex items-center justify-center text-white border-opacity-50 border-r border-b border-white p-12"
 					>
 						<div className="mt-12 mb-36 flex-grow">
