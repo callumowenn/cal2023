@@ -34,6 +34,7 @@ function Highlights() {
 	];
 
 	const floaty = useRef(null);
+	const floatyEmoji = useRef(null);
 	const highlightDiv = useRef(null);
 	const [divX, setDivX] = useState(null);
 	const [divY, setDivY] = useState(null);
@@ -65,6 +66,31 @@ function Highlights() {
 			}px, 0)`;
 		});
 
+		highlightDiv.current.childNodes[1].addEventListener(
+			"mouseenter",
+			() => {
+				floatyEmoji.current.innerHTML = "🎬";
+			}
+		);
+		highlightDiv.current.childNodes[2].addEventListener(
+			"mouseenter",
+			() => {
+				floatyEmoji.current.innerHTML = "🎥";
+			}
+		);
+		highlightDiv.current.childNodes[3].addEventListener(
+			"mouseenter",
+			() => {
+				floatyEmoji.current.innerHTML = "🖥";
+			}
+		);
+		highlightDiv.current.childNodes[4].addEventListener(
+			"mouseenter",
+			() => {
+				floatyEmoji.current.innerHTML = "👨‍💻";
+			}
+		);
+
 		highlightDiv.current.addEventListener("mouseleave", () => {
 			floaty.current.style.opacity = 0;
 		});
@@ -76,7 +102,9 @@ function Highlights() {
 				ref={floaty}
 				className="fixed z-10 rounded-full opacity-0 pointer-events-none transition ease-linear flex items-center justify-center sm:hidden"
 			>
-				<p className="animate-rotate text-9xl">📰</p>
+				<p ref={floatyEmoji} className="animate-rotate text-9xl">
+					📰
+				</p>
 			</div>
 			{highlights.map((highlight) => (
 				<Link href={highlight.link}>
