@@ -4,7 +4,7 @@ import Nav from "@components/Nav";
 
 function Layout({ children }) {
 	return (
-		<div className="flex flex-row bg-main-bg min-h-screen bg-fixed bg-cover">
+		<div className="flex flex-row w-screen bg-main-bg min-h-screen bg-fixed bg-cover">
 			<Head>
 				<title>Callum Owen</title>
 				<link

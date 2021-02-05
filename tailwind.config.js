@@ -18,9 +18,19 @@ module.exports = {
 					"0%, 100%": { transform: "rotate(-3deg)" },
 					"50%": { transform: "rotate(3deg)" },
 				},
+				scrolling: {
+					"0%": { transform: "translateX(0)" },
+					"100%": { transform: "translateX(-1939.61px)" },
+				},
 			},
 			animation: {
 				wave: "wave 0.5s linear infinite",
+				scrolling: "scrolling 8s linear infinite",
+			},
+		},
+		screens: {
+			sm: {
+				max: "639px",
 			},
 		},
 	},

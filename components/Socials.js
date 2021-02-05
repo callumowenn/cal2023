@@ -90,6 +90,7 @@ function Socials() {
 			{socials.map((social) => (
 				<a
 					className="flex justify-center mt-7 hover:opacity-80"
+					key={social.name}
 					style={{ color: "#2A3D3F" }}
 					href={social.link}
 					title={social.name}

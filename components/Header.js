@@ -1,9 +1,9 @@
 function Header() {
 	return (
-		<div className="m-24 flex items-center justify-center">
+		<div className="m-28 flex items-center flex-grow justify-center">
 			<div className="flex items-center">
 				<img
-					className="flex mr-24"
+					className="flex mr-20"
 					src="./assets/me-flip.png"
 					alt="me"
 				/>
