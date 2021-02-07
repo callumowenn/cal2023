@@ -3,7 +3,7 @@ import Marquee from "./Marquee";
 
 function Opener() {
 	return (
-		<div>
+		<div className="overflow-hidden">
 			<Marquee />
 			<Highlights />
 		</div>

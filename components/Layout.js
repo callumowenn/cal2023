@@ -4,7 +4,7 @@ import Nav from "@components/Nav";
 
 function Layout({ children }) {
 	return (
-		<div className="flex flex-row w-screen bg-main-bg min-h-screen bg-fixed bg-cover">
+		<div className="flex flex-row w-screen bg-main-bg min-h-screen bg-fixed bg-cover sm:flex-col">
 			<Head>
 				<title>Callum Owen</title>
 				<link
@@ -43,7 +43,7 @@ function Layout({ children }) {
 				/>
 			</Head>
 			<Nav />
-			<main className="flex flex-col flex-grow max-w-full overflow-hidden">
+			<main className="flex flex-col flex-grow w-main sm:w-screen">
 				{children}
 				<Footer />
 			</main>

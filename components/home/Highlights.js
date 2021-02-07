@@ -97,7 +97,11 @@ function Highlights() {
 	});
 
 	return (
-		<div id="highlights" ref={highlightDiv} className="grid grid-cols-4">
+		<div
+			id="highlights"
+			ref={highlightDiv}
+			className="grid grid-cols-4 sm:grid-cols-2"
+		>
 			<div
 				ref={floaty}
 				className="fixed z-10 rounded-full opacity-0 pointer-events-none transition ease-linear flex items-center justify-center sm:hidden"
@@ -112,7 +116,7 @@ function Highlights() {
 						key={highlight.link}
 						className="flex items-center justify-center text-white border-opacity-50 border-r border-b border-white p-12"
 					>
-						<div className="mt-12 mb-36 flex-grow">
+						<div className="mt-12 mb-44 flex-grow">
 							<div className="h-12 flex items-end pr-4">
 								{highlight.images.length == 1 ? (
 									highlight.images[0].charAt(0) == "." ? (

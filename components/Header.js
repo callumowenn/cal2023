@@ -1,9 +1,11 @@
+import Block from "./Block";
+
 function Header() {
 	return (
-		<div className="m-28 flex items-center flex-grow justify-center">
-			<div className="flex items-center">
+		<Block>
+			<div className="flex items-center sm:flex-col">
 				<img
-					className="flex mr-20"
+					className="flex mr-20 sm:mr-0 sm:w-64 sm:mb-8"
 					src="./assets/me-flip.png"
 					alt="me"
 				/>
@@ -16,7 +18,7 @@ function Header() {
 					</h1>
 				</div>
 			</div>
-		</div>
+		</Block>
 	);
 }
 

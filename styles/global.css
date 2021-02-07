@@ -55,6 +55,31 @@ html {
 	background: #111;
 }
 
-#highlights a:last-child {
-	border-right: 0;
+@media only screen and (min-width: 639px) {
+	#highlights a:last-child {
+		border-right: 0;
+	}
+
+	#mac .window:nth-child(3n) {
+		align-self: center;
+	}
+	#mac .window:nth-child(3n + 1) {
+		align-self: flex-start;
+	}
+	#mac .window:nth-child(3n + 2) {
+		align-self: flex-end;
+	}
+}
+
+@media only screen and (max-width: 639px) {
+	Nav {
+		backdrop-filter: blur(80px);
+		background: #11111180;
+	}
+	#highlights a:nth-child(odd) {
+		border-right: 0;
+	}
+	#mac .window {
+		align-self: center;
+	}
 }
