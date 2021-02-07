@@ -82,4 +82,7 @@ html {
 	#mac .window {
 		align-self: center;
 	}
+	#sidebar {
+		border-radius: 1rem 1rem 0 0;
+	}
 }
