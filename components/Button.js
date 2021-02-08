@@ -1,15 +1,48 @@
 import Link from "next/link";
 
-function Button({ text, link }) {
-	return (
-		<Link href={link}>
-			<a>
-				<div className="flex items-end justify-center px-8 py-4 w-max bg-white">
-					<p className="text-gray-600 text-2xl">{text}</p>
+function Button({ text, link, secondary }) {
+	const isInternalLink =
+		link && (link.startsWith("/") || link.startsWith("#"));
+
+	if (isInternalLink) {
+		return (
+			<Link href={link}>
+				<a>
+					<div
+						className={`flex items-end justify-center px-8 py-4 mr-8 w-max ${
+							secondary ? `border border-white` : "bg-white"
+						}`}
+					>
+						<p
+							className={` text-2xl ${
+								secondary ? "text-white" : "text-gray-600"
+							}`}
+						>
+							{text}
+						</p>
+					</div>
+				</a>
+			</Link>
+		);
+	} else {
+		return (
+			<a target="_blank" rel="noopener noreferrer" href={link}>
+				<div
+					className={`flex items-end justify-center px-8 py-4 mr-8 w-max ${
+						secondary ? `border border-white` : "bg-white"
+					}`}
+				>
+					<p
+						className={` text-2xl ${
+							secondary ? "text-white" : "text-gray-600"
+						}`}
+					>
+						{text}
+					</p>
 				</div>
 			</a>
-		</Link>
-	);
+		);
+	}
 }
 
 export default Button;

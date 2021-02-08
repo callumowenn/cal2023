@@ -1,48 +1,32 @@
-import { getProjectBySlug, getAllProjects } from "lib/api";
-import markdownToHtml from "lib/markdownToHtml";
+import MDXComponents from "@components/MDXComponents";
+import ProjectLayout from "@components/projects/ProjectLayout";
+import { getFileBySlug, getFiles } from "@lib/mdx";
+import hydrate from "next-mdx-remote/hydrate";
 
-function Project({ project }) {
-	return (
-		<div className="flex flex-col">
-			<img className="w-96" src={project.image} alt={project.title} />
-			<h1>{project.title}</h1>
-			<p dangerouslySetInnerHTML={{ __html: project.content }}></p>
-		</div>
-	);
+function Project({ mdxSource, frontMatter }) {
+	const content = hydrate(mdxSource, {
+		components: MDXComponents,
+	});
+	return <ProjectLayout frontMatter={frontMatter}>{content}</ProjectLayout>;
 }
 
 export default Project;
 
-export async function getStaticProps({ params }) {
-	const project = getProjectBySlug(params.slug, [
-		"title",
-		"image",
-		"content",
-		"slug",
-	]);
-	const content = await markdownToHtml(project.content || "");
+export async function getStaticPaths() {
+	const projects = await getFiles("projects");
 
 	return {
-		props: {
-			project: {
-				...project,
-				content,
+		paths: projects.map((p) => ({
+			params: {
+				slug: p.replace(/\.mdx/, ""),
 			},
-		},
+		})),
+		fallback: false,
 	};
 }
 
-export async function getStaticPaths() {
-	const projects = getAllProjects(["slug"]);
+export async function getStaticProps({ params }) {
+	const project = await getFileBySlug("projects", params.slug);
 
-	return {
-		paths: projects.map((project) => {
-			return {
-				params: {
-					slug: project.slug,
-				},
-			};
-		}),
-		fallback: false,
-	};
+	return { props: project };
 }

@@ -1,22 +1,14 @@
 import Preview from "@components/projects/Preview";
-import { getAllProjects } from "lib/api";
+import { getAllFilesFrontMatter } from "@lib/mdx";
 
-function Projects({ allProjects }) {
-	return (
-		<div className="flex flex-col items-center">
-			{allProjects.map((project) => (
-				<Preview project={project} />
-			))}
-		</div>
-	);
+function Projects({ projects }) {
+	return projects.map((p) => <Preview project={p} />);
 }
 
 export default Projects;
 
 export async function getStaticProps() {
-	const allProjects = getAllProjects(["title", "image", "slug"]);
+	const projects = await getAllFilesFrontMatter("projects");
 
-	return {
-		props: { allProjects },
-	};
+	return { props: { projects } };
 }
