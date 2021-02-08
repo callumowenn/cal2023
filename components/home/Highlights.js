@@ -133,7 +133,7 @@ function Highlights() {
 								) : (
 									<div
 										id="webHighlights"
-										className="sm:grid sm:grid-cols-2"
+										className="flex sm:grid sm:grid-cols-2"
 									>
 										{highlight.images.map((image) => (
 											<img
