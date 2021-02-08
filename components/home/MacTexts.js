@@ -2,7 +2,7 @@ const { default: MacText } = require("./MacText");
 
 function MacTexts() {
 	return (
-		<div className="flex flex-col flex-grow px-6 py-4">
+		<div className="flex flex-col flex-grow px-6 py-4 sm:px-4 sm:py-3">
 			<MacText
 				me
 				text="Born in Wrexham and raised in a small town in Shropshire - not the

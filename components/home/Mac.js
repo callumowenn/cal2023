@@ -3,8 +3,8 @@ import MacWindow from "./MacWindow";
 function Mac() {
 	return (
 		<div className="flex flex-grow flex-col relative">
-			<div className="flex flex-grow bg-mac h-screen bg-cover sticky top-0 sm:bg-right"></div>
-			<div id="mac" className="flex flex-col z-10 flex-grow px-24">
+			<div className="flex flex-grow bg-mac h-screen bg-cover sticky top-0 sm:bg-right z-10"></div>
+			<div id="mac" className="flex flex-col z-20 flex-grow px-24">
 				<MacWindow
 					pic="./assets/showcase/dam.jpeg"
 					alt="Biking around Amsterdam"

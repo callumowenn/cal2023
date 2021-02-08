@@ -3,7 +3,7 @@ import Button from "@components/Button";
 function Better() {
 	return (
 		<div className="grid " style={{ background: "#111" }}>
-			<div className="col-start-1 row-start-1 z-10 p-24">
+			<div className="col-start-1 row-start-1 z-10 p-24 sm:p-12">
 				<p className="text-5xl italic mb-36">
 					You probably deserve <br />{" "}
 					<span className="font-sans font-black text-yellow-400">

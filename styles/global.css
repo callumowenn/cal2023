@@ -79,6 +79,9 @@ html {
 	#highlights a:nth-child(odd) {
 		border-right: 0;
 	}
+	#webHighlights img:nth-child(2) {
+		display: none;
+	}
 	#mac .window {
 		align-self: center;
 	}

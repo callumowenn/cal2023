@@ -18,10 +18,12 @@ module.exports = {
 			maxWidth: {
 				"500px": "500px",
 				"80vw": "80vw",
+				"mobile-text": "270px",
 			},
 			height: {
 				"100px": "100px",
 				"400px": "400px",
+				"mobile-main": "calc(100vh - 64px)",
 			},
 			maxHeight: {
 				"400px": "400px",

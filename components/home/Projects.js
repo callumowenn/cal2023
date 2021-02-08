@@ -24,7 +24,7 @@ function Projects() {
 		},
 	];
 	return (
-		<div className="grid grid-cols-4 border-t border-white border-opacity-50">
+		<div className="grid grid-cols-4 border-t border-white border-opacity-50 sm:grid-cols-1 sm:border-t-0">
 			{projects.map((project) => (
 				<Project key={project.slug} data={project} />
 			))}

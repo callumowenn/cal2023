@@ -114,32 +114,37 @@ function Highlights() {
 				<Link href={highlight.link}>
 					<a
 						key={highlight.link}
-						className="flex items-center justify-center text-white border-opacity-50 border-r border-b border-white p-12"
+						className="flex items-center justify-center text-white border-opacity-50 border-r border-b border-white p-12 sm:p-4"
 					>
-						<div className="mt-12 mb-44 flex-grow">
-							<div className="h-12 flex items-end pr-4">
+						<div className="mt-12 mb-44 flex-grow sm:mb-32">
+							<div className="h-12 flex items-end pr-4 sm:h-auto">
 								{highlight.images.length == 1 ? (
 									highlight.images[0].charAt(0) == "." ? (
 										<img
-											className="max-h-12"
+											className="max-h-12 sm:max-h-9"
 											src={highlight.images}
 											alt=""
 										/>
 									) : (
-										<span className="text-5xl">
+										<span className="text-5xl sm:text-4xl sm:h-12 sm:mt-2">
 											{highlight.images}
 										</span>
 									)
 								) : (
-									highlight.images.map((image) => (
-										<img
-											className="max-h-12 mr-2 rounded-lg"
-											src={image}
-										/>
-									))
+									<div
+										id="webHighlights"
+										className="sm:grid sm:grid-cols-2"
+									>
+										{highlight.images.map((image) => (
+											<img
+												className="max-h-12 mr-2 rounded-lg sm:mt-2"
+												src={image}
+											/>
+										))}
+									</div>
 								)}
 							</div>
-							<h2 className="italic text-5xl opacity-50 font-light mt-4 h-24">
+							<h2 className="italic text-5xl opacity-50 font-light mt-4 h-24 sm:text-3xl">
 								{highlight.heading}
 							</h2>
 							<p className="mt-4 font-sans opacity-30">

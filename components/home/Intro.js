@@ -1,14 +1,15 @@
-import Block from "@components/Block";
-
 function Intro() {
 	return (
-		<Block>
+		<div className="my-32 mx-10 flex items-center flex-grow justify-center sm:mx-4">
 			<div className=" my-28" style={{ width: "480px" }}>
-				<p className=" font-sans text-3xl font-bold italic mb-12">
+				<p className=" font-sans text-3xl font-bold italic mb-12 sm:text-2xl">
 					I’ve been lucky enough to get involved with some pretty
 					amazing projects.
 				</p>
-				<p className="text-2xl" style={{ color: "#ffffff80" }}>
+				<p
+					className="text-2xl sm:text-xl"
+					style={{ color: "#ffffff80" }}
+				>
 					From being part of the team that engineered CNN’s move to
 					their{" "}
 					<a
@@ -36,7 +37,7 @@ function Intro() {
 					<span style={{ color: "white" }}>🤓</span>
 				</p>
 			</div>
-		</Block>
+		</div>
 	);
 }
 

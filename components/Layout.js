@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Footer from "./Footer";
 import Nav from "@components/Nav";
+import Menu from "./Menu";
 
 function Layout({ children }) {
 	return (
@@ -44,6 +45,7 @@ function Layout({ children }) {
 			</Head>
 			<Nav />
 			<main className="flex flex-col flex-grow w-main sm:w-screen">
+				<Menu />
 				{children}
 				<Footer />
 			</main>
