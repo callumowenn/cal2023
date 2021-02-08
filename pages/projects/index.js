@@ -1,6 +1,6 @@
 import Preview from "@components/projects/Preview";
 import { getAllProjects } from "lib/api";
-// hello
+
 function Projects({ allProjects }) {
 	return (
 		<div className="flex flex-col items-center">
