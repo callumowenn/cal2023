@@ -12,7 +12,7 @@ function Intro() {
 					From being part of the team that engineered CNN’s move to
 					their{" "}
 					<a
-						href="https://www.gpe.co.uk/our-portfolio/160-old-street/"
+						href="https://160oldstreet.com"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="text-white hover:underline"

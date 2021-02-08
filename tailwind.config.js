@@ -29,6 +29,7 @@ module.exports = {
 			backgroundImage: (theme) => ({
 				"main-bg": "url('/assets/blur.png')",
 				mac: "url('/assets/mac.jpg')",
+				doubs: "url('/assets/doubs.png')",
 			}),
 			fontFamily: {
 				sans: ["Helios", ...defaultTheme.fontFamily.sans],

@@ -2,6 +2,9 @@ import Header from "@components/Header";
 import Opener from "@components/home/Opener";
 import Intro from "@components/home/Intro";
 import Mac from "@components/home/Mac";
+import Scrolling from "@components/home/Scrolling";
+import Better from "@components/home/Better";
+import Footer from "@components/Footer";
 
 function Home() {
 	return (
@@ -10,7 +13,8 @@ function Home() {
 			<Opener />
 			<Intro />
 			<Mac />
-			<Intro />
+			<Scrolling />
+			<Better />
 		</div>
 	);
 }

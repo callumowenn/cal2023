@@ -12,7 +12,7 @@ function Nav() {
 					>
 						<img
 							className="flex rounded-full transform rotate-180"
-							src="./assets/me-transparent-sq-soft.png"
+							src="/assets/me-transparent-sq-soft.png"
 							alt="home"
 						/>
 					</a>

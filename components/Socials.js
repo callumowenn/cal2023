@@ -91,6 +91,8 @@ function Socials() {
 				<a
 					className="flex justify-center mt-7 hover:opacity-80 sm:m-0"
 					key={social.name}
+					target="_blank"
+					rel="noopener noreferrer"
 					style={{ color: "#ffffff80" }}
 					href={social.link}
 					title={social.name}
