@@ -5,7 +5,7 @@ import Menu from "./Menu";
 
 function Layout({ children }) {
 	return (
-		<div className="flex flex-row w-screen bg-main-bg min-h-screen bg-fixed bg-cover sm:flex-col">
+		<div className="flex flex-row w-screen bg-main-bg min-h-screen bg-fixed bg-cover bg-right sm:flex-col">
 			<Head>
 				<title>Callum Owen</title>
 				<meta
