@@ -5,7 +5,7 @@ import Socials from "./Socials";
 function Nav() {
 	const { open, toggleMenu } = useMenu();
 	return (
-		<nav className="w-nav border-r border-white border-opacity-50 z-50 flex flex-shrink-0 flex-grow-0 flex-col justify-between pt-5 pb-7 px-3 sticky top-0 h-screen sm:flex-row sm:p-2 sm:h-16 sm:border-0 sm:border-b sm:w-screen sm:items-center">
+		<nav className="w-nav border-r border-white border-opacity-50 z-50 flex flex-shrink-0 flex-grow-0 flex-col justify-between pt-5 pb-7 px-3 sticky top-0 h-screen sm:flex-row sm:p-2 sm:pt-pwa sm:h-pwa sm:border-0 sm:border-b sm:w-screen sm:items-center">
 			<div className="flex flex-col sm:flex-row">
 				<Link href="/">
 					<a

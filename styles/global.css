@@ -74,8 +74,6 @@ html {
 @media only screen and (max-width: 639px) {
 	Nav {
 		backdrop-filter: blur(80px);
-		padding-top: calc(0.5rem + env(safe-area-inset-top));
-		height: calc(4rem + env(safe-area-inset-top));
 	}
 	#highlights a:nth-child(odd) {
 		border-right: 0;
