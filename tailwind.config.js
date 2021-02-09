@@ -7,6 +7,14 @@ module.exports = {
 		extend: {
 			colors: {
 				incoming: "#555555",
+				"half-white": "#ffffff80",
+				"standout-green": "#A1D53F",
+				"standout-pink": "#CF3FD5",
+				"standout-purple": "#9B54EF",
+				"standout-blue": "#3FD5D5",
+				"standout-yellow": "#DDEF54",
+				"standout-orange": "#EFAD54",
+				"standout-red": "#EF5454",
 			},
 			width: {
 				nav: "80px",
@@ -17,6 +25,8 @@ module.exports = {
 			},
 			maxWidth: {
 				"500px": "500px",
+				"750px": "750px",
+				"950px": "950px",
 				"80vw": "80vw",
 				"mobile-text": "270px",
 			},

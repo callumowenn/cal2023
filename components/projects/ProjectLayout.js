@@ -1,8 +1,12 @@
+import ProjectHeader from "./ProjectHeader";
+import ProjectMain from "./ProjectMain";
+
 function ProjectLayout({ children, frontMatter }) {
 	console.log(frontMatter);
 	return (
-		<div className="mx-48">
-			<div>{children}</div>
+		<div>
+			<ProjectHeader data={frontMatter} />
+			<ProjectMain content={children} data={frontMatter} />
 		</div>
 	);
 }

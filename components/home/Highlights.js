@@ -94,6 +94,9 @@ function Highlights() {
 		highlightDiv.current.addEventListener("mouseleave", () => {
 			floaty.current.style.opacity = 0;
 		});
+
+		// TODO: remove listeners
+		// return
 	});
 
 	return (

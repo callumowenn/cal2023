@@ -1,4 +1,6 @@
 import Button from "@components/Button";
+import Logo from "./Logo";
+import Tags from "./Tags";
 
 function Preview({ project }) {
 	console.log(project);
@@ -6,29 +8,11 @@ function Preview({ project }) {
 		<div className="flex flex-col px-10 my-32">
 			<div className="flex my-10">
 				<div>
-					<img
-						className="w-32 h-32 rounded-3xl mr-8"
-						src={project.logo}
-						alt={`${project.title} logo`}
-					/>
+					<Logo src={project.logo} title={project.title} />
 				</div>
 				<div className="flex flex-col">
 					<h3 className="text-7xl italic mb-4">{project.title}</h3>
-					<div className="flex">
-						{project.tags.map((tag) => (
-							<div
-								className="flex py-1 px-3 m-1 rounded-2xl"
-								style={{ background: `${tag.colour}33` }}
-							>
-								<p
-									className=" font-sans"
-									style={{ color: tag.colour }}
-								>
-									{tag.name}
-								</p>
-							</div>
-						))}
-					</div>
+					<Tags tags={project.tags} />
 				</div>
 			</div>
 			<div>
