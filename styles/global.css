@@ -72,9 +72,6 @@ html {
 }
 
 @media only screen and (max-width: 639px) {
-	#cal2021 {
-		background-size: auto 100vh;
-	}
 	Nav {
 		backdrop-filter: blur(80px);
 	}
