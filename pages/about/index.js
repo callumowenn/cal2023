@@ -1,9 +1,10 @@
-const { default: Header } = require("@components/Header");
-
+import Header from "@components/Header";
+import Mac from "@components/home/Mac";
 function About() {
 	return (
 		<div>
 			<Header />
+			<Mac />
 		</div>
 	);
 }
