@@ -110,7 +110,13 @@ function Layout({ children }) {
 				{children}
 				<Footer />
 			</main>
-			<div className="w-screen h-screen fixed bg-main-bg bg-right bg-fixed bg-cover z-0"></div>
+			<div
+				className="w-screen h-screen fixed bg-main-bg bg-right bg-fixed bg-cover z-0"
+				style={{
+					backgroundSize: "100% 100%",
+					WebkitBackgroundSize: "100% 100%",
+				}}
+			></div>
 		</div>
 	);
 }
