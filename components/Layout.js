@@ -8,6 +8,10 @@ function Layout({ children }) {
 		<div className="flex flex-row w-screen bg-main-bg min-h-screen bg-fixed bg-cover sm:flex-col">
 			<Head>
 				<title>Callum Owen</title>
+				<meta
+					name="viewport"
+					content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+				/>
 				<link
 					rel="apple-touch-icon"
 					sizes="180x180"
