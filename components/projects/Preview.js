@@ -7,7 +7,7 @@ function Preview({ project }) {
 			<div className="flex my-10">
 				<div>
 					<img
-						className="w-32 h-32 rounded-2xl mr-8"
+						className="w-32 h-32 rounded-3xl mr-8"
 						src={project.logo}
 						alt={`${project.title} logo`}
 					/>
