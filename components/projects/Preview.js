@@ -5,7 +5,7 @@ import Tags from "./Tags";
 function Preview({ project }) {
 	console.log(project);
 	return (
-		<div className="flex flex-col px-10 my-32">
+		<div className="flex flex-col px-16 my-32">
 			<div className="flex my-10">
 				<div>
 					<Logo src={project.logo} title={project.title} />
