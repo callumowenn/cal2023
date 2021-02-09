@@ -11,16 +11,23 @@ function Preview({ project }) {
 					<Logo src={project.logo} title={project.title} />
 				</div>
 				<div className="flex flex-col">
-					<h3 className="text-7xl italic mb-4">{project.title}</h3>
+					<a href={`/projects/${project.slug}`} title="Read more">
+						<h3 className="text-7xl italic mb-4 hover:underline">
+							{project.title}
+						</h3>
+					</a>
+
 					<Tags tags={project.tags} />
 				</div>
 			</div>
-			<div>
-				<img
-					style={{ width: "70vw" }}
-					src={project.image}
-					alt={`${project.title} cover`}
-				/>
+			<div className="w-max">
+				<a href={`/projects/${project.slug}`} title="Read more">
+					<img
+						style={{ width: "70vw" }}
+						src={project.image}
+						alt={`${project.title} cover`}
+					/>
+				</a>
 			</div>
 			<div className="mt-8 flex">
 				<Button text="Read more" link={`/projects/${project.slug}`} />

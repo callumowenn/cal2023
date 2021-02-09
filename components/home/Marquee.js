@@ -5,7 +5,7 @@ function Marquee() {
 				<li className="flex items-center">
 					<img
 						className="max-h-12"
-						src="./assets/svg/feather.png"
+						src="/assets/svg/feather.png"
 						alt=""
 					/>
 					&nbsp;
@@ -15,7 +15,7 @@ function Marquee() {
 					&nbsp;
 					<img
 						className="max-h-12"
-						src="./assets/svg/logo-38.png"
+						src="/assets/svg/logo-38.png"
 						alt=""
 					/>
 					&nbsp;
@@ -25,7 +25,7 @@ function Marquee() {
 					&nbsp;
 					<img
 						className="max-h-12"
-						src="./assets/svg/logo-19.png"
+						src="/assets/svg/logo-19.png"
 						alt=""
 					/>
 					&nbsp;
@@ -35,7 +35,7 @@ function Marquee() {
 					&nbsp;
 					<img
 						className="max-h-12"
-						src="./assets/svg/cube.png"
+						src="/assets/svg/cube.png"
 						alt=""
 					/>
 					&nbsp;
@@ -45,7 +45,7 @@ function Marquee() {
 					&nbsp;
 					<img
 						className="max-h-12"
-						src="./assets/svg/sunset-1.png"
+						src="/assets/svg/sunset-1.png"
 						alt=""
 					/>
 					&nbsp;
@@ -57,7 +57,7 @@ function Marquee() {
 				<li className="flex items-center">
 					<img
 						className="max-h-12"
-						src="./assets/svg/feather.png"
+						src="/assets/svg/feather.png"
 						alt=""
 					/>
 					&nbsp;
@@ -67,7 +67,7 @@ function Marquee() {
 					&nbsp;
 					<img
 						className="max-h-12"
-						src="./assets/svg/logo-38.png"
+						src="/assets/svg/logo-38.png"
 						alt=""
 					/>
 					&nbsp;
@@ -77,7 +77,7 @@ function Marquee() {
 					&nbsp;
 					<img
 						className="max-h-12"
-						src="./assets/svg/logo-19.png"
+						src="/assets/svg/logo-19.png"
 						alt=""
 					/>
 					&nbsp;
@@ -87,7 +87,7 @@ function Marquee() {
 					&nbsp;
 					<img
 						className="max-h-12"
-						src="./assets/svg/cube.png"
+						src="/assets/svg/cube.png"
 						alt=""
 					/>
 					&nbsp;
@@ -97,7 +97,7 @@ function Marquee() {
 					&nbsp;
 					<img
 						className="max-h-12"
-						src="./assets/svg/sunset-1.png"
+						src="/assets/svg/sunset-1.png"
 						alt=""
 					/>
 					&nbsp;

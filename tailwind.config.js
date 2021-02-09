@@ -34,6 +34,8 @@ module.exports = {
 				"100px": "100px",
 				"400px": "400px",
 				"mobile-main": "calc(100vh - 64px)",
+				"80vh": "80vh",
+				"90vh": "90vh",
 			},
 			maxHeight: {
 				"400px": "400px",

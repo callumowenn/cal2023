@@ -3,10 +3,7 @@ import ProjectInfo from "./ProjectInfo";
 
 function ProjectMain({ content, data }) {
 	return (
-		<div
-			className="flex flex-col flex-grow mx-16"
-			style={{ width: "80vw" }}
-		>
+		<div className="flex flex-col flex-grow px-16">
 			<ProjectInfo
 				date={data.date}
 				skills={data.skills}
