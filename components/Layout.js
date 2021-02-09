@@ -12,6 +12,8 @@ function Layout({ children }) {
 					name="viewport"
 					content="width=device-width, initial-scale=1.0, viewport-fit=cover"
 				/>
+				<meta name="description" content="Description" />
+				<meta name="keywords" content="Keywords" />
 				<link
 					rel="apple-touch-icon"
 					sizes="180x180"
