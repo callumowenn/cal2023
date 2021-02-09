@@ -22,6 +22,10 @@ function Mac() {
 					pic="./assets/showcase/mud.JPG"
 					alt="Mountain biking with Dad"
 				/>
+				<MacWindow
+					pic="./assets/showcase/polaroid.jpg"
+					alt="Drinks with pals"
+				/>
 			</div>
 			<div className="flex flex-grow h-96"></div>
 		</div>
