@@ -5,7 +5,7 @@ import Menu from "./Menu";
 
 function Layout({ children }) {
 	return (
-		<div className="flex flex-row w-screen min-h-screen z-10 sm:flex-col">
+		<div className="flex flex-row w-screen bg-main-bg min-h-screen bg-fixed bg-cover sm:flex-col">
 			<Head>
 				<title>Callum Owen</title>
 				<meta
@@ -105,18 +105,11 @@ function Layout({ children }) {
 				/>
 			</Head>
 			<Nav />
-			<main className="flex flex-col flex-grow w-main z-10 sm:w-screen">
+			<main className="flex flex-col flex-grow w-main sm:w-screen">
 				<Menu />
 				{children}
 				<Footer />
 			</main>
-			<div
-				className="w-screen h-screen fixed bg-main-bg bg-right bg-fixed bg-cover z-0"
-				style={{
-					backgroundSize: "100% 100%",
-					WebkitBackgroundSize: "100% 100%",
-				}}
-			></div>
 		</div>
 	);
 }
