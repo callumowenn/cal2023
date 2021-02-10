@@ -1,6 +1,6 @@
 function ProjectContent({ content }) {
 	return (
-		<div className="project-content flex flex-col self-center max-w-750px">
+		<div className="project-content flex flex-col self-center max-w-750px mb-48">
 			{content}
 			<p className="hidden text-standout-green"></p>
 			<p className="hidden  text-standout-pink"></p>

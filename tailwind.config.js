@@ -34,13 +34,14 @@ module.exports = {
 			height: {
 				"100px": "100px",
 				"400px": "400px",
-				"mobile-main": "calc(100vh - 64px)",
+				"mobile-main": "calc(100vh - 64px - env(safe-area-inset-top))",
 				"80vh": "80vh",
 				"90vh": "90vh",
 				pwa: "calc(4rem + env(safe-area-inset-top))",
 			},
 			maxHeight: {
 				"400px": "400px",
+				"550px": "550px",
 			},
 			backgroundImage: (theme) => ({
 				"main-bg": "url('/assets/blur.png')",

@@ -56,7 +56,7 @@ const CustomList = (props) => {
 const Picture = ({ pic, caption, alt }) => {
 	return (
 		<div className="flex flex-col items-center my-8">
-			<img className=" max-w-950px" src={pic} alt={alt} />
+			<img className=" max-w-950px max-h-550px" src={pic} alt={alt} />
 			<p className="font-sans italic font-black my-2 opacity-75">
 				{caption}
 			</p>
