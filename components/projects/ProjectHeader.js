@@ -6,9 +6,9 @@ function ProjectHeader({ data }) {
 	console.log(data);
 	return (
 		<div className="grid">
-			<div className="col-start-1 row-start-1 w-main h-80vh flex z-0">
+			<div className="col-start-1 row-start-1 w-main h-90vh flex z-0">
 				<div className="flex-grow"></div>
-				<div className="flex-grow flex flex-col max-w-750px overflow-hidden">
+				<div className="flex-grow flex flex-col max-w-50vw overflow-hidden">
 					<div
 						className=" flex-grow opacity-20"
 						style={{

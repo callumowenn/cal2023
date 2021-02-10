@@ -27,6 +27,7 @@ module.exports = {
 				"500px": "500px",
 				"750px": "750px",
 				"950px": "950px",
+				"50vw": "50vw",
 				"80vw": "80vw",
 				"mobile-text": "270px",
 			},
