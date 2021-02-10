@@ -29,6 +29,8 @@ module.exports = {
 				"950px": "950px",
 				"50vw": "50vw",
 				"80vw": "80vw",
+				"90vw": "90vw",
+				"95vw": "95vw",
 				"mobile-text": "270px",
 			},
 			height: {

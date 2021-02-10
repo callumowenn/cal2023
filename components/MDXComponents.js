@@ -9,7 +9,7 @@ const CustomLink = (props) => {
 	if (isInternalLink) {
 		return (
 			<Link href={href}>
-				<a {...props} />
+				<a {...props} className="text-white hover:underline" />
 			</Link>
 		);
 	}
@@ -41,6 +41,14 @@ const CustomHeadingThree = (props) => {
 	);
 };
 
+const CustomBlockquote = (props) => {
+	return (
+		<blockquote
+			className="border-l-4 border-white border-opacity-50 px-4 mt-8 mb-16"
+			{...props}
+		></blockquote>
+	);
+};
 const CustomText = (props) => {
 	return <p className="text-2xl my-4 text-half-white" {...props}></p>;
 };
@@ -75,6 +83,7 @@ const StandoutText = (props) => {
 const MDXComponents = {
 	h1: CustomHeading,
 	h3: CustomHeadingThree,
+	blockquote: CustomBlockquote,
 	p: CustomText,
 	a: CustomLink,
 	ul: CustomList,

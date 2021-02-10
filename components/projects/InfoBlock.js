@@ -1,6 +1,6 @@
 function InfoBlock({ info, data, dataList }) {
 	return (
-		<div className="flex flex-col mx-12">
+		<div className="flex flex-col mx-6">
 			<p
 				className="font-extralight"
 				style={{

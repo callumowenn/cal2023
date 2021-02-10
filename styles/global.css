@@ -41,18 +41,49 @@
 * {
 	box-sizing: border-box;
 }
+html {
+	background: #111;
+}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p {
+p,
+label {
 	@apply font-serif;
 	color: white;
 }
-html {
-	background: #111;
+
+label {
+	@apply m-4;
+	@apply text-3xl;
+	@apply font-light;
+}
+
+input,
+textarea {
+	@apply font-sans;
+	@apply text-xl;
+	@apply p-4;
+	@apply rounded-xl;
+	@apply text-white;
+	@apply w-full;
+	outline: none;
+	background: #11111150;
+}
+textarea {
+	min-height: 100px;
+}
+input::placeholder,
+textarea::placeholder {
+	color: #ffffff60;
+}
+
+blockquote p {
+	font-size: 3rem !important;
+	line-height: 3rem !important;
 }
 
 @media only screen and (min-width: 639px) {
