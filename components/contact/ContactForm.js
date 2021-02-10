@@ -22,7 +22,7 @@ function ContactForm() {
 			onSubmit={registerUser}
 			className="flex flex-col max-w-95vw"
 			name="contact"
-			netlify
+			netlify="true"
 		>
 			<div className="flex my-4">
 				<label htmlFor="name" title="Name">
