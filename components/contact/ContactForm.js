@@ -22,9 +22,10 @@ function ContactForm() {
 			onSubmit={registerUser}
 			className="flex flex-col max-w-95vw"
 			name="contact"
-			netlify="true"
+			data-netlify="true"
+			method="POST"
 		>
-			<div className="flex my-4">
+			<div className="flex my-4 sm:my-4">
 				<label htmlFor="name" title="Name">
 					👋
 				</label>
@@ -35,10 +36,11 @@ function ContactForm() {
 					type="text"
 					autoComplete="name"
 					placeholder="Name"
+					autoFocus
 					required
 				/>
 			</div>
-			<div className="flex my-4">
+			<div className="flex my-4 sm:my-4">
 				<label htmlFor="email" title="Email">
 					✉️
 				</label>
@@ -52,7 +54,7 @@ function ContactForm() {
 					required
 				/>
 			</div>
-			<div className="flex my-4">
+			<div className="flex my-4 sm:my-4">
 				<label htmlFor="message" title="Message">
 					✏️
 				</label>

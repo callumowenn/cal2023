@@ -1,10 +1,12 @@
-import Header from "@components/Header";
+import Intro from "@components/about/Intro";
+import Tech from "@components/about/Tech";
 import Mac from "@components/home/Mac";
 function About() {
 	return (
 		<div>
-			<Header />
+			<Intro />
 			<Mac />
+			<Tech />
 		</div>
 	);
 }

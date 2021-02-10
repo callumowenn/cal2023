@@ -118,4 +118,15 @@ blockquote p {
 	#sidebar {
 		border-radius: 1rem 1rem 0 0;
 	}
+	input,
+	textarea {
+		@apply text-lg;
+		height: max-content;
+	}
+	label {
+		@apply mr-4;
+		@apply mt-3;
+		@apply ml-0;
+		@apply mb-0;
+	}
 }
