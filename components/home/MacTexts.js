@@ -19,6 +19,7 @@ function MacTexts() {
 				text="Maybe, but I’m also really into music, travel and football."
 			/>
 			<MacText text="Oh, that’s pretty cool I guess." />
+			<MacText me text="Check out these pics 👇" />
 		</div>
 	);
 }

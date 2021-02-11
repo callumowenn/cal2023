@@ -3,9 +3,9 @@ import { getAllFilesFrontMatter } from "@lib/mdx";
 
 function Projects({ projects }) {
 	return (
-		<div className="ml-16 my-24">
-			<div className="mt-48 mb-24 flex items-center">
-				<h1 className="font-sans italic font-black text-9xl">
+		<div className="ml-16 my-24 sm:mx-4">
+			<div className="mt-48 mb-24 flex items-center sm:mt-12 sm:ml-4">
+				<h1 className="font-sans italic font-black text-9xl sm:text-6xl">
 					Projects
 				</h1>
 			</div>

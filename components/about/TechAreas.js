@@ -31,8 +31,8 @@ function TechAreas() {
 	return (
 		<div className="flex flex-col my-20">
 			{areas.map((area) => (
-				<div className="flex justify-between my-4">
-					<div className="italic text-2xl text-half-white font-bold flex justify-center">
+				<div className="flex justify-between my-4 sm:flex-col sm:my-8">
+					<div className="italic text-2xl text-half-white font-bold flex justify-center sm:justify-start sm:mb-4">
 						<span className="text-white not-italic text-4xl mr-4">
 							{area.emoji}
 						</span>{" "}

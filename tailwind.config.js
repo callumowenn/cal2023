@@ -20,6 +20,7 @@ module.exports = {
 				nav: "80px",
 				"100px": "100px",
 				"130px": "130px",
+				"70vw": "70vw",
 				"90vw": "90vw",
 				main: "calc(100vw - 80px)",
 			},

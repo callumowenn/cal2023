@@ -27,7 +27,7 @@ const CustomLink = (props) => {
 const CustomHeading = (props) => {
 	return (
 		<h1
-			className="font-sans text-5xl italic font-black my-16"
+			className="font-sans text-5xl italic font-black my-16 sm:text-2xl"
 			{...props}
 		></h1>
 	);
@@ -50,7 +50,9 @@ const CustomBlockquote = (props) => {
 	);
 };
 const CustomText = (props) => {
-	return <p className="text-2xl my-4 text-half-white" {...props}></p>;
+	return (
+		<p className="text-2xl my-4 text-half-white sm:text-xl" {...props}></p>
+	);
 };
 const CustomList = (props) => {
 	return (
@@ -64,7 +66,11 @@ const CustomList = (props) => {
 const Picture = ({ pic, caption, alt }) => {
 	return (
 		<div className="flex flex-col items-center my-8">
-			<img className=" max-w-950px max-h-550px" src={pic} alt={alt} />
+			<img
+				className=" max-w-950px max-h-550px sm:max-w-none sm:w-screen"
+				src={pic}
+				alt={alt}
+			/>
 			<p className="font-sans italic font-black my-2 opacity-75">
 				{caption}
 			</p>

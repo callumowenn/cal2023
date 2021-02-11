@@ -6,24 +6,52 @@ import MacSidebar from "./MacSidebar";
 import MacTexts from "./MacTexts";
 import MacTopBar from "./MacTopBar";
 
-function MacWindow({ pic, alt }) {
+function MacWindow({ pic, vid, alt }) {
 	return (
-		<div
-			className="flex shadow-xl rounded-2xl overflow-hidden my-24 font-apple window sm:flex-col"
-			style={{
-				width: "700px",
-				maxWidth: "90vw",
-				height: `${pic ? "500px" : ""}`,
-			}}
-		>
-			<MacSidebar>
-				<MacButtons />
-				{pic ? <MacPreview pic={pic} alt={alt} /> : ""}
-			</MacSidebar>
-			<MacMain>
-				<MacTopBar />
-				{pic ? <MacPicture pic={pic} alt={alt} /> : <MacTexts />}
-			</MacMain>
+		<div className="window flex flex-col window  my-24">
+			<div
+				className="flex shadow-xl rounded-2xl overflow-hidden mb-8 font-apple  sm:flex-col"
+				style={{
+					width: "700px",
+					maxWidth: "90vw",
+					height: `${pic || vid ? "500px" : ""}`,
+				}}
+			>
+				<MacSidebar>
+					<MacButtons />
+					{pic ? (
+						<MacPreview pic={pic} alt={alt} />
+					) : vid ? (
+						<MacPreview vid={vid} alt={alt} />
+					) : (
+						""
+					)}
+				</MacSidebar>
+				<MacMain>
+					<MacTopBar />
+					{pic ? (
+						<MacPicture pic={pic} alt={alt} />
+					) : vid ? (
+						<MacPicture vid={vid} alt={alt} />
+					) : (
+						<MacTexts />
+					)}
+				</MacMain>
+			</div>
+			{pic || vid ? (
+				<div
+					className="shadow-xl rounded-2xl py-4 px-24 text-gray-200 flex items-center justify-center font-apple w-max self-center max-w-90vw sm:px-8"
+					style={{
+						backdropFilter: "blur(80px)",
+						WebkitBackdropFilter: "blur(80px)",
+						background: "#11111180",
+					}}
+				>
+					{alt}
+				</div>
+			) : (
+				""
+			)}
 		</div>
 	);
 }

@@ -2,7 +2,7 @@ import tagData from "@lib/tags";
 
 function Tags({ tags }) {
 	return (
-		<div className="flex">
+		<div className="flex sm:flex-wrap">
 			{tags.map((tag) => (
 				<a
 					href={tagData[tag].link}
@@ -12,7 +12,7 @@ function Tags({ tags }) {
 					rel="noopener noreferrer"
 				>
 					<p
-						className=" font-sans"
+						className=" font-sans sm:text-sm"
 						style={{ color: tagData[tag].colour }}
 					>
 						{tag}

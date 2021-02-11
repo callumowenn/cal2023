@@ -5,7 +5,7 @@ function Standout({ text, colour, emoji }) {
 			style={{ color: colour }}
 		>
 			&nbsp;{text}
-			<span className=" not-italic inline-flex">&nbsp;{emoji}&nbsp;</span>
+			<span className=" not-italic inline">&nbsp;{emoji}&nbsp;</span>
 		</p>
 	);
 }

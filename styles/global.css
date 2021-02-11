@@ -82,8 +82,12 @@ textarea::placeholder {
 }
 
 blockquote p {
-	font-size: 3rem !important;
-	line-height: 3rem !important;
+	font-size: 2.5rem !important;
+	line-height: 2.5rem !important;
+}
+.outline-text {
+	-webkit-text-stroke: 2px white;
+	-webkit-text-fill-color: transparent;
 }
 
 @media only screen and (min-width: 639px) {
@@ -117,6 +121,13 @@ blockquote p {
 	}
 	#sidebar {
 		border-radius: 1rem 1rem 0 0;
+	}
+	.outline-text {
+		-webkit-text-stroke: 1px white;
+	}
+	blockquote p {
+		font-size: 2rem !important;
+		line-height: 2rem !important;
 	}
 	input,
 	textarea {

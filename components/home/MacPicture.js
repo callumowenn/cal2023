@@ -1,12 +1,24 @@
-function MacPicture({ pic, alt }) {
+function MacPicture({ pic, vid, alt }) {
 	return (
 		<div className="flex flex-grow flex-col items-center justify-center">
-			<img
-				className="max-h-400px max-w-500px sm:max-w-80vw"
-				src={pic}
-				alt={alt}
-				title={alt}
-			/>
+			{vid ? (
+				<video
+					className="max-h-400px max-w-500px sm:max-w-80vw"
+					muted
+					autoPlay
+					loop
+					src={vid}
+					alt={alt}
+					title={alt}
+				></video>
+			) : (
+				<img
+					className="max-h-400px max-w-500px sm:max-w-80vw"
+					src={pic}
+					alt={alt}
+					title={alt}
+				/>
+			)}
 		</div>
 	);
 }

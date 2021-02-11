@@ -2,16 +2,19 @@ import Standout from "./Standout";
 
 function Intro() {
 	return (
-		<div className="flex flex-col py-8 px-32">
-			<div className="flex items-center mt-16 mb-8 bg-white bg-opacity-10 rounded-3xl p-6 w-max">
-				<img className="w-20 mr-6" src="/assets/me-flip.png" />
-				<h1 className="text-4xl font-serif italic text-white">
+		<div className="flex flex-col py-8 px-32 sm:px-4">
+			<div className="flex items-center mt-16 mb-8 bg-white bg-opacity-10 rounded-3xl p-6 w-max sm:p-5">
+				<img
+					className="w-20 mr-6 sm:w-12 sm:mr-5"
+					src="/assets/me-flip.png"
+				/>
+				<h1 className="text-4xl font-serif italic text-white sm:text-2xl">
 					So, who is this nerd?
 				</h1>
 			</div>
 			<div className="flex items-center mb-32">
 				<div
-					className=" text-6xl text-half-white py-12 font-apple font-extralight italic"
+					className=" text-6xl text-half-white py-12 font-apple font-extralight italic sm:text-3xl"
 					style={{ lineHeight: 1.2 }}
 				>
 					An

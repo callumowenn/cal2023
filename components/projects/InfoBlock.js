@@ -1,6 +1,6 @@
 function InfoBlock({ info, data, dataList }) {
 	return (
-		<div className="flex flex-col mx-6">
+		<div className="flex flex-col mx-6 sm:ml-0 sm:mr-3 sm:mb-24">
 			<p
 				className="font-extralight"
 				style={{
@@ -10,7 +10,7 @@ function InfoBlock({ info, data, dataList }) {
 			>
 				{info.toUpperCase()}
 			</p>
-			<p className="font-sans opacity-50 italic">
+			<p className="font-sans opacity-50 italic sm:text-xs">
 				{data
 					? data
 					: dataList?.map((data) => (
