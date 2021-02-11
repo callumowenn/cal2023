@@ -9,9 +9,9 @@ function ProjectHeader({ data }) {
 				<div className="flex-grow sm:hidden"></div>
 				<div className="flex-grow flex flex-col max-w-50vw overflow-hidden sm:max-w-none sm:h-96 ">
 					<div
-						className=" flex-grow opacity-20 sm:opacity-50 sm:w-screen"
+						className=" flex-grow opacity-20 sm:opacity-50 project-pic"
 						style={{
-							background: `url(${data.image}) fixed left`,
+							backgroundImage: `url(${data.image})`,
 						}}
 					></div>
 					<div className=" border-t border-white border-opacity-50 overflow-hidden sm:hidden"></div>

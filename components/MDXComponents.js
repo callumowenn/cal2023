@@ -27,7 +27,7 @@ const CustomLink = (props) => {
 const CustomHeading = (props) => {
 	return (
 		<h1
-			className="font-sans text-5xl italic font-black my-16 sm:text-2xl"
+			className="font-sans text-5xl italic font-black my-16 sm:text-3xl"
 			{...props}
 		></h1>
 	);
@@ -35,7 +35,7 @@ const CustomHeading = (props) => {
 const CustomHeadingThree = (props) => {
 	return (
 		<h3
-			className="font-sans text-3xl italic font-black my-8"
+			className="font-sans text-3xl italic font-black my-8 sm:text-xl"
 			{...props}
 		></h3>
 	);
@@ -67,11 +67,11 @@ const Picture = ({ pic, caption, alt }) => {
 	return (
 		<div className="flex flex-col items-center my-8">
 			<img
-				className=" max-w-950px max-h-550px sm:max-w-none sm:w-screen"
+				className=" max-w-950px max-h-550px sm:max-w-none sm:max-h-full sm:w-screen"
 				src={pic}
 				alt={alt}
 			/>
-			<p className="font-sans italic font-black my-2 opacity-75">
+			<p className="font-sans italic font-black my-2 opacity-75 sm:text-sm sm:font-medium">
 				{caption}
 			</p>
 		</div>
