@@ -1,8 +1,8 @@
 function InfoBlock({ info, data, dataList }) {
 	return (
-		<div className="flex flex-col mx-6 sm:ml-0 sm:mr-3 sm:mb-24">
+		<div className="flex flex-col mx-6 sm:ml-0 sm:mr-3 sm:mb-6">
 			<p
-				className="font-extralight"
+				className="font-extralight sm:mb-1"
 				style={{
 					color: "#FFE164",
 					fontFamily: "neue-haas-grotesk-display , sans",

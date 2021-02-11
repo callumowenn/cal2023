@@ -23,7 +23,7 @@ function ProjectHeader({ data }) {
 					<p className="italic opacity-50 text-2xl my-4 sm:text-xl">
 						Project &bull; {data.readingTime.text}
 					</p>
-					<h1 className="font-sans italic font-bold text-8xl my-4 sm:text-5xl">
+					<h1 className="font-sans italic font-bold text-8xl my-4 sm:text-4xl">
 						{data.title}
 					</h1>
 					<Tags tags={data.tags} />

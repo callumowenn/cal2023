@@ -1,4 +1,5 @@
 import { useMenu } from "lib/menu";
+import Image from "next/image";
 import Link from "next/link";
 import Socials from "./Socials";
 
@@ -12,11 +13,15 @@ function Nav() {
 						className="h-auto rounded-full mb-3 hover:bg-white hover:bg-opacity-10 sm:w-10 sm:h-10 sm:m-0"
 						title="Go Home"
 					>
-						<img
-							className="flex rounded-full transform rotate-180"
-							src="/assets/me-transparent-sq-soft.png"
-							alt="home"
-						/>
+						<div className="flex rounded-full transform rotate-180">
+							<Image
+								width={55}
+								height={55}
+								priority
+								src="/assets/me-transparent-sq-soft.png"
+								alt="home"
+							/>
+						</div>
 					</a>
 				</Link>
 				<button
@@ -24,11 +29,17 @@ function Nav() {
 					title="Menu"
 					onClick={() => toggleMenu()}
 				>
-					<img
-						className="flex rounded-full transform rotate-180"
-						src={`${open ? "/assets/x.png" : "/assets/menu.png"}`}
-						alt="home"
-					/>
+					<div className="flex rounded-full transform rotate-180">
+						<Image
+							width={55}
+							height={55}
+							priority
+							src={`${
+								open ? "/assets/x.png" : "/assets/menu.png"
+							}`}
+							alt="menu"
+						/>
+					</div>
 				</button>
 			</div>
 			<Socials />

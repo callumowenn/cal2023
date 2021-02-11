@@ -1,4 +1,5 @@
 import Button from "@components/Button";
+import Image from "next/image";
 import Logo from "./Logo";
 import Tags from "./Tags";
 
@@ -16,7 +17,6 @@ function Preview({ project }) {
 							{project.title}
 						</h3>
 					</a>
-
 					<Tags tags={project.tags} />
 				</div>
 			</div>
@@ -26,11 +26,15 @@ function Preview({ project }) {
 					href={`/projects/${project.slug}`}
 					title="Read more"
 				>
-					<img
-						className="w-70vw sm:w-full"
-						src={project.image}
-						alt={`${project.title} cover`}
-					/>
+					<div className="w-70vw sm:w-full">
+						<Image
+							src={project.image}
+							width={1008}
+							height={567}
+							priority
+							alt={`${project.title} cover`}
+						/>
+					</div>
 				</a>
 			</div>
 			<div className="mt-8 flex">

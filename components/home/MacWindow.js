@@ -6,7 +6,7 @@ import MacSidebar from "./MacSidebar";
 import MacTexts from "./MacTexts";
 import MacTopBar from "./MacTopBar";
 
-function MacWindow({ pic, alt }) {
+function MacWindow({ pic, aspect, alt }) {
 	return (
 		<div className="window flex flex-col window  my-24">
 			<div
@@ -23,7 +23,11 @@ function MacWindow({ pic, alt }) {
 				</MacSidebar>
 				<MacMain>
 					<MacTopBar />
-					{pic ? <MacPicture pic={pic} alt={alt} /> : <MacTexts />}
+					{pic ? (
+						<MacPicture pic={pic} aspect={aspect} alt={alt} />
+					) : (
+						<MacTexts />
+					)}
 				</MacMain>
 			</div>
 			{pic ? (

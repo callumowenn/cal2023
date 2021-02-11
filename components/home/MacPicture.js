@@ -1,12 +1,28 @@
-function MacPicture({ pic, vid, alt }) {
+import Image from "next/image";
+
+function MacPicture({ pic, aspect, alt }) {
+	let dimensions = {
+		landscape: {
+			width: 500,
+			height: 375,
+		},
+		portrait: {
+			width: 300,
+			height: 400,
+		},
+		"portrait-thin": { width: 225, height: 400 },
+	};
 	return (
 		<div className="flex flex-grow flex-col items-center justify-center">
-			<img
-				className="max-h-400px max-w-500px sm:max-w-80vw"
-				src={pic}
-				alt={alt}
-				title={alt}
-			/>
+			<div className="max-h-400px max-w-500px sm:max-w-80vw">
+				<Image
+					src={pic}
+					alt={alt}
+					width={dimensions[aspect].width}
+					height={dimensions[aspect].height}
+					title={alt}
+				/>
+			</div>
 		</div>
 	);
 }

@@ -8,30 +8,36 @@ function Mac() {
 				<MacWindow />
 				<MacWindow
 					pic="/assets/showcase/cam.jpg"
+					aspect="landscape"
 					alt="One of the many studios in New Broadcasting House 🎥"
 				/>
 				<MacWindow
 					pic="/assets/showcase/dam.jpeg"
+					aspect="portrait-thin"
 					alt="Biking around Amsterdam 🇳🇱"
 				/>
 				<MacWindow
 					pic="/assets/showcase/snowdon.JPG"
+					aspect="landscape"
 					alt="Walking up Snowdon 🏔"
 				/>
 				<MacWindow
 					pic="/assets/showcase/stage.JPG"
+					aspect="landscape"
 					alt="Production training with BBC 🎬"
-				/>
+				/>{" "}
 				<MacWindow
 					pic="/assets/showcase/mud.JPG"
+					aspect="portrait"
 					alt="Mountain biking with Dad 🚵🏼‍♂️"
 				/>
 				<MacWindow
 					pic="/assets/showcase/polaroid.jpg"
+					aspect="portrait"
 					alt="Drinks with pals 🍻"
 				/>
 			</div>
-			<div className="flex flex-grow h-96"></div>
+			<div className="flex flex-grow h-96"></div>{" "}
 		</div>
 	);
 }
