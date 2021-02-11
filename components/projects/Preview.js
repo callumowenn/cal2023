@@ -22,7 +22,7 @@ function Preview({ project }) {
 			</div>
 			<div className="flex">
 				<a
-					className="flex flex-grow"
+					className=""
 					href={`/projects/${project.slug}`}
 					title="Read more"
 				>

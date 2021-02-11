@@ -7,6 +7,7 @@ function MacPicture({ pic, vid, alt }) {
 					muted
 					autoPlay
 					loop
+					playsinline
 					src={vid}
 					alt={alt}
 					title={alt}

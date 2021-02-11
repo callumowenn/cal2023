@@ -9,16 +9,16 @@ function ProjectHeader({ data }) {
 				<div className="flex-grow sm:hidden"></div>
 				<div className="flex-grow flex flex-col max-w-50vw overflow-hidden sm:max-w-none sm:h-96 ">
 					<div
-						className=" flex-grow opacity-20"
+						className=" flex-grow opacity-20 sm:opacity-50 sm:w-screen"
 						style={{
-							background: `url(${data.image}) fixed cover left`,
+							background: `url(${data.image}) fixed left`,
 						}}
 					></div>
-					<div className=" border-t border-white border-opacity-50 overflow-hidden"></div>
+					<div className=" border-t border-white border-opacity-50 overflow-hidden sm:hidden"></div>
 				</div>
 			</div>
 			<div className="col-start-1 row-start-1 m-16 flex items-center z-10 sm:mx-4 sm:my-0 sm:row-start-2">
-				<div className="mx-16 sm:mx-8 sm:transform sm:-translate-y-12">
+				<div className="mx-16 sm:ml-4 sm:mr-0 sm:transform sm:-translate-y-12">
 					<Logo src={data.logo} title={data.title} />
 					<p className="italic opacity-50 text-2xl my-4 sm:text-xl">
 						Project &bull; {data.readingTime.text}
