@@ -27,10 +27,6 @@ function Mac() {
 					alt="Mountain biking with Dad 🚵🏼‍♂️"
 				/>
 				<MacWindow
-					vid="/assets/showcase/cnn.mp4"
-					alt="In the CNN Studio ⚡️"
-				/>
-				<MacWindow
 					pic="/assets/showcase/polaroid.jpg"
 					alt="Drinks with pals 🍻"
 				/>

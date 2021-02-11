@@ -6,7 +6,7 @@ import MacSidebar from "./MacSidebar";
 import MacTexts from "./MacTexts";
 import MacTopBar from "./MacTopBar";
 
-function MacWindow({ pic, vid, alt }) {
+function MacWindow({ pic, alt }) {
 	return (
 		<div className="window flex flex-col window  my-24">
 			<div
@@ -14,31 +14,19 @@ function MacWindow({ pic, vid, alt }) {
 				style={{
 					width: "700px",
 					maxWidth: "90vw",
-					height: `${pic || vid ? "500px" : ""}`,
+					height: `${pic ? "500px" : ""}`,
 				}}
 			>
 				<MacSidebar>
 					<MacButtons />
-					{pic ? (
-						<MacPreview pic={pic} alt={alt} />
-					) : vid ? (
-						<MacPreview vid={vid} alt={alt} />
-					) : (
-						""
-					)}
+					{pic ? <MacPreview pic={pic} alt={alt} /> : ""}
 				</MacSidebar>
 				<MacMain>
 					<MacTopBar />
-					{pic ? (
-						<MacPicture pic={pic} alt={alt} />
-					) : vid ? (
-						<MacPicture vid={vid} alt={alt} />
-					) : (
-						<MacTexts />
-					)}
+					{pic ? <MacPicture pic={pic} alt={alt} /> : <MacTexts />}
 				</MacMain>
 			</div>
-			{pic || vid ? (
+			{pic ? (
 				<div
 					className="shadow-xl rounded-2xl py-4 px-24  flex items-center justify-center w-max self-center overflow-hidden max-w-90vw sm:px-8"
 					style={{
