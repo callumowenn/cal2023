@@ -2,6 +2,7 @@ import PictureHeader from "@components/PictureHeader";
 import Posts from "@components/work/Posts";
 import TextSection from "@components/work/TextSection";
 import { getAllFilesFrontMatter } from "@lib/mdx";
+import Head from "next/head";
 
 function CNN({ cnnPosts }) {
 	return (
@@ -37,13 +38,14 @@ function CNN({ cnnPosts }) {
 							March 2, 2020
 						</a>
 					</blockquote>{" "}
-					<script
-						async
-						src="https://platform.twitter.com/widgets.js"
-						charset="utf-8"
-					></script>
+					<Head>
+						<script
+							async
+							src="https://platform.twitter.com/widgets.js"
+							charset="utf-8"
+						></script>
+					</Head>
 				</div>
-
 				<TextSection>
 					<p className=" font-sans text-3xl font-bold italic mb-12 sm:text-2xl">
 						Despite the pandemic, my time with CNN was both
