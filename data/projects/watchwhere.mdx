@@ -18,9 +18,9 @@ status: "Finished"
 
 # Tired of flicking through streaming services trying to find that one show?
 
-[WatchWhere](https://watchwhere.web.app "Go to WatchWhere") is the simple streaming service search engine. Have you ever struggled to find a show and had to resort to Googling "_where to watch..._"?
+[WatchWhere](https://watchwhere.web.app "Go to WatchWhere") is the simple streaming service search engine. Have you ever struggled to find a show and had to resort to Googling "_where to watch..._"? <StandoutText>Not a fun time, is it?</StandoutText>
 
-### <StandoutText>Not a fun time, is it?</StandoutText>
+I got the idea for WatchWhere while on my second placement with [CNN](/cnn "Read about my time at CNN"), after being asked to check out Node.js. By this point, I had already been into web development for a decent amount of time and was familiar with Node.js. With the confidence that came from that, I had no hesitation in jumping right into a project - excited to see what I could make. Although I'd heard of Node.js, I hadn't thought of a good project allowing me to try it out. But, this little push from JJ - my manager while with CNN - would get me thinking.
 
 <Picture
 	pic="/assets/projects/watchwhere/countries.png"
@@ -28,23 +28,16 @@ status: "Finished"
 	alt="WatchWhere screenshot"
 />
 
-I got the idea for WatchWhere while on my second placement with [CNN](/cnn "Read about my time at CNN"), after being asked to check out Node.js. By this point, I had already been into web development for a decent amount of time and was familiar with Node.js. With the confidence that came from that, I had no hesitation in jumping right into a project - excited to see what I could make. Although I'd heard of Node.js, I hadn't thought of a good project allowing me to try it out. But, this little push from JJ - my manager while with CNN - would get me thinking. I wanted to find an API with actually useful or interesting data I could play with, which led me to [RapidAPI](https://rapidapi.com "Go to RapidAPI").
+### Universal streaming service search
 
-### Whoa, that's a lot of APIs.
+Very often with these side projects, I find myself trying to solve my own problems. A few days earlier, Sander - my sister's boyfriend - was trying to find a show that he swore was on Dutch Netflix before realising it must have been taken down. Oh, he's Dutch by the way - should've said. As insignificant as this sounds, it would lay the seeds for the idea of WatchWhere. So as I sat there thinking about what kind of data would actually be useful in a Node.js app - staying away from just making a weather app - the answer was right there in front of me.
 
-There were a lot of APIs. Seeing as I was with CNN, I wanted to check out if there were any TV or film APIs to integrate. I found two: [Utelly](https://www.utelly.com "Go to Utelly") and [uNoGS - Unofficial Netflix Online Global Search](https://unogs.com "Go to uNoGS"). Utelly was great because it pulled in data from all sorts of streaming services:
+> People like streaming!
 
--   Netflix
--   Amazon Prime
--   Disney+
--   Apple TV
--   YouTube
+But every major corporation wants a slice of the streaming pie - Netflix, Amazon, Disney, Apple, HBO... shows are only going to get harder to find as each corporation tries to keep their shows fenced-in to their own platforms. That's pretty sad, people just want to watch their shows - should be simple, right? This was the goal with WatchWhere. I couldn't believe it, but there were APIs out there that already collect metadata from these streaming services:
 
-and also pulled data from online video stores:
-
--   Google Play Store
--   iTunes Store
--   Amazon Prime Store
+-   [Utelly](https://utelly.com) - Collects metadata from streaming services, even includes an IMDB link for each show
+-   [uNoGS](https://unogs.com/) - Collects data from international Netflix: if it's not available in your country, it's probably available in another continent somewhere
 
 <Picture
 	pic="/assets/projects/watchwhere/list.png"
@@ -52,46 +45,14 @@ and also pulled data from online video stores:
 	alt="WatchWhere screenshot"
 />
 
-All that data <StandoutText>for free?</StandoutText> No complaints. What's even better - and I didn't realise this until deep in development - is that each show also comes with a link to it's [IMDB](https://www.imdb.com "Go to IMDB") page. That's pretty sick - WatchWhere can tell you where to watch a show, and you can go to IMDB right from the app and read reviews etc. <StandoutText>Pretty cool.</StandoutText>
+### Simple as that! ...right?
 
-### How did I design it?
+Excitedly, this was my first proper project using [React](https://reactjs.org), too. Perhaps a recipe for disaster. Initially I had to get my head around props and state - the worst part was flicking between old [StackOverflow] posts before knowing [the difference between class components and functional components](https://reactjs.org/docs/components-and-props.html#function-and-class-components). But, YouTube would come to the rescue again and, with plenty of tinkering, I'd come out the other side a better man. Call it character building.
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+The Node.js stuff comes to play when connecting to these APIs. I used Axios to make the calls, which can actually be done from the front-end react code. But, determined to use Node.js, I did a bit of research into deploying a Node.js server and figured there are some massive benefits to doing so. First, the API calls required a secret key. Turns out there's no way to do this in the front-end without leaking the key. So, by making it an environment variable on the Node.js server, the secret key is safe and sound. You can also do incredibly useful things like rate-limiting and slow-down to prevent spammers going crazy at your server.
 
-<Picture
-	pic="/assets/projects/watchwhere/login.png"
-	caption="Login integration with Google and Facebook"
-	alt="WatchWhere screenshot"
-/>
+> Excitedly, this was my first proper project using [React](https://reactjs.org)
 
-### Another subtitle
+### What's next for WatchWhere?
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-<Picture
-	pic="/assets/projects/watchwhere/mobile.png"
-	caption="Tap an app to go straight there and start watching."
-	alt="WatchWhere screenshot"
-/>
-
-### How did I design it?
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-### Another subtitle
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-<Picture
-	pic="/assets/projects/watchwhere/light.png"
-	caption="It's got a light mode, too."
-	alt="WatchWhere screenshot"
-/>
-
-### How did I design it?
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-### Another subtitle
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+I've been using WatchWhere regularly since I made it - it's just as useful as I imagined! There's a couple things I need to iron-out before I start shouting about it to the world, but I'm so happy with how it turned out. If you're reading this, maybe you'd like to [check it out for yourself](https://watchwhere.web.app).
