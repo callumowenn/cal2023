@@ -43,6 +43,8 @@ function PictureHeader({ pic, logo, subone, subtwo, title, tags, height }) {
 					{tags ? <Tags tags={tags} /> : ""}
 				</div>
 			</div>
+			<div className="hidden h-screen"></div>
+			<div className="hidden h-90vh"></div>
 		</div>
 	);
 }
