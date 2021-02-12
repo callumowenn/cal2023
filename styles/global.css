@@ -90,10 +90,17 @@ blockquote p {
 	-webkit-text-fill-color: transparent;
 }
 
-.project-pic {
-	background-position: left;
-	background-attachment: fixed;
-	background-size: auto 100%;
+@keyframes emoji-spin {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.post:hover span {
+	animation: emoji-spin 8s infinite linear;
 }
 
 @media only screen and (min-width: 639px) {
@@ -130,10 +137,6 @@ blockquote p {
 	}
 	.outline-text {
 		-webkit-text-stroke: 1px white;
-	}
-	.project-pic {
-		background-position: unset;
-		background-attachment: unset;
 	}
 	blockquote p {
 		font-size: 2rem !important;

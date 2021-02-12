@@ -20,8 +20,8 @@ function CNN({ cnnPosts }) {
 				section="cnn"
 				shift
 			/>
-			<div className="flex flex-grow justify-center mb-24  ml-24 sm:ml-0 sm:mt-24  sm:flex-col">
-				<div className="sm:mb-24">
+			<div className="flex flex-grow justify-center mb-24 ml-24 sm:ml-0 sm:mt-24  sm:flex-col">
+				<div className="sm:mb-24 flex-grow">
 					<blockquote
 						className="twitter-tweet"
 						data-dnt="true"

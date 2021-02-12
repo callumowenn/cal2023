@@ -5,22 +5,18 @@ function PictureHeader({ pic, logo, subone, subtwo, title, tags, height }) {
 	return (
 		<div className="grid">
 			<div
-				className={`col-start-1 row-start-1 w-main h-${height} flex z-0 sm:h-96 sm:w-screen`}
+				className={`col-start-1  border-b w-50vw ml-auto row-start-1 h-${height} flex z-0 sm:h-96 sm:w-screen`}
+			></div>
+			<div
+				className={`col-start-1 row-start-1 absolute w-main h-${height} flex flex-row-reverse z-0 sm:h-96 sm:w-screen`}
+				style={{ clip: "rect(0, auto, auto, 0)" }}
 			>
 				<div className="flex-grow sm:hidden"></div>
-				<div className="flex-grow flex flex-col max-w-50vw overflow-hidden sm:max-w-none sm:h-96 ">
-					<div
-						className={`flex-grow  ${
-							tags
-								? "project-pic opacity-20 sm:opacity-50"
-								: "bg-cover bg-center opacity-40"
-						}`}
-						style={{
-							backgroundImage: `url(${pic})`,
-						}}
-					></div>
-					<div className=" border-t border-white border-opacity-50 overflow-hidden sm:hidden"></div>
-				</div>
+				<img
+					className={`flex-grow fixed flex sm:w-screen w-50vw sm:max-w-none sm:h-96 opacity-25 object-cover h-${height} object-left-top`}
+					style={{ backfaceVisibility: "hidden" }}
+					src={pic}
+				/>
 			</div>
 			<div className="col-start-1 row-start-1 m-16 flex items-center z-10 sm:mx-4 sm:my-0 sm:row-start-2">
 				<div className="mx-16 sm:ml-4 sm:mr-0 sm:transform sm:-translate-y-12">
@@ -30,13 +26,15 @@ function PictureHeader({ pic, logo, subone, subtwo, title, tags, height }) {
 						<img className="max-h-16" src={logo} alt={title} />
 					)}
 
-					<p className="italic text-half-white text-2xl my-8 sm:text-xl">
+					<p className="italic text-half-white text-2xl mt-8 mb-4 sm:text-xl sm:mb-2">
 						{subone} &bull; {subtwo}
 					</p>
 					<h1
 						className={`font-sans italic font-bold ${
-							tags ? "text-8xl" : "text-9xl"
-						} sm:text-4xl`}
+							tags
+								? "text-8xl sm:text-4xl"
+								: "text-9xl sm:text-6xl"
+						} `}
 					>
 						{title}
 					</h1>
