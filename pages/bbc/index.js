@@ -17,20 +17,21 @@ function BBC({ bbcPosts }) {
 			<Posts posts={bbcPosts} section="bbc" shift />
 			<TextSection mb>
 				<p className=" font-sans text-3xl font-bold italic mb-12 sm:text-2xl">
-					Lorem ipsum dolor sit, amet officia adipisicing elit.
-					Perferendis sitem!
+					Combining tech, software, media, a free degree and three
+					years experience.
 				</p>
 				<p className="text-2xl text-half-white sm:text-xl">
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-					Eum asperiores amet praesentium quidem officia. Vel qui quo
-					est odit pariatur totam ipsa inventore! Voluptatum
-					praesentium culpa odio suscipit quaerat dolorem!
+					Where do I start? This apprenticeship's been a rollercoaster
+					from day one. I've had the chance to travel all around the
+					UK - from standing on the roof of New Broadcasting House in
+					London, to getting hands-on with cuttng edge tech in
+					Salford.
 					<br />
 					<br />
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-					Nostrum, obcaecati illum corporis, accusamus voluptas
-					blanditiis quas ducimus illo iusto voluptatem commodi,
-					inventore consequuntur eos quam dicta quisquam?
+					Life never stops within the BBC. There's always more things
+					to learn; more people to meet; more experience to gain. As a
+					New Talent Apprentice, I focus on bringing positive,
+					progressional energy.
 				</p>
 			</TextSection>
 		</div>
