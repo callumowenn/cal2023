@@ -9,14 +9,14 @@ function CNN({ cnnPosts }) {
 		<div className="mb-32 flex flex-col">
 			<PictureHeader
 				pic="/assets/cnn/mcr.jpg"
-				logo="/assets/cnn.png"
+				section="cnn"
 				subone="Broadcast Engineering"
 				subtwo="2020 Placements"
 				title="Life at CNN"
 				height="screen"
 			/>
 			<Posts
-				posts={[cnnPosts[1], cnnPosts[5], cnnPosts[2]]}
+				posts={[cnnPosts[4], cnnPosts[1], cnnPosts[5]]}
 				section="cnn"
 				shift
 			/>
@@ -73,15 +73,6 @@ function CNN({ cnnPosts }) {
 					</p>
 				</TextSection>
 			</div>
-
-			{cnnPosts.length > 3 ? (
-				<Posts
-					posts={[cnnPosts[3], cnnPosts[4], cnnPosts[0]]}
-					section="cnn"
-				/>
-			) : (
-				""
-			)}
 		</div>
 	);
 }

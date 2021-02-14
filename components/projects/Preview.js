@@ -1,5 +1,6 @@
 import Button from "@components/Button";
 import Image from "next/image";
+import Link from "next/link";
 import Logo from "./Logo";
 import Tags from "./Tags";
 
@@ -12,30 +13,31 @@ function Preview({ project }) {
 					<Logo src={project.logo} title={project.title} />
 				</div>
 				<div className="flex flex-col">
-					<a href={`/projects/${project.slug}`} title="Read more">
-						<h3 className="text-7xl italic mb-4 hover:underline sm:text-4xl sm:mb-4">
-							{project.title}
-						</h3>
-					</a>
+					<Link href={`/projects/${project.slug}`}>
+						<a title="Read more">
+							<h3 className="text-7xl italic mb-4 hover:underline sm:text-4xl sm:mb-4">
+								{project.title}
+							</h3>
+						</a>
+					</Link>
+
 					<Tags tags={project.tags} />
 				</div>
 			</div>
 			<div className="flex">
-				<a
-					className=""
-					href={`/projects/${project.slug}`}
-					title="Read more"
-				>
-					<div className="w-70vw sm:w-full">
-						<Image
-							src={project.image}
-							width={1008}
-							height={567}
-							priority
-							alt={`${project.title} cover`}
-						/>
-					</div>
-				</a>
+				<Link href={`/projects/${project.slug}`}>
+					<a className="" title="Read more">
+						<div className="w-70vw sm:w-full">
+							<Image
+								src={project.image}
+								width={1008}
+								height={567}
+								priority
+								alt={`${project.title} cover`}
+							/>
+						</div>
+					</a>
+				</Link>
 			</div>
 			<div className="mt-8 flex">
 				<Button text="Read more" link={`/projects/${project.slug}`} />

@@ -1,7 +1,17 @@
+import Link from "next/link";
 import Logo from "./projects/Logo";
 import Tags from "./projects/Tags";
 
-function PictureHeader({ pic, logo, subone, subtwo, title, tags, height }) {
+function PictureHeader({
+	pic,
+	section,
+	logo,
+	subone,
+	subtwo,
+	title,
+	tags,
+	height,
+}) {
 	return (
 		<div className="grid">
 			<div
@@ -23,7 +33,14 @@ function PictureHeader({ pic, logo, subone, subtwo, title, tags, height }) {
 					{tags ? (
 						<Logo src={logo} title={title} />
 					) : (
-						<img className="max-h-16" src={logo} alt={title} />
+						<Link href={`/${section}`}>
+							<a className="flex w-max">
+								<img
+									className="max-h-16 "
+									src={`/assets/${section}.png`}
+								/>
+							</a>
+						</Link>
 					)}
 
 					<p className="italic text-half-white text-2xl mt-8 mb-4 sm:text-xl sm:mb-2">

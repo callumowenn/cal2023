@@ -7,7 +7,7 @@ function PostLayout({ children, section, frontMatter }) {
 		<div>
 			<PictureHeader
 				pic={frontMatter.image}
-				logo={`/assets/${section}.png`}
+				section={section}
 				subone={
 					<span className="text-white not-italic">
 						{frontMatter.emoji}
