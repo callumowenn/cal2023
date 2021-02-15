@@ -28,7 +28,7 @@ function PictureHeader({
 					src={pic}
 				/>
 			</div>
-			<div className="col-start-1 row-start-1 m-16 flex items-center z-10 sm:mx-4 sm:my-0 sm:row-start-2">
+			<div className="col-start-1 row-start-1 m-16 mr-0 flex items-center z-10 sm:mx-4 sm:my-0 sm:row-start-2">
 				<div className="mx-16 sm:ml-4 sm:mr-0 sm:transform sm:-translate-y-12">
 					{tags ? (
 						<Logo src={logo} title={title} />
