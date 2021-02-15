@@ -15,10 +15,10 @@ function Header() {
 					/>
 				</div>
 				<div className="flex flex-col">
-					<p className="font-serif opacity-50 text-2xl italic sm:text-xl">
+					<p className=" sub-intro font-serif opacity-50 text-2xl italic sm:text-xl">
 						Hi, i'm
 					</p>
-					<h1 className="font-serif text-6xl font-bold sm:text-5xl">
+					<h1 className="main-intro font-serif text-6xl font-bold sm:text-5xl">
 						Callum Owen
 					</h1>
 				</div>

@@ -103,6 +103,11 @@ blockquote p {
 	animation: emoji-spin 8s infinite linear;
 }
 
+.sub-intro,
+.main-intro {
+	font-display: optional;
+}
+
 @media only screen and (min-width: 639px) {
 	#highlights a:last-child {
 		border-right: 0;

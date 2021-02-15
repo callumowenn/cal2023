@@ -103,6 +103,11 @@ function Layout({ children }) {
 					rel="stylesheet"
 					href="https://use.typekit.net/hbm6nog.css"
 				/>
+				<link
+					rel="preload"
+					href="https://use.typekit.net/hbm6nog.css"
+					as="style"
+				/>
 			</Head>
 			<Nav />
 			<main className="flex flex-col flex-grow w-main sm:w-screen">
