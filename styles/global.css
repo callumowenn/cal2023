@@ -8,6 +8,7 @@
 		url("./fonts/heliosBlack.woff") format("woff");
 	font-weight: 900;
 	font-style: normal;
+	font-display: optional;
 }
 @font-face {
 	font-family: "Helios";
@@ -15,6 +16,7 @@
 		url("./fonts/helios.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
+	font-display: optional;
 }
 @font-face {
 	font-family: "Helios";
@@ -22,6 +24,7 @@
 		url("./fonts/heliosBold.woff") format("woff");
 	font-weight: 700;
 	font-style: normal;
+	font-display: optional;
 }
 @font-face {
 	font-family: "Helios";
@@ -29,6 +32,7 @@
 		url("./fonts/heliosBoldItalic.woff") format("woff");
 	font-weight: 700;
 	font-style: italic;
+	font-display: optional;
 }
 @font-face {
 	font-family: "Helios";
@@ -36,6 +40,7 @@
 		url("./fonts/heliosItalic.woff") format("woff");
 	font-weight: 400;
 	font-style: italic;
+	font-display: optional;
 }
 
 * {
@@ -101,11 +106,6 @@ blockquote p {
 
 .post:hover span {
 	animation: emoji-spin 8s infinite linear;
-}
-
-.sub-intro,
-.main-intro {
-	font-display: optional;
 }
 
 @media only screen and (min-width: 639px) {

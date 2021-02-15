@@ -99,15 +99,10 @@ function Layout({ children }) {
 					content="/favicon/browserconfig.xml"
 				/>
 				<meta name="theme-color" content="#ffffff" />
-				<link
-					rel="stylesheet"
-					href="https://use.typekit.net/hbm6nog.css"
-				/>
-				<link
-					rel="preload"
-					href="https://use.typekit.net/hbm6nog.css"
-					as="style"
-				/>
+				<link rel="preload" href="/fonts/typekit.css" as="style" />
+				<link rel="stylesheet" href="/fonts/typekit.css" />
+				<link rel="preload" href="/fonts/helios.css" as="style" />
+				<link rel="stylesheet" href="/fonts/helios.css" />
 			</Head>
 			<Nav />
 			<main className="flex flex-col flex-grow w-main sm:w-screen">
