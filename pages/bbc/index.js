@@ -8,7 +8,7 @@ function BBC({ bbcPosts }) {
 		<div className="mb-32">
 			<PictureHeader
 				pic="/assets/bbc/sound.jpeg"
-				logo="/assets/bbc.png"
+				section="bbc"
 				subone="Broadcast Engineering"
 				subtwo="Degree Apprenticeship"
 				title="Life at BBC"
