@@ -35,7 +35,9 @@ const CustomHeading = (props) => {
 const CustomHeadingThree = (props) => {
 	return (
 		<h3
-			className="font-sans text-3xl italic font-black my-8 sm:text-xl"
+			className={`font-sans text-3xl italic font-black my-8 sm:text-xl ${
+				props.emoji ? "mt-4" : ""
+			}`}
 			{...props}
 		></h3>
 	);
@@ -85,6 +87,17 @@ const StandoutText = (props) => {
 		></span>
 	);
 };
+const EmojiHeader = (props) => {
+	return (
+		<>
+			<span className="text-8xl mt-8">
+				{props.emoji}&nbsp;{props.emoji}
+				&nbsp;{props.emoji}
+			</span>
+			<CustomHeadingThree emoji>{props.text}</CustomHeadingThree>
+		</>
+	);
+};
 
 const MDXComponents = {
 	h1: CustomHeading,
@@ -95,6 +108,7 @@ const MDXComponents = {
 	ul: CustomList,
 	Picture,
 	StandoutText,
+	EmojiHeader,
 };
 
 export default MDXComponents;
