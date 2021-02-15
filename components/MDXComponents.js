@@ -88,13 +88,14 @@ const StandoutText = (props) => {
 	);
 };
 const EmojiHeader = (props) => {
+	console.log(props);
 	return (
 		<>
 			<span className="text-8xl mt-8">
 				{props.emoji}&nbsp;{props.emoji}
 				&nbsp;{props.emoji}
 			</span>
-			<CustomHeadingThree emoji>{props.text}</CustomHeadingThree>
+			{props.children}
 		</>
 	);
 };
