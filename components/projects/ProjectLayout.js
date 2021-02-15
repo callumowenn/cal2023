@@ -1,3 +1,4 @@
+import Better from "@components/home/Better";
 import PictureHeader from "@components/PictureHeader";
 import ProjectMain from "./ProjectMain";
 

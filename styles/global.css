@@ -90,6 +90,13 @@ blockquote p {
 	-webkit-text-fill-color: transparent;
 }
 
+code {
+	background: #11111177;
+	padding: 2px 4px;
+	border-radius: 4px;
+	color: rgb(179, 110, 206);
+}
+
 @keyframes emoji-spin {
 	0% {
 		transform: rotate(0);

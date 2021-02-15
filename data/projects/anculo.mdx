@@ -3,11 +3,34 @@ title: "Anculo"
 logo: "/assets/projects/anculo/anculo.png"
 image: "/assets/projects/anculo/anculo-cover.png"
 live: "https://anculo.co.uk"
-tags: ["Client Work", "Static"]
+tags: ["Client work", "Static"]
 date: "Winter 2020"
-skills: ["Working for clients", "WordPress Design", "Copywriting"]
+skills: ["WordPress", "Copywriting"]
 type: "Client work"
 status: "Finished"
 ---
 
-This is Anculo
+# For Anculo, the goal was simple: impress and inform visitors, while making it easy for them to get in touch
+
+This was the second website I made for Anculo. Again, as it's my Dad's financial advisor brand, there was little pressure for the job, and this time I had the prior experience of setting up the [Anculo Wills site](https://anculowills.co.uk).
+
+### Why did Anculo need a new site?
+
+The last site they had was very informative, but the layout was a bit awkward and the monthly costs were way too much. With my solution, the new site would be freely hosted by [Netlify](https://netlify.com), saving potentially hundreds per year.
+
+### How did I make this site?
+
+Similar to Anculo Wills, this site was made using [WordPress](https://wordpress.com/). I don't tend to use WordPress for anything other than getting a decent, brochure-style website out quick. With both Anculo and Anculo Wills, it definitely made the most sense.
+
+The main goals with a brochure site is really to look professional, impress your visitors, and then let them contact you. That's the path you hope the user follows. Pretty simple. No need for anything fancy, and if it can be done quick then that's great. So, WordPress it is.
+
+### How can you host WordPress sites for free?
+
+Often with a lot of sites, you buy a domain with WordPress installed and you get straight into developing your site right there on the domain. Thing is, you're then tied in to paying those hosting fees - for a site that's basically [static](https://dev.to/gtanyware/what-is-a-static-website-4k3o). Turns out, there's a way to download WordPress locally on your computer - the program is called [MAMP](https://www.mamp.info/). With this, you can develop the site as
+normal. Once you're done, download the static files using one of the many WordPress plugins that allow you to do so.
+
+> Tip: I used the plugin '[Simply Static](https://wordpress.org/plugins/simply-static/)'. Can't lie, it was a bit dodgy. So, I used Chrome DevTools to download all the files it missed, then in VSCode I'd change the URLs from localhost:8888/whatever so they actually worked.
+
+Host these files on Netlify and you're live. All that's left to do is go to where you registered the domain, and configure it to point to Netlify's nameservers. <StandoutText>Done.</StandoutText>
+
+Here's another tip. On the Anculo site, you'll see a contact page at the bottom of each page. With Netlify, you simply add the `netlify` attribute to the form, and [they collect all the responses](https://docs.netlify.com/forms/setup/). You even get a little email with each one.

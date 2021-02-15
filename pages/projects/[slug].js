@@ -1,3 +1,4 @@
+import Better from "@components/home/Better";
 import MDXComponents from "@components/MDXComponents";
 import ProjectLayout from "@components/projects/ProjectLayout";
 import { getFileBySlug, getFiles } from "@lib/mdx";
@@ -17,6 +18,7 @@ function Project({ mdxSource, frontMatter }) {
 				/>
 			</Head>
 			<ProjectLayout frontMatter={frontMatter}>{content}</ProjectLayout>
+			{frontMatter.type == "Client work" ? <Better /> : ""}
 		</>
 	);
 }

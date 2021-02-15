@@ -64,6 +64,14 @@ const CustomList = (props) => {
 		></ul>
 	);
 };
+const CustomOrderedList = (props) => {
+	return (
+		<li
+			className="font-serif text-2xl my-8 list-disc list-inside text-half-white"
+			{...props}
+		></li>
+	);
+};
 
 const Picture = ({ pic, caption, alt }) => {
 	return (
@@ -107,6 +115,7 @@ const MDXComponents = {
 	p: CustomText,
 	a: CustomLink,
 	ul: CustomList,
+	li: CustomOrderedList,
 	Picture,
 	StandoutText,
 	EmojiHeader,
