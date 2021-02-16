@@ -8,11 +8,15 @@ function Post({ post, section }) {
 			<a className="flex flex-col w-80 m-8 group sm:mx-0 post">
 				<div className="flex flex-shrink-0 h-52 justify-center relative rounded-3xl shadow-lg overflow-hidden group-hover:shadow-2xl">
 					<Image
-						className="flex-grow object-cover"
+						className={`flex-grow object-cover ${
+							post.aspect == "square-1024"
+								? "object-left-top"
+								: ""
+						}`}
 						priority
 						src={post.image}
-						height={coverAspects[post.aspect].height}
-						width={coverAspects[post.aspect].width}
+						height={coverAspects[`${post.aspect}-preview`].height}
+						width={coverAspects[`${post.aspect}-preview`].width}
 					/>
 				</div>
 				<div className="flex mt-6">

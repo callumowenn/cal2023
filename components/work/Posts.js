@@ -8,7 +8,7 @@ function Posts({ posts, section, shift }) {
 			}`}
 		>
 			{posts.map((p) => (
-				<Post section={section} post={p} />
+				<Post key={p.slug} section={section} post={p} />
 			))}
 		</div>
 	);
