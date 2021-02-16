@@ -15,11 +15,7 @@ function CNN({ cnnPosts }) {
 				title="Life at CNN"
 				height="screen"
 			/>
-			<Posts
-				posts={[cnnPosts[4], cnnPosts[1], cnnPosts[5]]}
-				section="cnn"
-				shift
-			/>
+			<Posts posts={cnnPosts} section="cnn" shift />
 			<div className="flex flex-grow justify-center mb-24 ml-24 sm:ml-0 sm:mt-24  sm:flex-col">
 				<div className="sm:mb-24 flex-grow">
 					<blockquote
