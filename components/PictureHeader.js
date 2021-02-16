@@ -50,7 +50,7 @@ function PictureHeader({
 						className={`font-sans italic font-bold ${
 							tags
 								? "text-8xl sm:text-4xl"
-								: "text-9xl sm:text-6xl"
+								: "text-9xl sm:text-4xl"
 						} `}
 					>
 						{title}

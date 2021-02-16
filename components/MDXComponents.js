@@ -27,17 +27,26 @@ const CustomLink = (props) => {
 const CustomHeading = (props) => {
 	return (
 		<h1
-			className="font-sans text-5xl italic font-black my-16 sm:text-3xl"
+			className="font-sans text-6xl italic font-black mt-32 mb-8 pb-8 border-b border-half-white sm:text-3xl sm:mt-16"
 			{...props}
 		></h1>
 	);
 };
+const CustomHeadingTwo = (props) => {
+	return (
+		<h3
+			className={`font-sans text-4xl italic font-black my-8 sm:text-3xl ${
+				props.emoji ? "mt-4" : ""
+			}`}
+			{...props}
+		></h3>
+	);
+};
+
 const CustomHeadingThree = (props) => {
 	return (
 		<h3
-			className={`font-sans text-3xl italic font-black my-8 sm:text-xl ${
-				props.emoji ? "mt-4" : ""
-			}`}
+			className="font-sans text-4xl italic font-black my-8 pb-8 border-half-white border-b sm:text-3xl"
 			{...props}
 		></h3>
 	);
@@ -46,20 +55,20 @@ const CustomHeadingThree = (props) => {
 const CustomBlockquote = (props) => {
 	return (
 		<blockquote
-			className="border-l-4 border-white border-opacity-50 italic px-4 mt-8 mb-16"
+			className="border-l-4 border-white border-opacity-50 italic px-4 my-16"
 			{...props}
 		></blockquote>
 	);
 };
 const CustomText = (props) => {
 	return (
-		<p className="text-2xl my-4 text-half-white sm:text-xl" {...props}></p>
+		<p className="text-3xl my-4 text-half-white sm:text-2xl" {...props}></p>
 	);
 };
 const CustomList = (props) => {
 	return (
 		<ul
-			className="font-serif text-2xl my-8 list-disc list-inside text-half-white"
+			className="custom-list font-serif text-3xl sm:text-2xl my-16 list-disc list-inside text-half-white"
 			{...props}
 		></ul>
 	);
@@ -67,7 +76,7 @@ const CustomList = (props) => {
 const CustomOrderedList = (props) => {
 	return (
 		<li
-			className="font-serif text-2xl my-8 list-disc list-inside text-half-white"
+			className="font-serif text-3xl sm:text-2xl my-16 list-disc list-inside text-half-white"
 			{...props}
 		></li>
 	);
@@ -75,15 +84,19 @@ const CustomOrderedList = (props) => {
 
 const Picture = ({ pic, caption, alt }) => {
 	return (
-		<div className="flex flex-col items-center my-8">
+		<div className="flex flex-col items-center my-4">
 			<img
 				className=" max-w-950px max-h-550px sm:max-w-none sm:max-h-full sm:w-screen"
 				src={pic}
 				alt={alt}
 			/>
-			<p className="font-sans italic font-black my-2 opacity-75 sm:text-sm sm:font-medium">
-				{caption}
-			</p>
+			{caption ? (
+				<p className="font-sans italic font-black my-2 opacity-75 sm:text-sm sm:font-medium">
+					{caption}
+				</p>
+			) : (
+				""
+			)}
 		</div>
 	);
 };
@@ -95,21 +108,29 @@ const StandoutText = (props) => {
 		></span>
 	);
 };
-const EmojiHeader = (props) => {
-	console.log(props);
+const EmojiHeader = ({ emoji, lesson, lessonEmoji, children }) => {
 	return (
-		<>
-			<span className="text-8xl mt-8">
-				{props.emoji}&nbsp;{props.emoji}
-				&nbsp;{props.emoji}
+		<div className="flex mt-16 pt-4 sm:pt-0 pb-4 mb-8 border-b  border-half-white bg-white bg-opacity-5 px-8 sm:px-4">
+			<span className="text-8xl mt-8 mr-8 sm:text-5xl sm:mr-4	">
+				{emoji}
 			</span>
-			{props.children}
-		</>
+			<div className="flex flex-col">
+				{children}
+				<span
+					className="font-serif text-3xl mb-8 sm:mb-4 italic text-half-white sm:text-2xl "
+					style={{ marginTop: "-1rem" }}
+				>
+					{lesson}{" "}
+					<span className="text-white not-italic">{lessonEmoji}</span>
+				</span>
+			</div>
+		</div>
 	);
 };
 
 const MDXComponents = {
 	h1: CustomHeading,
+	h2: CustomHeadingTwo,
 	h3: CustomHeadingThree,
 	blockquote: CustomBlockquote,
 	p: CustomText,
