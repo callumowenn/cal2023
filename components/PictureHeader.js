@@ -21,7 +21,7 @@ function PictureHeader({
 				className={`col-start-1  border-b w-50vw ml-auto row-start-1 h-${height} flex z-0 sm:h-96 sm:w-screen`}
 			></div>
 			<div
-				className={`col-start-1 row-start-1 absolute w-main h-${height} flex flex-row-reverse z-0 sm:h-96 sm:w-screen`}
+				className={`col-start-1 row-start-1 absolute w-main h-${height} flex flex-row-reverse z-0 pointer-events-none sm:h-96 sm:w-screen`}
 				style={{ clip: "rect(0, auto, auto, 0)" }}
 			>
 				<div className="flex-grow sm:hidden"></div>
