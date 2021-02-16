@@ -1,9 +1,12 @@
+import coverAspects from "@lib/coverAspects";
+import Image from "next/image";
 import Link from "next/link";
 import Logo from "./projects/Logo";
 import Tags from "./projects/Tags";
 
 function PictureHeader({
 	pic,
+	aspect,
 	section,
 	logo,
 	subone,
@@ -22,11 +25,23 @@ function PictureHeader({
 				style={{ clip: "rect(0, auto, auto, 0)" }}
 			>
 				<div className="flex-grow sm:hidden"></div>
-				<img
+				<div
+					className={`flex-grow fixed flex sm:w-screen w-50vw sm:max-w-none sm:h-96 opacity-25 object-cover h-${height} object-left-top`}
+					style={{ backfaceVisibility: "hidden" }}
+				>
+					<Image
+						className="object-cover object-left-top"
+						src={pic}
+						priority
+						width={coverAspects[aspect].width}
+						height={coverAspects[aspect].height}
+					/>
+				</div>
+				{/* <img
 					className={`flex-grow fixed flex sm:w-screen w-50vw sm:max-w-none sm:h-96 opacity-25 object-cover h-${height} object-left-top`}
 					style={{ backfaceVisibility: "hidden" }}
 					src={pic}
-				/>
+				/> */}
 			</div>
 			<div className="col-start-1 row-start-1 m-16 mr-0 flex items-center z-10 sm:mx-4 sm:my-0 sm:row-start-2">
 				<div className="mx-16 sm:ml-4 sm:mr-0 sm:transform sm:-translate-y-12">

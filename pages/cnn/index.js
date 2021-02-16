@@ -9,6 +9,7 @@ function CNN({ cnnPosts }) {
 		<div className="mb-32 flex flex-col">
 			<PictureHeader
 				pic="/assets/cnn/mcr.jpg"
+				aspect="landscape-1024"
 				section="cnn"
 				subone="Broadcast Engineering"
 				subtwo="2020 Placements"

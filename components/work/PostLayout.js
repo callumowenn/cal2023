@@ -7,6 +7,7 @@ function PostLayout({ children, section, frontMatter }) {
 		<div>
 			<PictureHeader
 				pic={frontMatter.image}
+				aspect={frontMatter.aspect}
 				section={section}
 				subone={
 					<span className="text-white not-italic">

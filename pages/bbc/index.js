@@ -8,6 +8,7 @@ function BBC({ bbcPosts }) {
 		<div className="mb-32">
 			<PictureHeader
 				pic="/assets/bbc/sound.jpeg"
+				aspect="portrait-4032"
 				section="bbc"
 				subone="Broadcast Engineering"
 				subtwo="Degree Apprenticeship"

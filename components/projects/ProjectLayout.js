@@ -8,6 +8,7 @@ function ProjectLayout({ children, frontMatter }) {
 		<div>
 			<PictureHeader
 				pic={frontMatter.image}
+				aspect={frontMatter.aspect}
 				logo={frontMatter.logo}
 				subone="Project"
 				subtwo={frontMatter.readingTime.text}
