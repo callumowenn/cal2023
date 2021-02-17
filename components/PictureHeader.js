@@ -33,6 +33,7 @@ function PictureHeader({
 						className="object-cover object-left-top"
 						src={pic}
 						priority
+						layout="intrinsic"
 						width={coverAspects[aspect].width}
 						height={coverAspects[aspect].height}
 					/>

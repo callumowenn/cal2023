@@ -32,6 +32,7 @@ function Preview({ project }) {
 								src={project.image}
 								width={1008}
 								height={567}
+								layout="intrinsic"
 								priority
 								alt={`${project.title} cover`}
 							/>

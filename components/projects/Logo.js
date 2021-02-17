@@ -6,6 +6,7 @@ function Logo({ src, title }) {
 			<Image
 				width={128}
 				height={128}
+				layout="intrinsic"
 				priority
 				src={src}
 				alt={`${title} logo`}
