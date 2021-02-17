@@ -22,6 +22,8 @@ module.exports = {
 				nav: "80px",
 				"100px": "100px",
 				"130px": "130px",
+				"274px": "274px",
+				"343px": "343px",
 				"50vw": "50vw",
 				"70vw": "70vw",
 				"90vw": "90vw",
