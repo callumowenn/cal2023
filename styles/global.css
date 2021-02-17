@@ -42,7 +42,7 @@
 	box-sizing: border-box;
 }
 html {
-	background: #1d2021;
+	background: #293a3d;
 }
 h1,
 h2,
@@ -163,6 +163,9 @@ code {
 }
 
 @media only screen and (max-width: 639px) {
+	html {
+		background: #1d2021;
+	}
 	Nav {
 		backdrop-filter: blur(80px);
 	}

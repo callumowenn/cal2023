@@ -16,7 +16,7 @@ function Home() {
 				<Scrolling />
 				<Better />
 			</div>
-			<div className="hidden sm:block absolute h-screen bg-right w-screen top-0 z-0 bg-blur-fade"></div>
+			<div className="hidden sm:block absolute h-screen bg-right bg-cover w-screen top-0 z-0 bg-blur-fade"></div>
 		</>
 	);
 }
