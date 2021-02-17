@@ -119,11 +119,15 @@ function Layout({ children }) {
 					async
 					src="https://www.googletagmanager.com/gtag/js?id=G-TY7B1JQ2YF"
 				></script>
-				<script>
-					window.dataLayer = window.dataLayer || [] function gtag()
-					{dataLayer.push(arguments)}
-					gtag('js', new Date()); gtag('config', 'G-TY7B1JQ2YF');
-				</script>
+				<script
+					dangerouslySetInnerHTML={{
+						__html: `window.dataLayer = window.dataLayer || [];
+						function gtag(){dataLayer.push(arguments);}
+						gtag('js', new Date());
+
+  						gtag('config', 'G-TY7B1JQ2YF');`,
+					}}
+				/>
 			</Head>
 			<Nav />
 			<main className="flex flex-col flex-grow w-main sm:w-screen">
