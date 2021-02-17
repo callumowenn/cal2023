@@ -10,6 +10,7 @@ function Header() {
 						width={338}
 						height={338}
 						priority
+						layout="intrinsic"
 						src="/assets/me-flip.png"
 						alt="me"
 					/>
