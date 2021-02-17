@@ -25,7 +25,7 @@ function Nav() {
 					</a>
 				</Link>
 				<button
-					className="h-auto rounded-full overflow-hidden mb-3 hover:bg-white hover:bg-opacity-10 sm:w-10 sm:h-10 sm:m-0"
+					className="h-auto rounded-full overflow-hidden mb-3 hover:bg-white hover:bg-opacity-10 sm:w-10 sm:h-10 sm:m-0 sm:ml-10"
 					title="Menu"
 					onClick={() => toggleMenu()}
 				>
