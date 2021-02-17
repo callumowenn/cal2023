@@ -12,6 +12,10 @@ function Layout({ children }) {
 					Callum Owen ⚡ BBC engineering apprentice and developer
 				</title>
 				<meta
+					name="description"
+					content="Hey, I'm Callum Owen. Engineering apprentice at BBC and self-taught developer."
+				></meta>
+				<meta
 					name="viewport"
 					content="width=device-width, initial-scale=1.0, viewport-fit=cover"
 				/>
@@ -111,6 +115,15 @@ function Layout({ children }) {
 					href="https://use.typekit.net/hbm6nog.css"
 					as="style"
 				/>
+				<script
+					async
+					src="https://www.googletagmanager.com/gtag/js?id=G-TY7B1JQ2YF"
+				></script>
+				<script>
+					window.dataLayer = window.dataLayer || [] function gtag()
+					{dataLayer.push(arguments)}
+					gtag('js', new Date()); gtag('config', 'G-TY7B1JQ2YF');
+				</script>
 			</Head>
 			<Nav />
 			<main className="flex flex-col flex-grow w-main sm:w-screen">
