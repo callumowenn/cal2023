@@ -112,6 +112,7 @@ function ContactForm() {
 					}`}
 					disabled
 					type="submit"
+					style={{ cursor: "not-allowed" }}
 				>
 					{button == "Sending" ? (
 						<svg

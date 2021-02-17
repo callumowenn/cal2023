@@ -11,10 +11,7 @@ function BBCPost({ mdxSource, frontMatter }) {
 	return (
 		<>
 			<Head>
-				<link
-					rel="stylesheet"
-					href="https://use.typekit.net/hbm6nog.css"
-				/>
+				<title>{frontMatter.title} ⚡ Callum Owen</title>
 			</Head>
 			<PostLayout section="bbc" frontMatter={frontMatter}>
 				{content}

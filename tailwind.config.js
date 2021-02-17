@@ -15,6 +15,8 @@ module.exports = {
 				"standout-yellow": "#DDEF54",
 				"standout-orange": "#EFAD54",
 				"standout-red": "#EF5454",
+				"bg-top": "#293035",
+				"bg-bottom": "#1e2630",
 			},
 			width: {
 				nav: "80px",

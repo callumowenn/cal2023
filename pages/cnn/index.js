@@ -7,6 +7,9 @@ import Head from "next/head";
 function CNN({ cnnPosts }) {
 	return (
 		<div className="mb-32 flex flex-col">
+			<Head>
+				<title>CNN ⚡ Callum Owen</title>
+			</Head>
 			<PictureHeader
 				pic="/assets/cnn/mcr.jpg"
 				aspect="landscape-1024"

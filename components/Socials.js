@@ -86,10 +86,10 @@ function Socials() {
 		},
 	];
 	return (
-		<div className="flex flex-col content-center sm:hidden">
+		<div className="flex flex-col sm:hidden">
 			{socials.map((social) => (
 				<a
-					className="flex justify-center mt-7 hover:opacity-80 sm:m-0"
+					className="flex justify-center mt-7 h-auto hover:opacity-80 sm:m-0"
 					key={social.name}
 					target="_blank"
 					rel="noopener noreferrer"
@@ -97,7 +97,7 @@ function Socials() {
 					href={social.link}
 					title={social.name}
 				>
-					{social.svg}
+					<div>{social.svg}</div>
 				</a>
 			))}
 		</div>

@@ -38,12 +38,16 @@ function Highlights() {
 	const highlightDiv = useRef(null);
 	const [divX, setDivX] = useState(null);
 	const [divY, setDivY] = useState(null);
+	const [scrollY, setScrollY] = useState(null);
 
 	useEffect(() => {
-		console.log(navigator.userAgent);
+		console.log("EFFECTTTTT");
+		console.log("screenY: " + window.screenY);
+		console.log("scrollY: " + window.scrollY);
 		const { x, y } = highlightDiv.current.getBoundingClientRect();
 		setDivX(x);
 		setDivY(y);
+		setScrollY(window.scrollY);
 
 		window.onresize = () => {
 			const {
@@ -60,9 +64,10 @@ function Highlights() {
 
 		highlightDiv.current.addEventListener("mousemove", (e) => {
 			const { clientX: mouseX, clientY: mouseY, target } = e;
+			console.log(e);
 
 			floaty.current.style.transform = `translate3d(${mouseX - divX}px, ${
-				mouseY - divY
+				mouseY - divY - scrollY
 			}px, 0)`;
 		});
 
@@ -95,8 +100,10 @@ function Highlights() {
 			floaty.current.style.opacity = 0;
 		});
 
+		function cleanup() {}
+
 		// TODO: remove listeners
-		// return
+		// return cleanup()
 	});
 
 	return (
@@ -109,9 +116,7 @@ function Highlights() {
 				ref={floaty}
 				className="fixed z-10 rounded-full opacity-0 pointer-events-none transition ease-linear flex items-center justify-center sm:hidden"
 			>
-				<p ref={floatyEmoji} className="animate-rotate text-9xl">
-					📰
-				</p>
+				<p ref={floatyEmoji} className="animate-rotate text-9xl"></p>
 			</div>
 			{highlights.map((highlight) => (
 				<Link href={highlight.link}>

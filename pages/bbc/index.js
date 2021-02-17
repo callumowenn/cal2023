@@ -2,10 +2,14 @@ import PictureHeader from "@components/PictureHeader";
 import Posts from "@components/work/Posts";
 import TextSection from "@components/work/TextSection";
 import { getAllFilesFrontMatter } from "@lib/mdx";
+import Head from "next/head";
 
 function BBC({ bbcPosts }) {
 	return (
 		<div className="mb-32">
+			<Head>
+				<title>BBC ⚡ Callum Owen</title>
+			</Head>
 			<PictureHeader
 				pic="/assets/bbc/sound.jpeg"
 				aspect="portrait-1024"

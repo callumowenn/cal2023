@@ -6,9 +6,9 @@ function Footer() {
 	const menu = useMenu();
 	return (
 		<div className="h-screen flex sm:flex-col sm:h-mobile-main">
-			<div className="footer-grid grid grid-cols-4 grid-rows-2 flex-grow text-5xl italic sm:grid-cols-2 sm:grid-rows-3 sm:text-3xl">
+			<div className="footer-grid sm:h-mobile-main grid grid-cols-4 grid-rows-2 flex-grow text-5xl italic sm:grid-cols-2 sm:grid-rows-3 sm:text-3xl">
 				<Link href="/bbc">
-					<a className=" flex items-center border-r border-b border-half-white justify-center bbc group hover:bg-black hover:bg-opacity-5">
+					<a className=" flex items-center h-auto border-r border-b border-half-white justify-center bbc group hover:bg-black hover:bg-opacity-5">
 						<div className="flex flex-col p-8 sm:p-4 items-center">
 							<span className="not-italic text-7xl sm:text-6xl mb-4 w-min text-white">
 								🎬

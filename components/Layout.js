@@ -6,9 +6,11 @@ import MobileCreds from "./MobileCreds";
 
 function Layout({ children }) {
 	return (
-		<div className="flex flex-row w-screen bg-main-bg min-h-screen bg-fixed bg-cover sm:flex-col">
+		<div className="flex flex-row w-screen bg-main-bg min-h-screen bg-fixed bg-cover sm:flex-col sm:bg-gradient-to-t sm:from-bg-bottom sm:to-bg-top">
 			<Head>
-				<title>Callum Owen</title>
+				<title>
+					Callum Owen ⚡ BBC engineering apprentice and developer
+				</title>
 				<meta
 					name="viewport"
 					content="width=device-width, initial-scale=1.0, viewport-fit=cover"
@@ -100,8 +102,15 @@ function Layout({ children }) {
 					content="/favicon/browserconfig.xml"
 				/>
 				<meta name="theme-color" content="#ffffff" />
-				<link rel="preload" href="/fonts/typekit.css" as="style" />
-				<link rel="stylesheet" href="/fonts/typekit.css" />
+				<link
+					rel="stylesheet"
+					href="https://use.typekit.net/hbm6nog.css"
+				/>
+				<link
+					rel="preload"
+					href="https://use.typekit.net/hbm6nog.css"
+					as="style"
+				/>
 			</Head>
 			<Nav />
 			<main className="flex flex-col flex-grow w-main sm:w-screen">

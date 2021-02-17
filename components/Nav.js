@@ -25,7 +25,7 @@ function Nav() {
 					</a>
 				</Link>
 				<button
-					className="h-auto rounded-full overflow-hidden mb-3 hover:bg-white hover:bg-opacity-10 sm:w-10 sm:h-10 sm:m-0 sm:ml-10"
+					className="h-auto rounded-full overflow-hidden mb-3 hover:bg-white hover:bg-opacity-10 sm:w-10 sm:h-10 sm:m-0 sm:ml-2"
 					title="Menu"
 					onClick={() => toggleMenu()}
 				>
@@ -43,6 +43,15 @@ function Nav() {
 				</button>
 			</div>
 			<Socials />
+			<div className="hidden sm:flex ">
+				<Link href="/contact">
+					<a>
+						<p className="font-sans px-3 font-bold text-half-white">
+							Contact
+						</p>
+					</a>
+				</Link>
+			</div>
 		</nav>
 	);
 }
