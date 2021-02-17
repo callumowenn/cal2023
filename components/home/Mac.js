@@ -9,7 +9,7 @@ function Mac() {
 				<MacWindow
 					pic="/assets/showcase/cam.jpg"
 					aspect="landscape"
-					alt="One of the many studios in New Broadcasting House 🎥"
+					alt="Studio work for BBC 🎥"
 				/>
 				<MacWindow
 					pic="/assets/showcase/dam.jpeg"

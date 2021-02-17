@@ -2,6 +2,7 @@ import Head from "next/head";
 import Footer from "./Footer";
 import Nav from "@components/Nav";
 import Menu from "./Menu";
+import MobileCreds from "./MobileCreds";
 
 function Layout({ children }) {
 	return (
@@ -101,14 +102,13 @@ function Layout({ children }) {
 				<meta name="theme-color" content="#ffffff" />
 				<link rel="preload" href="/fonts/typekit.css" as="style" />
 				<link rel="stylesheet" href="/fonts/typekit.css" />
-				<link rel="preload" href="/fonts/helios.css" as="style" />
-				<link rel="stylesheet" href="/fonts/helios.css" />
 			</Head>
 			<Nav />
 			<main className="flex flex-col flex-grow w-main sm:w-screen">
 				<Menu />
 				{children}
 				<Footer />
+				<MobileCreds />
 			</main>
 		</div>
 	);

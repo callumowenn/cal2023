@@ -101,6 +101,34 @@ code {
 	margin: 10px 0;
 }
 
+.footer-grid {
+	grid-template-areas:
+		"bbc cnn projects about"
+		"cred cred contact lost";
+}
+
+.footer-grid .cnn {
+	grid-area: cnn;
+}
+.footer-grid .bbc {
+	grid-area: bbc;
+}
+.footer-grid .projects {
+	grid-area: projects;
+}
+.footer-grid .about {
+	grid-area: about;
+}
+.footer-grid .cred {
+	grid-area: cred;
+}
+.footer-grid .contact {
+	grid-area: contact;
+}
+.footer-grid .lost {
+	grid-area: lost;
+}
+
 @keyframes emoji-spin {
 	0% {
 		transform: rotate(0);
@@ -111,6 +139,10 @@ code {
 }
 
 .post:hover span {
+	animation: emoji-spin 8s infinite linear;
+}
+
+.footer-grid a:hover span {
 	animation: emoji-spin 8s infinite linear;
 }
 
@@ -133,6 +165,12 @@ code {
 @media only screen and (max-width: 639px) {
 	Nav {
 		backdrop-filter: blur(80px);
+	}
+	.footer-grid {
+		grid-template-areas:
+			"bbc cnn"
+			"projects about"
+			"contact lost";
 	}
 	#highlights a:nth-child(odd) {
 		border-right: 0;

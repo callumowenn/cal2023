@@ -11,6 +11,12 @@ function Project({ mdxSource, frontMatter }) {
 	});
 	return (
 		<>
+			<Head>
+				<link
+					rel="stylesheet"
+					href="https://use.typekit.net/hbm6nog.css"
+				/>
+			</Head>
 			<ProjectLayout frontMatter={frontMatter}>{content}</ProjectLayout>
 			{frontMatter.type == "Client work" ? <Better /> : ""}
 		</>
