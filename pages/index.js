@@ -7,14 +7,17 @@ import Better from "@components/home/Better";
 
 function Home() {
 	return (
-		<div>
-			<Header />
-			<Opener />
-			<Intro />
-			<Mac />
-			<Scrolling />
-			<Better />
-		</div>
+		<>
+			<div className="z-10">
+				<Header />
+				<Opener />
+				<Intro />
+				<Mac />
+				<Scrolling />
+				<Better />
+			</div>
+			<div className="hidden sm:block absolute h-screen bg-right w-screen top-0 z-0 bg-blur-fade"></div>
+		</>
 	);
 }
 

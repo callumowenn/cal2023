@@ -53,6 +53,7 @@ module.exports = {
 			},
 			backgroundImage: (theme) => ({
 				"main-bg": "url('/assets/blur.png')",
+				"blur-fade": "url('/assets/blur-fade.png')",
 				mac: "url('/assets/mac.jpg')",
 				doubs: "url('/assets/doubs.png')",
 			}),
