@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function Intro() {
 	return (
 		<div className="my-32 mx-10 flex items-center flex-grow justify-center sm:mx-4">
@@ -12,14 +14,11 @@ function Intro() {
 				>
 					From being part of the team that engineered CNN’s move to
 					their{" "}
-					<a
-						href="https://160oldstreet.com"
-						target="_blank"
-						rel="noopener noreferrer"
-						className="text-white hover:underline"
-					>
-						shiny, new London bureau
-					</a>
+					<Link href="/cnn/a-new-home">
+						<a className="text-white hover:underline">
+							shiny, new London bureau
+						</a>
+					</Link>
 					, to getting hands on with innovative tech like NDI and SRT
 					to power remote broadcast workflows; it’s impossible to get
 					bored in this crazy world of tech.
