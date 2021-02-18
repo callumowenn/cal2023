@@ -56,6 +56,14 @@ label {
 	color: white;
 }
 
+#mac > * {
+	-webkit-transform: translateZ(0);
+}
+
+.is-sticky > * {
+	-webkit-transform: translateZ(0);
+}
+
 label {
 	@apply m-4;
 	@apply text-3xl;
