@@ -82,11 +82,13 @@ const CustomOrderedList = (props) => {
 	);
 };
 
-const Picture = ({ pic, caption, alt }) => {
+const Picture = ({ pic, caption, alt, portrait }) => {
 	return (
 		<div className="flex flex-col items-center my-4">
 			<img
-				className=" max-w-950px max-h-550px sm:max-w-none sm:max-h-full sm:w-screen"
+				className={`max-w-950px max-h-550px sm:max-w-none sm:max-h-full ${
+					portrait ? "sm:w-60vw" : "sm:w-screen"
+				}`}
 				src={pic}
 				alt={alt}
 			/>

@@ -25,6 +25,7 @@ module.exports = {
 				"274px": "274px",
 				"343px": "343px",
 				"50vw": "50vw",
+				"60vw": "60vw",
 				"70vw": "70vw",
 				"90vw": "90vw",
 				main: "calc(100vw - 80px)",
