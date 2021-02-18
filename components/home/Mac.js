@@ -4,7 +4,7 @@ function Mac() {
 	return (
 		<div className="flex flex-grow flex-col relative">
 			<div className="flex flex-grow bg-mac h-screen bg-cover sticky top-0 sm:bg-right z-10"></div>
-			<div id="mac" className="flex flex-col z-20 flex-grow px-24">
+			<div id="mac" className="flex flex-col z-50 flex-grow px-24">
 				<MacWindow />
 				<MacWindow
 					pic="/assets/showcase/cam.jpg"

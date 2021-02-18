@@ -1,7 +1,7 @@
 function MacMain({ children }) {
 	return (
 		<div
-			className="flex flex-grow flex-col  z-50 "
+			className="flex flex-grow flex-col "
 			style={{ background: "#323232" }}
 		>
 			{children}
