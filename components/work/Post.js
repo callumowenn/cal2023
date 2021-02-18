@@ -29,7 +29,6 @@ function Post({ post, section }) {
 							className="absolute bottom-0 right-0 p-2 h-10 w-20 flex items-center justify-center shadow-2xl  bg-opacity-20 bg-white"
 							style={{
 								backdropFilter: "blur(50px)",
-								WebkitBackdropFilter: "blur(50px)",
 								borderRadius: "24px 0 0 0",
 							}}
 						>
