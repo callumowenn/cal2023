@@ -8,7 +8,7 @@ import MacTopBar from "./MacTopBar";
 
 function MacWindow({ pic, aspect, alt }) {
 	return (
-		<div className="window flex flex-col window  my-24">
+		<div className="window flex  flex-col my-24">
 			<div
 				className="flex shadow-xl rounded-2xl overflow-hidden mb-8 font-apple  sm:flex-col"
 				style={{
