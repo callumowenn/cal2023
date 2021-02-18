@@ -14,7 +14,7 @@ function Post({ post, section }) {
 								: ""
 						}`}
 						priority
-						layout="responsive"
+						layout="intrinsic"
 						src={post.image}
 						height={coverAspects[`${post.aspect}-preview`].height}
 						width={coverAspects[`${post.aspect}-preview`].width}
