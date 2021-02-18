@@ -15,7 +15,7 @@ function Header() {
 						alt="me"
 					/>
 				</div>
-				<div className="flex flex-col w-343px sm:w-274px">
+				<div className="flex flex-col w-343px sm:w-auto">
 					<p className=" sub-intro font-serif opacity-50 text-2xl italic sm:text-xl">
 						Hi, i'm
 					</p>
