@@ -28,7 +28,7 @@ function PictureHeader({
 			>
 				<div className="flex-grow sm:hidden"></div>
 				<div
-					className={`flex-grow fixed flex sm:w-screen w-50vw sm:max-w-none sm:h-96 opacity-25 object-cover h-${height} object-left-top`}
+					className={`flex-grow fixed flex sm:w-screen w-50vw sm:max-w-none sm:h-96 opacity-25 object-cover h-${height} object-left-top sm:static`}
 					style={{ backfaceVisibility: "hidden" }}
 				>
 					<Image
