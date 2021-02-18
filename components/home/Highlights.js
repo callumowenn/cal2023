@@ -41,9 +41,6 @@ function Highlights() {
 	const [scrollY, setScrollY] = useState(null);
 
 	useEffect(() => {
-		console.log("EFFECTTTTT");
-		console.log("screenY: " + window.screenY);
-		console.log("scrollY: " + window.scrollY);
 		const { x, y } = highlightDiv.current.getBoundingClientRect();
 		setDivX(x);
 		setDivY(y);
@@ -64,7 +61,6 @@ function Highlights() {
 
 		highlightDiv.current.addEventListener("mousemove", (e) => {
 			const { clientX: mouseX, clientY: mouseY, target } = e;
-			console.log(e);
 
 			floaty.current.style.transform = `translate3d(${mouseX - divX}px, ${
 				mouseY - divY - scrollY

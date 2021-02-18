@@ -3,6 +3,8 @@ import Posts from "@components/work/Posts";
 import TextSection from "@components/work/TextSection";
 import { getAllFilesFrontMatter } from "@lib/mdx";
 import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
 
 function BBC({ bbcPosts }) {
 	return (
@@ -21,11 +23,11 @@ function BBC({ bbcPosts }) {
 			/>
 			<Posts posts={bbcPosts} section="bbc" shift />
 			<TextSection mb>
-				<p className=" font-sans text-3xl font-bold italic mb-12 sm:text-2xl">
+				<h3 className=" font-sans text-3xl font-bold italic mb-12 sm:text-2xl">
 					Combining tech, software, media, a free degree and three
 					years experience.
-				</p>
-				<p className="text-2xl text-half-white sm:text-xl">
+				</h3>
+				<p className="text-2xl font-light text-half-white">
 					Where do I start? This apprenticeship's been a rollercoaster
 					from day one. I've had the chance to travel all around the
 					UK - from standing on the roof of New Broadcasting House in
@@ -38,6 +40,26 @@ function BBC({ bbcPosts }) {
 					New Talent Apprentice, I focus on bringing positive,
 					progressional energy.
 				</p>
+				<div className="flex flex-grow justify-center mt-16">
+					<Link href="/bbc/best-bits-so-far">
+						<a className="self-center mr-16 opacity-50 sm:mr-0 group transition hover:opacity-100 focus:opacity-100">
+							<div className="flex items-center">
+								<p className="font-sans text-xl italic mr-4 group-hover:underline">
+									Check out my highlights
+								</p>
+								<div className="flex rounded-full p-2 bg-white">
+									<Image
+										width={35}
+										height={35}
+										priority
+										src="/assets/arrow-dark.png"
+										alt="arrow"
+									/>
+								</div>
+							</div>
+						</a>
+					</Link>
+				</div>
 			</TextSection>
 		</div>
 	);

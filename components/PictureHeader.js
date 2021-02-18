@@ -1,4 +1,5 @@
 import coverAspects from "@lib/coverAspects";
+import { parseISO, format } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "./projects/Logo";
@@ -12,6 +13,7 @@ function PictureHeader({
 	subone,
 	subtwo,
 	title,
+	date,
 	tags,
 	height,
 }) {
@@ -54,8 +56,15 @@ function PictureHeader({
 						</Link>
 					)}
 
-					<p className="italic text-half-white text-2xl mt-8 mb-4 sm:text-xl sm:mb-2">
-						{subone} &bull; {subtwo}
+					<p className="font-sans text-half-white text-base mt-8 mb-4 sm:mb-2">
+						{date ? (
+							<span className>
+								{format(parseISO(date), "MMMM dd, yyyy")} &bull;
+							</span>
+						) : (
+							""
+						)}
+						{subone} &bull; {subtwo}{" "}
 					</p>
 					<h1
 						className={`font-sans italic font-bold ${

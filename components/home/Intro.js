@@ -3,9 +3,9 @@ import Link from "next/link";
 
 function Intro() {
 	return (
-		<div className="my-32 mx-10 flex items-center flex-grow justify-center sm:mx-4">
+		<div className="my-32 mx-10 flex items-center flex-grow justify-center sm:mx-4 sm:my-16">
 			<div className="flex flex-col my-28" style={{ width: "500px" }}>
-				<h3 className=" font-sans text-3xl italic font-bold mb-8">
+				<h3 className=" font-sans text-3xl italic font-bold mb-8 sm:text-2xl">
 					I’ve been lucky enough to get involved with some pretty
 					amazing projects.
 				</h3>
@@ -34,9 +34,9 @@ function Intro() {
 					</span>{" "}
 					<span style={{ color: "white" }}>🤓</span>
 				</p>
-				<div className="flex self-center mt-16">
+				<div className="flex self-center mt-16 ">
 					<Link href="/bbc">
-						<a className="self-center mr-16 opacity-50 group transition hover:opacity-100 focus:opacity-100">
+						<a className="self-center sm:self-end mr-16 sm:mr-0 sm:mb-8 opacity-50 group transition hover:opacity-100 focus:opacity-100">
 							<div className="flex items-center">
 								<p className="font-sans text-xl italic mr-4 group-hover:underline">
 									Life at BBC
@@ -54,7 +54,7 @@ function Intro() {
 						</a>
 					</Link>
 					<Link href="/projects">
-						<a className="self-center opacity-50 group transition hover:opacity-100 focus:opacity-100">
+						<a className="self-center sm:hidden sm:self-end opacity-50 group transition hover:opacity-100 focus:opacity-100">
 							<div className="flex items-center">
 								<p className="font-sans text-xl italic mr-4 group-hover:underline">
 									Projects

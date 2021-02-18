@@ -4,14 +4,17 @@ import Intro from "@components/home/Intro";
 import Mac from "@components/home/Mac";
 import Scrolling from "@components/home/Scrolling";
 import Better from "@components/home/Better";
+import Posts from "@components/work/Posts";
+import { getAllFilesFrontMatter } from "@lib/mdx";
 
-function Home() {
+function Home({ sortedPosts }) {
 	return (
 		<>
 			<div className="z-10">
 				<Header />
 				<Opener />
 				<Intro />
+				<Posts posts={sortedPosts} section="all" />
 				<Mac />
 				<Scrolling />
 				<Better />
@@ -22,3 +25,20 @@ function Home() {
 }
 
 export default Home;
+
+export async function getStaticProps() {
+	const bbcPosts = await getAllFilesFrontMatter("bbc");
+	const cnnPosts = await getAllFilesFrontMatter("cnn");
+
+	let allPosts = bbcPosts.concat(cnnPosts);
+
+	let sortedPosts = allPosts
+		.sort((a, b) => {
+			console.log(a);
+			console.log();
+			return new Date(b.date) - new Date(a.date);
+		})
+		.slice(0, 3);
+
+	return { props: { sortedPosts } };
+}

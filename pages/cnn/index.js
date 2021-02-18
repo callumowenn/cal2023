@@ -3,6 +3,8 @@ import Posts from "@components/work/Posts";
 import TextSection from "@components/work/TextSection";
 import { getAllFilesFrontMatter } from "@lib/mdx";
 import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
 
 function CNN({ cnnPosts }) {
 	return (
@@ -21,7 +23,7 @@ function CNN({ cnnPosts }) {
 			/>
 			<Posts posts={cnnPosts} section="cnn" shift />
 			<div className="flex flex-grow justify-center mb-24 ml-24 sm:ml-0 sm:mt-24  sm:flex-col">
-				<div className="sm:mb-24 flex-grow">
+				<div className="sm:mb-24 sm:w-90vw sm:self-center">
 					<blockquote
 						className="twitter-tweet"
 						data-dnt="true"
@@ -47,22 +49,19 @@ function CNN({ cnnPosts }) {
 					</Head>
 				</div>
 				<TextSection>
-					<p className=" font-sans text-3xl font-bold italic mb-12 sm:text-2xl">
+					<h3 className=" font-sans text-3xl font-bold italic mb-12 sm:text-2xl">
 						Despite the pandemic, my time with CNN was both
 						inspiring and enlightening.
-					</p>
-					<p className="text-2xl text-half-white sm:text-xl">
+					</h3>
+					<p className="text-2xl text-half-white font-light">
 						It's hard to put into words all the experience I gained
 						from my time with CNN. Out of pure luck, I'd be working
 						there just as they were moving into their{" "}
-						<a
-							className="text-white hover:underline"
-							href="http://160oldstreet.com"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							shiny, new, London bureau
-						</a>{" "}
+						<Link href="/cnn/a-new-home">
+							<a className="text-white hover:underline">
+								shiny, new, London bureau
+							</a>
+						</Link>
 						. <br />
 						<br />
 						Just six months after A-Levels, I'd find myself in an
@@ -71,6 +70,26 @@ function CNN({ cnnPosts }) {
 						towards the shared goal of moving CNN into this amazing
 						new building - I feel incredibly lucky.
 					</p>
+					<div className="flex flex-grow justify-center mt-16">
+						<Link href="/cnn/favourite-moments">
+							<a className="self-center mr-16 opacity-50 group sm:mr-0 transition hover:opacity-100 focus:opacity-100">
+								<div className="flex items-center">
+									<p className="font-sans text-xl italic mr-4 group-hover:underline">
+										My favourite moments
+									</p>
+									<div className="flex rounded-full p-2 bg-white">
+										<Image
+											width={35}
+											height={35}
+											priority
+											src="/assets/arrow-dark.png"
+											alt="arrow"
+										/>
+									</div>
+								</div>
+							</a>
+						</Link>
+					</div>
 				</TextSection>
 			</div>
 		</div>
