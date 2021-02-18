@@ -1,12 +1,11 @@
 function Standout({ text, colour, emoji }) {
 	return (
-		<p
-			className="inline-flex font-apple font-black"
+		<span
+			className="inline font-apple font-black"
 			style={{ color: colour }}
 		>
-			&nbsp;{text}
-			<span className=" not-italic inline">&nbsp;{emoji}&nbsp;</span>
-		</p>
+			{text} <span className="not-italic">{emoji}</span>
+		</span>
 	);
 }
 

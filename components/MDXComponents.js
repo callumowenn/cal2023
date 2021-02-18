@@ -62,13 +62,13 @@ const CustomBlockquote = (props) => {
 };
 const CustomText = (props) => {
 	return (
-		<p className="text-3xl my-4 text-half-white sm:text-2xl" {...props}></p>
+		<p className="text-2xl my-4 font-light text-half-white" {...props}></p>
 	);
 };
 const CustomList = (props) => {
 	return (
 		<ul
-			className="custom-list font-serif text-3xl sm:text-2xl my-16 list-disc list-inside text-half-white"
+			className="custom-list font-serif text-2xl font-light sm:text-2xl my-4 list-disc list-inside text-half-white"
 			{...props}
 		></ul>
 	);
@@ -76,7 +76,7 @@ const CustomList = (props) => {
 const CustomOrderedList = (props) => {
 	return (
 		<li
-			className="font-serif text-3xl sm:text-2xl my-16 list-disc list-inside text-half-white"
+			className="font-serif text-2xl font-light sm:text-2xl my-4 list-disc list-inside text-half-white"
 			{...props}
 		></li>
 	);

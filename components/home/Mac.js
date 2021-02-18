@@ -25,11 +25,6 @@ function Mac() {
 					pic="/assets/showcase/stage.JPG"
 					aspect="landscape"
 					alt="Production training with BBC 🎬"
-				/>{" "}
-				<MacWindow
-					pic="/assets/showcase/mud.JPG"
-					aspect="portrait"
-					alt="Mountain biking with Dad 🚵🏼‍♂️"
 				/>
 				<MacWindow
 					pic="/assets/showcase/polaroid.jpg"

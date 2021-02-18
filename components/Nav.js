@@ -10,7 +10,8 @@ function Nav() {
 			<div className="flex flex-col sm:flex-row">
 				<Link href="/">
 					<a
-						className="h-auto rounded-full mb-3 hover:bg-white hover:bg-opacity-10 sm:w-10 sm:h-10 sm:m-0"
+						className="h-auto rounded-full mb-3 hover:bg-white hover:bg-opacity-10 focus:bg-white focus:bg-opacity-10 sm:w-10 sm:h-10 sm:m-0"
+						style={{ outline: "none" }}
 						title="Go Home"
 					>
 						<div className="flex rounded-full transform rotate-180">
@@ -25,7 +26,8 @@ function Nav() {
 					</a>
 				</Link>
 				<button
-					className="h-auto rounded-full overflow-hidden mb-3 hover:bg-white hover:bg-opacity-10 sm:w-10 sm:h-10 sm:m-0 sm:ml-2"
+					className="h-auto rounded-full overflow-hidden mb-3 hover:bg-white hover:bg-opacity-10 focus:bg-white focus:bg-opacity-10 sm:w-10 sm:h-10 sm:m-0 sm:ml-2"
+					style={{ outline: "none" }}
 					title="Menu"
 					onClick={() => toggleMenu()}
 				>

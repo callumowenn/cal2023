@@ -1,21 +1,20 @@
+import Image from "next/image";
 import Link from "next/link";
 
 function Intro() {
 	return (
 		<div className="my-32 mx-10 flex items-center flex-grow justify-center sm:mx-4">
-			<div className=" my-28" style={{ width: "480px" }}>
-				<p className=" font-sans text-3xl font-bold italic mb-12 sm:text-2xl">
+			<div className="flex flex-col my-28" style={{ width: "500px" }}>
+				<h3 className=" font-sans text-3xl italic font-bold mb-8">
 					I’ve been lucky enough to get involved with some pretty
 					amazing projects.
-				</p>
-				<p
-					className="text-2xl sm:text-xl"
-					style={{ color: "#ffffff80" }}
-				>
+				</h3>
+				<p className="text-2xl text-half-white font-light">
+					On this BBC apprenticeship, the opportunities are endless.
 					From being part of the team that engineered CNN’s move to
 					their{" "}
 					<Link href="/cnn/a-new-home">
-						<a className="text-white hover:underline">
+						<a className="text-white hover:underline focus:underline">
 							shiny, new London bureau
 						</a>
 					</Link>
@@ -35,6 +34,44 @@ function Intro() {
 					</span>{" "}
 					<span style={{ color: "white" }}>🤓</span>
 				</p>
+				<div className="flex self-center mt-16">
+					<Link href="/bbc">
+						<a className="self-center mr-16 opacity-50 group transition hover:opacity-100 focus:opacity-100">
+							<div className="flex items-center">
+								<p className="font-sans text-xl italic mr-4 group-hover:underline">
+									Life at BBC
+								</p>
+								<div className="flex rounded-full p-2 bg-white">
+									<Image
+										width={35}
+										height={35}
+										priority
+										src="/assets/arrow-dark.png"
+										alt="arrow"
+									/>
+								</div>
+							</div>
+						</a>
+					</Link>
+					<Link href="/projects">
+						<a className="self-center opacity-50 group transition hover:opacity-100 focus:opacity-100">
+							<div className="flex items-center">
+								<p className="font-sans text-xl italic mr-4 group-hover:underline">
+									Projects
+								</p>
+								<div className="flex rounded-full p-2 bg-white">
+									<Image
+										width={35}
+										height={35}
+										priority
+										src="/assets/arrow-dark.png"
+										alt="arrow"
+									/>
+								</div>
+							</div>
+						</a>
+					</Link>
+				</div>
 			</div>
 		</div>
 	);

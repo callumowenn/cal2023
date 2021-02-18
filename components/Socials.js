@@ -86,14 +86,14 @@ function Socials() {
 		},
 	];
 	return (
-		<div className="flex flex-col sm:hidden">
+		<div className="flex items-center flex-col sm:hidden">
 			{socials.map((social) => (
 				<a
-					className="flex justify-center mt-7 h-auto hover:opacity-80 sm:m-0"
+					className="flex justify-center text-white hover:bg-white p-4 rounded-full bg-white bg-opacity-0 opacity-50 mt-2 w-min hover:opacity-100 hover:bg-opacity-10 focus:opacity-100 focus:bg-opacity-10 sm:m-0"
 					key={social.name}
 					target="_blank"
 					rel="noopener noreferrer"
-					style={{ color: "#ffffff80" }}
+					style={{ outline: "none" }}
 					href={social.link}
 					title={social.name}
 				>
