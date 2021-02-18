@@ -62,15 +62,20 @@ function PictureHeader({
 					) : (
 						<Link href={`/${section}`}>
 							<a className="flex w-max">
-								<img
-									className="max-h-16 "
+								<Image
 									src={`/assets/${section}.png`}
+									width={section == "bbc" ? 223 : 168}
+									height={section == "bbc" ? 64 : 80}
 								/>
+								{/* <img
+									className="max-h-20 "
+									src={`/assets/${section}.png`}
+								/> */}
 							</a>
 						</Link>
 					)}
 
-					<p className="font-sans text-half-white text-base mt-8 mb-4 sm:mb-2">
+					<p className="font-sans text-half-white text-base mt-8 mb-4 sm:text-xs sm:mb-2">
 						{date ? (
 							<span className>
 								{format(parseISO(date), "MMMM dd, yyyy")} &bull;
