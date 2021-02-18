@@ -2,6 +2,7 @@ import coverAspects from "@lib/coverAspects";
 import { parseISO, format } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import Logo from "./projects/Logo";
 import Tags from "./projects/Tags";
 
@@ -17,6 +18,8 @@ function PictureHeader({
 	tags,
 	height,
 }) {
+	const size = useWindowSize();
+
 	return (
 		<div className="grid">
 			<div
@@ -31,14 +34,25 @@ function PictureHeader({
 					className={`flex-grow fixed flex sm:w-screen w-50vw sm:max-w-none sm:h-96 opacity-25 object-cover h-${height} object-left-top sm:static`}
 					style={{ backfaceVisibility: "hidden" }}
 				>
-					<Image
-						className="object-cover object-left-top"
-						src={pic}
-						priority
-						layout="intrinsic"
-						width={coverAspects[aspect].width}
-						height={coverAspects[aspect].height}
-					/>
+					{size.width > 500 ? (
+						<Image
+							className="object-cover object-left-top"
+							src={pic}
+							priority
+							layout="intrinsic"
+							width={coverAspects[aspect].width}
+							height={coverAspects[aspect].height}
+						/>
+					) : (
+						<Image
+							className="object-cover object-left-top"
+							src={pic}
+							priority
+							layout="intrinsic"
+							width={coverAspects[`${aspect}-preview`].width}
+							height={coverAspects[`${aspect}-preview`].height}
+						/>
+					)}
 				</div>
 			</div>
 			<div className="col-start-1 row-start-1 m-16 mr-0 flex items-center z-10 sm:mx-4 sm:my-0 sm:row-start-2">
@@ -85,3 +99,36 @@ function PictureHeader({
 }
 
 export default PictureHeader;
+
+function useWindowSize() {
+	// Initialize state with undefined width/height so server and client renders match
+	// Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
+	const [windowSize, setWindowSize] = useState({
+		width: undefined,
+		height: undefined,
+	});
+
+	useEffect(() => {
+		// only execute all the code below in client side
+		if (typeof window !== "undefined") {
+			// Handler to call on window resize
+			function handleResize() {
+				// Set window width/height to state
+				setWindowSize({
+					width: window.innerWidth,
+					height: window.innerHeight,
+				});
+			}
+
+			// Add event listener
+			window.addEventListener("resize", handleResize);
+
+			// Call handler right away so state gets updated with initial window size
+			handleResize();
+
+			// Remove event listener on cleanup
+			return () => window.removeEventListener("resize", handleResize);
+		}
+	}, []); // Empty array ensures that effect is only run on mount
+	return windowSize;
+}
