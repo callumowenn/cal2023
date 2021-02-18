@@ -59,6 +59,9 @@ label {
 #mac > * {
 	-webkit-transform: translateZ(0);
 }
+.mac-back > * {
+	-webkit-transform: translateZ(0);
+}
 
 .is-sticky > * {
 	-webkit-transform: translateZ(0);
