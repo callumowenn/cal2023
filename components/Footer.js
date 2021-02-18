@@ -20,7 +20,7 @@ function Footer() {
 					</a>
 				</Link>
 				<Link href="/cnn">
-					<a className=" flex items-center border-r border-b border-half-white justify-center cnn group hover:bg-black hover:bg-opacity-5">
+					<a className=" flex items-center border-r border-b border-half-white justify-center cnn group hover:bg-black hover:bg-opacity-5 sm:border-r-0">
 						<div className="flex flex-col p-8 sm:p-4 items-center">
 							<span className="not-italic text-7xl sm:text-6xl mb-4 w-min text-white">
 								🎥
