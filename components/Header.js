@@ -15,11 +15,11 @@ function Header() {
 						alt="me"
 					/>
 				</div>
-				<div className="flex flex-col w-343px sm:w-auto">
-					<p className=" sub-intro font-serif opacity-50 text-2xl italic sm:text-xl">
+				<div className="flex flex-col w-392px sm:w-auto">
+					<p className=" sub-intro font-apple font-light opacity-50 text-2xl sm:text-xl">
 						Hi, i'm
 					</p>
-					<h1 className="main-intro font-serif text-6xl font-bold sm:text-5xl">
+					<h1 className="main-intro font-apple font-black italic text-6xl sm:text-5xl">
 						Callum Owen
 					</h1>
 				</div>
