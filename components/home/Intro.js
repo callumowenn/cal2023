@@ -3,14 +3,13 @@ import Link from "next/link";
 
 function Intro() {
 	return (
-		<div className="my-32 mx-10 flex items-center flex-grow justify-center sm:mx-4 sm:my-16">
+		<div className="my-24 mx-10 flex items-center flex-grow justify-center sm:mx-4 sm:my-16">
 			<div className="flex flex-col my-28" style={{ width: "500px" }}>
 				<h3 className=" font-sans text-3xl italic font-bold mb-8 sm:text-2xl">
 					I’ve been lucky enough to get involved with some pretty
 					amazing projects.
 				</h3>
 				<p className="text-2xl text-half-white font-light">
-					On this BBC apprenticeship, the opportunities are endless.
 					From being part of the team that engineered CNN’s move to
 					their{" "}
 					<Link href="/cnn/a-new-home">
@@ -22,10 +21,12 @@ function Intro() {
 					to power remote broadcast workflows; it’s impossible to get
 					bored in this crazy world of tech.
 					<br />
-					<br /> Having always been drawn to software by the
-					combination of functionality and design, I’ve recently
-					enjoyed creating websites and apps for side projects and
-					small businesses.{" "}
+					<br />
+					As a BBC apprentice, I'm able to explore all corners of
+					broadcast production and software. Having always been drawn
+					to software by the combination of functionality and design,
+					I’ve recently enjoyed creating websites and apps for side
+					projects and small businesses.{" "}
 					<span
 						className="font-sans font-bold italic"
 						style={{ color: "#A1D53F" }}
