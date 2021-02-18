@@ -30,13 +30,13 @@ function BBC({ bbcPosts }) {
 				<p className="text-2xl font-light text-half-white">
 					Where do I start? This apprenticeship's been a rollercoaster
 					from day one. I've had the chance to travel all around the
-					UK - from standing on the roof of New Broadcasting House in
-					London, to getting hands-on with cuttng edge tech in
+					UK - from installing studios at New Broadcasting House in
+					London, to getting hands-on with cutting-edge tech in
 					Salford.
 					<br />
 					<br />
-					Life never stops within the BBC. There's always more things
-					to learn; more people to meet; more experience to gain. As a
+					Life never stops in the BBC. There's always more things to
+					learn; more people to meet; more experience to gain. As a
 					New Talent Apprentice, I focus on bringing positive,
 					progressional energy.
 				</p>
