@@ -4,8 +4,9 @@ function Posts({ posts, section, shift }) {
 	return (
 		<>
 			{section == "all" ? (
-				<div className="flex mb-4 font-light ml-24 sm:ml-8 font-serif italic text-5xl text-half-white">
-					Recent articles
+				<div className="flex mb-4 font-black ml-24 sm:ml-8 font-apple italic text-7xl sm:text-6xl mt-4 text-half-white">
+					<span className="not-italic text-white">✏️</span>
+					&nbsp;Recent articles
 				</div>
 			) : (
 				""

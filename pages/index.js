@@ -13,7 +13,17 @@ function Home({ sortedPosts }) {
 			<div className="z-10">
 				<Header />
 				<Opener />
-				<Intro />
+				<div className="flex flex-row-reverse flex-grow sm:flex-col">
+					<div className="my-24 flex items-center flex-grow justify-center sm:hidden">
+						<iframe
+							src="https://my.spline.design/librarycarrot-57f73e9c2482c77f49eeb28f3f5fec6f/"
+							frameborder="0"
+							width="100%"
+							height="100%"
+						></iframe>
+					</div>
+					<Intro />
+				</div>
 				<Posts posts={sortedPosts} section="all" />
 				<Mac />
 				<Scrolling />
