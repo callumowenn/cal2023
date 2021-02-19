@@ -38,7 +38,7 @@ function PictureHeader({
 						<Image
 							className="object-cover object-left-top"
 							src={pic}
-							priority
+							// priority
 							layout="intrinsic"
 							width={coverAspects[aspect].width}
 							height={coverAspects[aspect].height}
@@ -47,7 +47,7 @@ function PictureHeader({
 						<Image
 							className="object-cover object-left-top"
 							src={pic}
-							priority
+							// priority
 							layout="intrinsic"
 							width={coverAspects[`${aspect}-preview`].width}
 							height={coverAspects[`${aspect}-preview`].height}
