@@ -75,8 +75,8 @@ module.exports = {
 					"100%": { transform: "rotate(360deg)" },
 				},
 				scrolling: {
-					"0%": { transform: "translateX(0)" },
-					"100%": { transform: "translateX(-1939.61px)" },
+					"0%": { transform: "translate3d(0,0,0)" },
+					"100%": { transform: "translate3d(-1939.61px,0,0)" },
 				},
 			},
 			animation: {

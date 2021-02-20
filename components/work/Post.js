@@ -18,8 +18,10 @@ function Post({ post, section }) {
 								? "object-left-top"
 								: ""
 						}`}
-						priority
+						// priority
 						layout="intrinsic"
+						loading={section == "all" ? "lazy" : undefined}
+						priority={section == "all" ? undefined : true}
 						src={post.image}
 						height={coverAspects[`${post.aspect}-preview`].height}
 						width={coverAspects[`${post.aspect}-preview`].width}

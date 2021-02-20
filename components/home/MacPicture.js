@@ -20,6 +20,7 @@ function MacPicture({ pic, aspect, alt }) {
 					alt={alt}
 					width={dimensions[aspect].width}
 					height={dimensions[aspect].height}
+					loading="lazy"
 					layout="intrinsic"
 					title={alt}
 				/>

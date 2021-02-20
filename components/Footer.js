@@ -85,6 +85,7 @@ function Footer() {
 						<img
 							className="mb-4 w-28 sm:w-20"
 							src="/assets/me-flip.png"
+							loading="lazy"
 							alt="Me"
 						/>
 						<p className="text-xl italic sm:text-lg">
@@ -120,6 +121,7 @@ function Footer() {
 					<img
 						className="object-cover flex-grow h-full opacity-20"
 						src="/assets/lost.gif"
+						loading="lazy"
 					/>
 				</div>
 			</div>
