@@ -89,6 +89,7 @@ const Picture = ({ pic, caption, alt, portrait }) => {
 				className={`max-w-950px max-h-550px sm:max-w-none sm:max-h-full ${
 					portrait ? "sm:w-60vw" : "sm:w-screen"
 				}`}
+				loading="lazy"
 				src={pic}
 				alt={alt}
 			/>
