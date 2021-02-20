@@ -18,7 +18,7 @@ function Home({ sortedPosts }) {
 						<div className="flex-grow "></div>
 						<Intro />
 					</div>
-					<div className="flex flex-row-reverse row-start-1 col-start-1 opacity-50 sm:flex-col">
+					<div className="flex flex-row-reverse row-start-1 col-start-1 sm:flex-col">
 						<div className="my-24 justify-self-end flex items-center flex-grow justify-center sm:hidden">
 							<iframe
 								src="https://my.spline.design/librarycarrot-57f73e9c2482c77f49eeb28f3f5fec6f/"
