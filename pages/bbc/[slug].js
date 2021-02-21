@@ -11,7 +11,41 @@ function BBCPost({ mdxSource, frontMatter }) {
 	return (
 		<>
 			<Head>
-				<title>{frontMatter.title} ⚡ Callum Owen</title>
+				<title>{frontMatter.title} 🎬 BBC ⚡ Callum Owen</title>
+				<meta name="author" content="Callum Owen" />
+				<meta property="og:type" content="article" />
+				<meta property="og:site_name" content="Callum Owen" />
+
+				{/* <!-- Open Graph / Facebook --/> */}
+				<meta
+					property="og:url"
+					content={`https://callumowen.co.uk/bbc/${frontMatter.slug}`}
+				/>
+				<meta
+					property="og:title"
+					content={`${frontMatter.title} 🎬 BBC ⚡ Callum Owen`}
+				/>
+				<meta
+					property="og:description"
+					content={`${frontMatter.readingTime.text} - ${frontMatter.snippet}`}
+				/>
+				<meta property="og:image" content={frontMatter.image} />
+
+				{/* <!-- Twitter --/> */}
+				<meta property="twitter:card" content="summary_large_image" />
+				<meta
+					property="twitter:url"
+					content={`https://callumowen.co.uk/bbc/${frontMatter.slug}`}
+				/>
+				<meta
+					property="twitter:title"
+					content={`${frontMatter.title} 🎬 BBC ⚡ Callum Owen`}
+				/>
+				<meta
+					property="twitter:description"
+					content={`${frontMatter.readingTime.text} - ${frontMatter.snippet}`}
+				/>
+				<meta property="twitter:image" content={frontMatter.image} />
 			</Head>
 			<PostLayout section="bbc" frontMatter={frontMatter}>
 				{content}

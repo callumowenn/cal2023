@@ -12,38 +12,6 @@ function Layout({ children }) {
 					Callum Owen ⚡ BBC engineering apprentice and developer
 				</title>
 				<meta
-					name="description"
-					content="Read about life as a BBC apprentice, my time at CNN and my web development projects"
-				></meta>
-				{/* <!-- Open Graph / Facebook --> */}
-				<meta property="og:type" content="website" />
-				<meta property="og:url" content="https://callumowen.co.uk/" />
-				<meta
-					property="og:title"
-					content="Callum Owen ⚡ BBC engineering apprentice and developer"
-				/>
-				<meta
-					property="og:description"
-					content="Read about life as a BBC apprentice, my time at CNN and my web development projects"
-				/>
-				<meta property="og:image" content="/assets/sc.png" />
-
-				{/* <!-- Twitter --/> */}
-				<meta property="twitter:card" content="summary_large_image" />
-				<meta
-					property="twitter:url"
-					content="https://callumowen.co.uk/"
-				/>
-				<meta
-					property="twitter:title"
-					content="Callum Owen ⚡ BBC engineering apprentice and developer"
-				/>
-				<meta
-					property="twitter:description"
-					content="Read about life as a BBC apprentice, my time at CNN and my web development projects"
-				/>
-				<meta property="twitter:image" content="/assets/sc.png" />
-				<meta
 					name="viewport"
 					content="width=device-width, initial-scale=1.0, viewport-fit=cover"
 				/>
@@ -102,8 +70,6 @@ function Layout({ children }) {
 					name="apple-mobile-web-app-status-bar-style"
 					content="black-translucent"
 				/>
-				<meta name="description" content="Description" />
-				<meta name="keywords" content="Keywords" />
 				<link
 					rel="apple-touch-icon"
 					sizes="180x180"
