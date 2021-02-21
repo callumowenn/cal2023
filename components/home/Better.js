@@ -7,9 +7,8 @@ function Better() {
 				<p className="text-5xl italic mb-36 sm:text-4xl sm:font-extralight sm:mb-48">
 					You probably deserve <br />{" "}
 					<span className="font-sans font-black text-yellow-400">
-						a better website
+						a better website.
 					</span>
-					.
 				</p>
 
 				<p className="font-sans italic font-bold text-2xl mb-4 opacity-50 sm:text-base">

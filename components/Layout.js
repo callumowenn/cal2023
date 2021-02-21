@@ -135,7 +135,7 @@ function Layout({ children }) {
 				<Menu />
 				{children}
 				<Footer />
-				<MobileCreds />
+				{/* <MobileCreds /> */}
 			</main>
 		</div>
 	);

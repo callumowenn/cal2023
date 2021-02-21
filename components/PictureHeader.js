@@ -29,7 +29,7 @@ function PictureHeader({
 			></div>
 			<div
 				className={`col-start-1 row-start-1 absolute w-main h-${height} flex flex-row-reverse z-0 pointer-events-none sm:h-96 sm:w-screen`}
-				style={{ clip: "rect(0, auto, auto, 0)" }}
+				style={{ clipPath: " inset(0 auto auto 0)" }}
 			>
 				<div className="flex-grow sm:hidden"></div>
 				<div

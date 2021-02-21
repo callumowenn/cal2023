@@ -15,7 +15,7 @@ function Preview({ project }) {
 				<div className="flex flex-col">
 					<Link href={`/projects/${project.slug}`}>
 						<a title="Read more">
-							<h3 className="text-7xl italic mb-4 hover:underline sm:text-4xl sm:mb-4">
+							<h3 className="text-7xl italic mb-4 hover:underline sm:text-4xl sm:mb-0">
 								{project.title}
 							</h3>
 						</a>

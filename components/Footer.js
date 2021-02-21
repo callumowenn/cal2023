@@ -1,4 +1,5 @@
 import { useMenu } from "@lib/menu";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -119,10 +120,28 @@ function Footer() {
 				</Link>
 				<div className=" flex items-center justify-center lost">
 					<img
-						className="object-cover flex-grow h-full opacity-20"
+						className="object-cover flex-grow h-full opacity-20 sm:hidden"
 						src="/assets/lost.gif"
 						loading="lazy"
 					/>
+					<div className="not-sm:hidden mx-4 w-max">
+						<Image
+							width={50}
+							height={50}
+							src="/assets/me-flip.png"
+							loading="lazy"
+							alt="me"
+						/>
+						<p className="italic sm:text-sm">
+							<span className=" text-standout-green font-sans font-black">
+								Designed and developed <br />
+							</span>{" "}
+							by Callum Owen{" "}
+							<span className="opacity-50">
+								&copy;{date.getUTCFullYear()}
+							</span>
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>

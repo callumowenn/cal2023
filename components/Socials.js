@@ -1,4 +1,4 @@
-function Socials() {
+function Socials({ show }) {
 	let socials = [
 		{
 			name: "Instagram",
@@ -9,7 +9,7 @@ function Socials() {
 					focusable="false"
 					data-prefix="fab"
 					data-icon="instagram"
-					className="svg-inline--fa fa-instagram fa-w-14 w-5"
+					className="svg-inline--fa fa-instagram fa-w-14 w-5 sm:w-6"
 					role="img"
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 448 512"
@@ -30,7 +30,7 @@ function Socials() {
 					focusable="false"
 					data-prefix="fab"
 					data-icon="github"
-					className="svg-inline--fa fa-github fa-w-16 w-5"
+					className="svg-inline--fa fa-github fa-w-16 w-5 sm:w-6"
 					role="img"
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 496 512"
@@ -42,27 +42,27 @@ function Socials() {
 				</svg>
 			),
 		},
-		{
-			name: "Dribbble",
-			link: "https://dribbble.com/callumowen",
-			svg: (
-				<svg
-					aria-hidden="true"
-					focusable="false"
-					data-prefix="fab"
-					data-icon="dribbble"
-					className="svg-inline--fa fa-dribbble fa-w-16 w-5"
-					role="img"
-					xmlns="http://www.w3.org/2000/svg"
-					viewBox="0 0 512 512"
-				>
-					<path
-						fill="currentColor"
-						d="M256 8C119.252 8 8 119.252 8 256s111.252 248 248 248 248-111.252 248-248S392.748 8 256 8zm163.97 114.366c29.503 36.046 47.369 81.957 47.835 131.955-6.984-1.477-77.018-15.682-147.502-6.818-5.752-14.041-11.181-26.393-18.617-41.614 78.321-31.977 113.818-77.482 118.284-83.523zM396.421 97.87c-3.81 5.427-35.697 48.286-111.021 76.519-34.712-63.776-73.185-116.168-79.04-124.008 67.176-16.193 137.966 1.27 190.061 47.489zm-230.48-33.25c5.585 7.659 43.438 60.116 78.537 122.509-99.087 26.313-186.36 25.934-195.834 25.809C62.38 147.205 106.678 92.573 165.941 64.62zM44.17 256.323c0-2.166.043-4.322.108-6.473 9.268.19 111.92 1.513 217.706-30.146 6.064 11.868 11.857 23.915 17.174 35.949-76.599 21.575-146.194 83.527-180.531 142.306C64.794 360.405 44.17 310.73 44.17 256.323zm81.807 167.113c22.127-45.233 82.178-103.622 167.579-132.756 29.74 77.283 42.039 142.053 45.189 160.638-68.112 29.013-150.015 21.053-212.768-27.882zm248.38 8.489c-2.171-12.886-13.446-74.897-41.152-151.033 66.38-10.626 124.7 6.768 131.947 9.055-9.442 58.941-43.273 109.844-90.795 141.978z"
-					></path>
-				</svg>
-			),
-		},
+		// {
+		// 	name: "Dribbble",
+		// 	link: "https://dribbble.com/callumowen",
+		// 	svg: (
+		// 		<svg
+		// 			aria-hidden="true"
+		// 			focusable="false"
+		// 			data-prefix="fab"
+		// 			data-icon="dribbble"
+		// 			className="svg-inline--fa fa-dribbble fa-w-16 w-5 sm:w-6"
+		// 			role="img"
+		// 			xmlns="http://www.w3.org/2000/svg"
+		// 			viewBox="0 0 512 512"
+		// 		>
+		// 			<path
+		// 				fill="currentColor"
+		// 				d="M256 8C119.252 8 8 119.252 8 256s111.252 248 248 248 248-111.252 248-248S392.748 8 256 8zm163.97 114.366c29.503 36.046 47.369 81.957 47.835 131.955-6.984-1.477-77.018-15.682-147.502-6.818-5.752-14.041-11.181-26.393-18.617-41.614 78.321-31.977 113.818-77.482 118.284-83.523zM396.421 97.87c-3.81 5.427-35.697 48.286-111.021 76.519-34.712-63.776-73.185-116.168-79.04-124.008 67.176-16.193 137.966 1.27 190.061 47.489zm-230.48-33.25c5.585 7.659 43.438 60.116 78.537 122.509-99.087 26.313-186.36 25.934-195.834 25.809C62.38 147.205 106.678 92.573 165.941 64.62zM44.17 256.323c0-2.166.043-4.322.108-6.473 9.268.19 111.92 1.513 217.706-30.146 6.064 11.868 11.857 23.915 17.174 35.949-76.599 21.575-146.194 83.527-180.531 142.306C64.794 360.405 44.17 310.73 44.17 256.323zm81.807 167.113c22.127-45.233 82.178-103.622 167.579-132.756 29.74 77.283 42.039 142.053 45.189 160.638-68.112 29.013-150.015 21.053-212.768-27.882zm248.38 8.489c-2.171-12.886-13.446-74.897-41.152-151.033 66.38-10.626 124.7 6.768 131.947 9.055-9.442 58.941-43.273 109.844-90.795 141.978z"
+		// 			></path>
+		// 		</svg>
+		// 	),
+		// },
 		{
 			name: "LinkedIn",
 			link: "https://www.linkedin.com/in/hi-im-callum",
@@ -72,7 +72,7 @@ function Socials() {
 					focusable="false"
 					data-prefix="fab"
 					data-icon="linkedin"
-					className="svg-inline--fa fa-linkedin fa-w-14 w-5"
+					className="svg-inline--fa fa-linkedin fa-w-14 w-5 sm:w-6"
 					role="img"
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 448 512"
@@ -84,9 +84,35 @@ function Socials() {
 				</svg>
 			),
 		},
+		{
+			name: "Email",
+			link:
+				"mailto:callumowen@outlook.com?subject=Hey!%20%F0%9F%91%8B%F0%9F%8F%BC",
+			svg: (
+				<svg
+					aria-hidden="true"
+					focusable="false"
+					data-prefix="fas"
+					data-icon="envelope"
+					className="svg-inline--fa fa-envelope fa-w-16 w-5 sm:w-6"
+					role="img"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 512 512"
+				>
+					<path
+						fill="currentColor"
+						d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
+					></path>
+				</svg>
+			),
+		},
 	];
 	return (
-		<div className="flex items-center flex-col sm:hidden">
+		<div
+			className={`flex items-center ${
+				show ? "not-sm:hidden my-4" : "flex-col sm:hidden"
+			}`}
+		>
 			{socials.map((social) => (
 				<a
 					className="flex justify-center text-white hover:bg-white p-4 rounded-full bg-white bg-opacity-0 opacity-50 mt-2 w-min hover:opacity-100 hover:bg-opacity-10 focus:opacity-100 focus:bg-opacity-10 sm:m-0"

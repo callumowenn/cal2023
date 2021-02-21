@@ -6,11 +6,12 @@ function Marquee() {
 			<ul className="flex opacity-80 flex-shrink-0 animate-scrolling italic  text-5xl">
 				<li className="flex items-center">
 					<div className="max-h-12">
+						{/* <img src={feather} /> */}
 						<Image
 							height={48}
 							width={48}
 							priority
-							src="/assets/svg/feather.png"
+							src="/assets/svg/feather.svg"
 							alt=""
 						/>
 					</div>
@@ -24,7 +25,7 @@ function Marquee() {
 							height={48}
 							width={48}
 							priority
-							src="/assets/svg/logo-38.png"
+							src="/assets/svg/logo-38.svg"
 							alt=""
 						/>
 					</div>
@@ -38,7 +39,7 @@ function Marquee() {
 							height={48}
 							width={48}
 							priority
-							src="/assets/svg/logo-19.png"
+							src="/assets/svg/logo-19.svg"
 							alt=""
 						/>
 					</div>
@@ -52,7 +53,7 @@ function Marquee() {
 							height={48}
 							width={48}
 							priority
-							src="/assets/svg/cube.png"
+							src="/assets/svg/cube.svg"
 							alt=""
 						/>
 					</div>
@@ -66,7 +67,7 @@ function Marquee() {
 							height={48}
 							width={48}
 							priority
-							src="/assets/svg/sunset-1.png"
+							src="/assets/svg/sunset-1.svg"
 							alt=""
 						/>
 					</div>
@@ -82,7 +83,7 @@ function Marquee() {
 							height={48}
 							width={48}
 							priority
-							src="/assets/svg/feather.png"
+							src="/assets/svg/feather.svg"
 							alt=""
 						/>
 					</div>
@@ -96,7 +97,7 @@ function Marquee() {
 							height={48}
 							width={48}
 							priority
-							src="/assets/svg/logo-38.png"
+							src="/assets/svg/logo-38.svg"
 							alt=""
 						/>
 					</div>
@@ -110,7 +111,7 @@ function Marquee() {
 							height={48}
 							width={48}
 							priority
-							src="/assets/svg/logo-19.png"
+							src="/assets/svg/logo-19.svg"
 							alt=""
 						/>
 					</div>
@@ -124,7 +125,7 @@ function Marquee() {
 							height={48}
 							width={48}
 							priority
-							src="/assets/svg/cube.png"
+							src="/assets/svg/cube.svg"
 							alt=""
 						/>
 					</div>
@@ -138,7 +139,7 @@ function Marquee() {
 							height={48}
 							width={48}
 							priority
-							src="/assets/svg/sunset-1.png"
+							src="/assets/svg/sunset-1.svg"
 							alt=""
 						/>
 					</div>

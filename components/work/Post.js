@@ -46,8 +46,10 @@ function Post({ post, section }) {
 						""
 					)}
 				</div>
-				<div className="flex mt-6">
-					<span className="h-12 mr-6 text-5xl">{post.emoji}</span>
+				<div className="flex mt-6 sm:mt-4">
+					<span className="h-12 mr-6 text-5xl sm:mr-4">
+						{post.emoji}
+					</span>
 					<div className="flex flex-col">
 						<h1 className="italic font-sans font-bold text-xl group-hover:underline">
 							{post.title}

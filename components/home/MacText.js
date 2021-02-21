@@ -1,10 +1,14 @@
 function MacText({ me, text }) {
 	return (
 		<div
-			className={` max-w-xs h-auto my-3 py-2 px-4 text-white rounded-3xl w-max sm:max-w-mobile-text ${
+			className={` max-w-xs h-auto my-3 px-4 text-white rounded-3xl w-max sm:max-w-mobile-text ${
 				me ? "self-end bg-blue-500" : "bg-incoming"
 			}`}
-			style={{ lineHeight: "1.2rem" }}
+			style={{
+				lineHeight: "1.2rem",
+				paddingTop: "10px",
+				paddingBottom: "10px",
+			}}
 		>
 			<div>
 				<span>{text}</span>

@@ -1,4 +1,4 @@
-function ShareLinks({ title, section, slug }) {
+function ShareLinks({ title, section, slug, bottom }) {
 	let sections = {
 		bbc: {
 			text: `Check out Callum Owen's post about life as a BBC apprentice: ${title}`,
@@ -15,7 +15,18 @@ function ShareLinks({ title, section, slug }) {
 	};
 
 	return (
-		<div className="flex mt-4 text-half-white">
+		<div
+			className={`flex mt-4 ${
+				bottom ? "justify-center" : ""
+			}  text-half-white`}
+		>
+			{bottom ? (
+				<p className="mr-4 flex self-center font-sans text-half-white">
+					share:
+				</p>
+			) : (
+				""
+			)}
 			<a
 				className="mr-4 hover:text-white focus:text-white"
 				style={{ outline: 0 }}

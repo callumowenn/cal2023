@@ -89,6 +89,9 @@ module.exports = {
 			sm: {
 				max: "639px",
 			},
+			"not-sm": {
+				min: "640px",
+			},
 		},
 		padding: {
 			0: "0px",

@@ -1,5 +1,7 @@
 import ContactForm from "@components/contact/ContactForm";
+import Socials from "@components/Socials";
 import Head from "next/head";
+import Image from "next/image";
 
 function Contact() {
 	return (
@@ -15,16 +17,17 @@ function Contact() {
 					backgroundColor: "#11111180",
 				}}
 			>
-				<div className="flex items-center mb-8">
-					<img className="w-24 mr-8" src="/assets/me-flip.png" />
-					<h1 className="font-sans  text-4xl font-black text-white">
+				<Socials show />
+				<div className="flex items-center my-12 sm:my-4">
+					<Image width={70} height={70} src="/assets/me-flip.png" />
+					<h1 className="font-sans ml-8 sm:ml-4  text-7xl sm:text-4xl font-bold italic text-white">
 						Hit me up!
 					</h1>
 				</div>
 
 				<ContactForm />
 			</div>
-			<div className="col-start-1 row-start-1 bg-mac bg-cover bg-fixed bg-right"></div>
+			<div className="col-start-1 row-start-1 bg-mac bg-cover bg-fixed bg-right sm:bg-local"></div>
 		</div>
 	);
 }
