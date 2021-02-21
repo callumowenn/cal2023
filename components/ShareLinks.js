@@ -94,7 +94,7 @@ function ShareLinks({ title, section, slug }) {
 			<a
 				className="mr-4 hover:text-white focus:text-white"
 				style={{ outline: 0 }}
-				href={`https://api.whatsapp.com/send?text=${sections[section].emoji} ${sections[section].text}`}
+				href={`https://api.whatsapp.com/send?text=${sections[section].emoji} ${sections[section].text} https://callumowen.co.uk/${section}/${slug}`}
 				target="_blank"
 				rel="noopener noreferrer"
 			>
