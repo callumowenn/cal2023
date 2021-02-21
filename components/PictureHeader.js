@@ -97,7 +97,15 @@ function PictureHeader({
 						{title}
 					</h1>
 					{tags ? <Tags tags={tags} /> : ""}
-					<ShareLinks title={title} section={section} slug={slug} />
+					{slug ? (
+						<ShareLinks
+							title={title}
+							section={section}
+							slug={slug}
+						/>
+					) : (
+						""
+					)}
 				</div>
 			</div>
 			<div className="hidden h-screen"></div>
