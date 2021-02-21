@@ -10,6 +10,17 @@ function Intro() {
 					amazing projects.
 				</h3>
 				<p className="text-2xl text-half-white font-light">
+					As a BBC apprentice, I'm able to explore all corners of
+					broadcast production and software. Having always been drawn
+					to software by the combination of functionality and design,
+					I’ve recently enjoyed creating websites and apps for side
+					projects and small businesses.{" "}
+					<span className="font-sans font-bold italic text-standout-green">
+						what a nerd!
+					</span>{" "}
+					<span className="text-white">🤓</span>
+					<br />
+					<br />
 					From being part of the team that engineered CNN’s move to
 					their{" "}
 					<Link href="/cnn/a-new-home">
@@ -17,23 +28,9 @@ function Intro() {
 							shiny, new London bureau
 						</a>
 					</Link>
-					, to getting hands on with innovative tech like NDI and SRT
-					to power remote broadcast workflows; it’s impossible to get
+					, to getting hands on with innovative tech to power remote
+					broadcast workflows like NDI and SRT; it’s impossible to get
 					bored in this crazy world of tech.
-					<br />
-					<br />
-					As a BBC apprentice, I'm able to explore all corners of
-					broadcast production and software. Having always been drawn
-					to software by the combination of functionality and design,
-					I’ve recently enjoyed creating websites and apps for side
-					projects and small businesses.{" "}
-					<span
-						className="font-sans font-bold italic"
-						style={{ color: "#A1D53F" }}
-					>
-						what a nerd!
-					</span>{" "}
-					<span style={{ color: "white" }}>🤓</span>
 				</p>
 				<div className="flex self-center mt-8">
 					<Link href="/bbc">
