@@ -21,29 +21,16 @@ function Home({ sortedPosts }) {
 					<div className="flex flex-row-reverse row-start-1 col-start-1 sm:flex-col">
 						<div className="my-24 justify-self-end flex items-center flex-grow justify-center sm:hidden">
 							<iframe
-								src="https://my.spline.design/librarycarrot-57f73e9c2482c77f49eeb28f3f5fec6f/"
-								className="pointer-events-auto"
+								src="https://my.spline.design/apps-f82f11ce9b5156fdff19d437d7b58fde/"
 								frameborder="0"
-								loading="lazy"
 								width="100%"
 								height="100%"
+								className="pointer-events-auto"
+								loading="lazy"
 							></iframe>
 						</div>
-						{/* <Intro /> */}
-						{/* <div className="flex-grow"></div> */}
 					</div>
 				</div>
-				{/* <div className="flex flex-row-reverse flex-grow sm:flex-col">
-					<div className="my-24 flex items-center flex-grow justify-center sm:hidden">
-						<iframe
-							src="https://my.spline.design/librarycarrot-57f73e9c2482c77f49eeb28f3f5fec6f/"
-							frameborder="0"
-							width="100%"
-							height="100%"
-						></iframe>
-					</div>
-					<Intro />
-				</div> */}
 				<Posts posts={sortedPosts} section="all" />
 				<Mac />
 				<Scrolling />
