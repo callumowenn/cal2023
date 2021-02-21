@@ -47,6 +47,11 @@ function Home({ sortedPosts }) {
 					property="twitter:image"
 					content="http://callumowen.co.uk/assets/sc.png"
 				/>
+				<link
+					rel="preload"
+					as="image"
+					href="/assets/blur-fade.png"
+				></link>
 			</Head>
 			<div className="z-10">
 				<Header />

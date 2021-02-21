@@ -100,6 +100,13 @@ function Layout({ children }) {
 					content="/favicon/browserconfig.xml"
 				/>
 				<meta name="theme-color" content="#ffffff" />
+				<link rel="preload" as="image" href="/assets/blur.png"></link>
+				<link
+					rel="preload"
+					as="image"
+					href="/assets/me-flip.png"
+				></link>
+
 				<link
 					rel="stylesheet"
 					href="https://use.typekit.net/hbm6nog.css"
