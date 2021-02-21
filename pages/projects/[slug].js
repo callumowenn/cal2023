@@ -46,7 +46,10 @@ function Project({ mdxSource, frontMatter }) {
 					property="twitter:description"
 					content={`${frontMatter.readingTime.text} - ${frontMatter.snippet}`}
 				/>
-				<meta property="twitter:image" content={frontMatter.image} />
+				<meta
+					property="twitter:image"
+					content={`http://callumowen.co.uk${frontMatter.image}`}
+				/>
 			</Head>
 			<ProjectLayout frontMatter={frontMatter}>{content}</ProjectLayout>
 			{frontMatter.type == "Client work" ? <Better /> : ""}

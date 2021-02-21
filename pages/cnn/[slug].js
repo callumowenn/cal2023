@@ -46,7 +46,10 @@ function CNNPost({ mdxSource, frontMatter }) {
 					property="twitter:description"
 					content={`${frontMatter.readingTime.text} - ${frontMatter.snippet}`}
 				/>
-				<meta property="twitter:image" content={frontMatter.image} />
+				<meta
+					property="twitter:image"
+					content={`http://callumowen.co.uk${frontMatter.image}`}
+				/>
 			</Head>
 			<PostLayout section="cnn" frontMatter={frontMatter}>
 				{content}

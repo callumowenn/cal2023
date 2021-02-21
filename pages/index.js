@@ -43,7 +43,10 @@ function Home({ sortedPosts }) {
 					property="twitter:description"
 					content="Read about life as a BBC apprentice, my time at CNN and my web development projects. Get to know me and keep up with my latest stuff."
 				/>
-				<meta property="twitter:image" content="/assets/sc.png" />
+				<meta
+					property="twitter:image"
+					content="http://callumowen.co.uk/assets/sc.png"
+				/>
 			</Head>
 			<div className="z-10">
 				<Header />
