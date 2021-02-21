@@ -13,7 +13,9 @@ function ProjectLayout({ children, frontMatter }) {
 				subone="Project"
 				subtwo={frontMatter.readingTime.text}
 				title={frontMatter.title}
+				slug={frontMatter.slug}
 				tags={frontMatter.tags}
+				section="projects"
 				height="90vh"
 			/>
 			<ProjectMain content={children} data={frontMatter} />

@@ -17,6 +17,7 @@ function PostLayout({ children, section, frontMatter }) {
 				subtwo={frontMatter.readingTime.text}
 				title={frontMatter.title}
 				date={frontMatter.date}
+				slug={frontMatter.slug}
 				height="90vh"
 			/>
 			<div className="flex flex-col flex-grow px-16 sm:px-4">

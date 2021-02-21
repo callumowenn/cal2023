@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import Logo from "./projects/Logo";
 import Tags from "./projects/Tags";
+import ShareLinks from "./ShareLinks";
 
 function PictureHeader({
 	pic,
@@ -13,6 +14,7 @@ function PictureHeader({
 	logo,
 	subone,
 	subtwo,
+	slug,
 	title,
 	date,
 	tags,
@@ -95,6 +97,7 @@ function PictureHeader({
 						{title}
 					</h1>
 					{tags ? <Tags tags={tags} /> : ""}
+					<ShareLinks title={title} section={section} slug={slug} />
 				</div>
 			</div>
 			<div className="hidden h-screen"></div>
