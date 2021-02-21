@@ -24,13 +24,6 @@ function PostLayout({ children, section, frontMatter }) {
 			<div className="flex flex-col flex-grow px-16 sm:px-4">
 				<ProjectContent content={children} />
 			</div>
-			<div className="flex flex-grow my-16 items-center justify-center">
-				<ShareLinks
-					title={frontMatter.title}
-					section={section}
-					slug={frontMatter.slug}
-				/>
-			</div>
 		</div>
 	);
 }
