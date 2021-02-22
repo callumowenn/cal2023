@@ -118,7 +118,7 @@ function Footer() {
 						</div>
 					</a>
 				</Link>
-				<div className="flex items-center justify-center mob">
+				<div className="flex items-center justify-center border-l border-half-white  mob">
 					<div className="not-sm:hidden mx-4 w-max">
 						<Image
 							width={50}
