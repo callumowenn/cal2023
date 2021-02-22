@@ -61,15 +61,16 @@ function Home({ sortedPosts }) {
 						<div className="flex-grow "></div>
 						<Intro />
 					</div>
-					<div className="flex flex-row-reverse row-start-1 col-start-1 sm:flex-col">
+					<div className="flex row-start-1 col-start-1 sm:flex-col">
+						<div className="flex-grow"></div>
 						<div className="my-24 justify-self-end flex items-center flex-grow justify-center sm:hidden">
 							<iframe
-								src="https://my.spline.design/apps-f82f11ce9b5156fdff19d437d7b58fde/"
+								src="https://my.spline.design/phone-0128a5e33406261bcdbedfb981227d2e/"
 								frameborder="0"
 								width="100%"
-								height="100%"
-								className="pointer-events-auto"
 								loading="lazy"
+								className="pointer-events-auto"
+								height="100%"
 							></iframe>
 						</div>
 					</div>
