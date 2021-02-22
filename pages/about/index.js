@@ -4,7 +4,7 @@ import Mac from "@components/home/Mac";
 import Head from "next/head";
 function About() {
 	return (
-		<div>
+		<div className="flex flex-col w-full">
 			<Head>
 				<title>About ⚡ Callum Owen</title>
 			</Head>

@@ -53,10 +53,10 @@ function Home({ sortedPosts }) {
 					href="/assets/blur-fade.png"
 				></link>
 			</Head>
-			<div className="z-10">
+			<div className="flex flex-col items-center z-10">
 				<Header />
 				<Opener />
-				<div className="flex-grow grid pointer-events-none">
+				<div className="flex-grow flex-shrink-0 max-w-1600px w-full grid pointer-events-none">
 					<div className="flex flex-row-reverse row-start-1 col-start-1 sm:flex-col z-30">
 						<div className="flex-grow "></div>
 						<Intro />
@@ -68,7 +68,7 @@ function Home({ sortedPosts }) {
 								src="https://my.spline.design/appscopy-ee73103f7b8c387427637cf829f1608c/"
 								frameborder="0"
 								width="100%"
-								className='pointer-events-auto'
+								className="pointer-events-auto"
 								height="100%"
 							></iframe>
 						</div>

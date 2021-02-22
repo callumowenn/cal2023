@@ -2,7 +2,7 @@ import Button from "@components/Button";
 
 function Better() {
 	return (
-		<div className="grid " style={{ background: "#111" }}>
+		<div className="grid  w-full" style={{ background: "#111" }}>
 			<div className="col-start-1 row-start-1 z-10 p-24 sm:p-12">
 				<p className="text-5xl italic mb-36 sm:text-4xl sm:font-extralight sm:mb-48">
 					You probably deserve <br />{" "}

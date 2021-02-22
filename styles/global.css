@@ -92,6 +92,16 @@ textarea::placeholder {
 	color: #ffffff60;
 }
 
+#home-projects a:nth-child(1),
+#home-projects a:nth-child(2),
+#home-projects a:nth-child(3) {
+	border-right: 1px solid #ffffff80;
+}
+
+#home-projects a:nth-last-child() {
+	border-right: 0;
+}
+
 blockquote p {
 	font-size: 2.5rem !important;
 	line-height: 2.5rem !important;

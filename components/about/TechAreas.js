@@ -29,16 +29,16 @@ function TechAreas() {
 		},
 	];
 	return (
-		<div className="flex flex-col my-20">
+		<div className="flex flex-col  my-20">
 			{areas.map((area) => (
-				<div className="flex justify-between my-4 sm:flex-col sm:my-8">
-					<div className="italic text-2xl text-half-white font-bold flex justify-center sm:justify-start sm:mb-4">
-						<span className="text-white not-italic text-4xl mr-4">
+				<div className="flex w-full self-start justify-between items-center my-8 sm:flex-col sm:my-8">
+					<div className="italic sm:self-start text-4xl text-half-white items-center font-bold flex justify-center sm:justify-start sm:mb-4">
+						<span className="text-white not-italic text-7xl mr-8">
 							{area.emoji}
 						</span>{" "}
 						{area.name}
 					</div>
-					<div>
+					<div className="justify-self-end sm:self-start">
 						<Tags tags={area.tags} />
 					</div>
 				</div>

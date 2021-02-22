@@ -3,7 +3,7 @@ import Standout from "./Standout";
 
 function Intro() {
 	return (
-		<div className="flex flex-col py-8 px-32 sm:px-4">
+		<div className="flex max-w-1500px self-center flex-col py-8 px-32 sm:px-4">
 			<div className="flex items-center mt-16 bg-white bg-opacity-10 rounded-full p-6 w-max sm:p-5">
 				<div className="w-20 flex items-center mr-4 sm:w-12">
 					<Image
