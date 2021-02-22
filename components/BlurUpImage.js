@@ -2,7 +2,15 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Blurhash } from "react-blurhash";
 
-function BlurUpImage({ src, blurhash, width, height, layout, className }) {
+function BlurUpImage({
+	src,
+	blurhash,
+	width,
+	height,
+	layout,
+	className,
+	mobile,
+}) {
 	const [loaded, setLoaded] = useState(false);
 
 	const loadImageWithPromise = (src) =>
@@ -41,8 +49,8 @@ function BlurUpImage({ src, blurhash, width, height, layout, className }) {
 			>
 				<Blurhash
 					hash={blurhash}
-					width={width}
-					height={height}
+					width={mobile ? 500 : width}
+					height={mobile ? 500 : height}
 					resolutionX={100}
 					resolutionY={100}
 					punch={1}

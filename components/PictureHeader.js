@@ -52,10 +52,10 @@ function PictureHeader({
 							className="object-cover object-left-top"
 							src={pic}
 							blurhash={blurhash}
-							// priority
+							mobile
 							layout="intrinsic"
 							width={coverAspects[`${aspect}-preview`].width}
-							height={coverAspects[`${aspect}-preview`].height}
+							height={coverAspects[`${aspect}-preview`].width}
 						/>
 					)}
 				</div>
