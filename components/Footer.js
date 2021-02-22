@@ -106,7 +106,7 @@ function Footer() {
 							router.pathname == "/contact"
 								? "bg-standout-green bg-opacity-20"
 								: "hover:bg-standout-green hover:bg-opacity-10"
-						} flex transition items-center border-half-white justify-center contact group `}
+						} flex transition items-center border-half-white sm:border-r justify-center contact group `}
 					>
 						<div className="flex flex-col p-8 sm:p-4 items-center">
 							<span className="not-italic text-7xl sm:text-6xl mb-4 w-min text-white">
@@ -118,7 +118,7 @@ function Footer() {
 						</div>
 					</a>
 				</Link>
-				<div className="flex items-center justify-center border-l border-half-white  mob">
+				<div className="flex items-center justify-center  mob">
 					<div className="not-sm:hidden mx-4 w-max">
 						<Image
 							width={50}
