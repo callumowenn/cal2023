@@ -7,7 +7,8 @@ function BlurUpImage({ src, blurhash, width, height, layout, classes }) {
 	return (
 		<>
 			<Image
-				className={classes}
+				className={classes + ` absolute top-0`}
+				style={{ transition: "0.5s" }}
 				src={src}
 				width={width}
 				layout={layout}
@@ -18,7 +19,7 @@ function BlurUpImage({ src, blurhash, width, height, layout, classes }) {
 			/>
 			<div
 				className={`absolute top-0 ${loaded ? " opacity-0" : ""}`}
-				style={{ transition: "0.5s" }}
+				style={{ transition: "1s" }}
 			>
 				<Blurhash
 					hash={blurhash}
