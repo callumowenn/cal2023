@@ -5,10 +5,10 @@ function Header() {
 	return (
 		<Block>
 			<div className="flex items-center sm:flex-col sm:items-start">
-				<div className="flex mr-20 sm:mr-0 sm:w-28 sm:mb-8">
+				<div className="flex mr-20 tab-port:w-52 sm:mr-0 sm:w-28 sm:mb-8">
 					<Image
-						width={338}
-						height={338}
+						width={300}
+						height={300}
 						priority
 						layout="intrinsic"
 						src="/assets/me-flip.png"

@@ -4,8 +4,8 @@ import Link from "next/link";
 function Project({ data }) {
 	return (
 		<Link href={`/projects/${data.slug}`}>
-			<a className="grid h-screen p-4 border-half-white overflow-hidden group sm:h-64 sm:border-r-0 border-t">
-				<div className="col-start-1 flex row-start-1 ">
+			<a className="grid h-screen p-4 border-half-white overflow-hidden group tab-port:h-80 sm:h-64 sm:border-r-0 border-t">
+				<div className="col-start-1 flex row-start-1 tab-port:h-80">
 					<Image
 						className="object-cover opacity-10 group-hover:opacity-20"
 						loading="lazy"

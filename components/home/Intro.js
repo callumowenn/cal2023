@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Intro() {
 	return (
-		<div className="my-24 mx-36 flex items-center  pointer-events-auto  justify-center sm:mx-4 sm:my-12">
+		<div className="my-24 mx-36 tab-land:mx-16 flex items-center  pointer-events-auto  justify-center sm:mx-4 sm:my-12">
 			<div className="flex flex-col max-w-500px my-28">
 				<h3 className=" font-sans text-3xl italic font-bold mb-8 sm:text-2xl">
 					I’ve been lucky enough to get involved with some pretty

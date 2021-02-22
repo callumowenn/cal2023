@@ -91,6 +91,12 @@ module.exports = {
 			},
 		},
 		screens: {
+			"tab-land": {
+				max: "1370px",
+			},
+			"tab-port": {
+				max: "1025px",
+			},
 			sm: {
 				max: "639px",
 			},

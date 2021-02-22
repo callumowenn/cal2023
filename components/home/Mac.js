@@ -2,9 +2,12 @@ import MacWindow from "./MacWindow";
 
 function Mac() {
 	return (
-		<div className="flex flex-grow w-full flex-col relative">
+		<div className="flex flex-grow w-full flex-col relative sm:w-screen">
 			<div className="mac-back flex flex-grow bg-mac h-screen bg-cover sticky top-0 sm:bg-right z-10"></div>
-			<div id="mac" className="flex flex-col z-40 flex-grow px-24">
+			<div
+				id="mac"
+				className="flex flex-col z-40 flex-grow px-24 sm:px-0 sm:items-center"
+			>
 				<MacWindow />
 				<MacWindow
 					pic="/assets/showcase/cam.jpg"

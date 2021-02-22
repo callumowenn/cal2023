@@ -16,7 +16,7 @@ function Scrolling() {
 				>
 					Still scrolling?
 				</p>
-				<div className="h-screen mx-32 bg-yellow-400 flex-grow z-10 grid grid-cols-2 sm:w-full sm:mx-8 sm:h-96 sm:grid-cols-1 sm:p-4">
+				<div className="h-screen mx-32 tab-land:mx-16 bg-yellow-400 flex-grow z-10 grid grid-cols-2 tab-port:mx-0 tab-port:h-80vh sm:w-full sm:mx-8 sm:h-96 sm:grid-cols-1 sm:p-4">
 					<div></div>
 					<div></div>
 					<div></div>

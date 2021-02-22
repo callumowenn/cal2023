@@ -26,7 +26,7 @@ function Projects() {
 	return (
 		<div
 			id="home-projects"
-			className="grid grid-cols-4 border-opacity-50 sm:grid-cols-1"
+			className="grid grid-cols-4 border-opacity-50 tab-port:grid-cols-1"
 		>
 			{projects.map((project) => (
 				<Project key={project.slug} data={project} />

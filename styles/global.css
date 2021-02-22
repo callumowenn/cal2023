@@ -167,11 +167,7 @@ code {
 	animation: emoji-spin 8s infinite linear;
 }
 
-@media only screen and (min-width: 639px) {
-	#highlights a:last-child {
-		border-right: 0;
-	}
-
+@media only screen and (min-width: 1025px) {
 	#mac .window:nth-child(3n) {
 		align-self: center;
 	}
@@ -182,7 +178,18 @@ code {
 		align-self: flex-end;
 	}
 }
-
+@media only screen and (min-width: 639px) {
+	#highlights a:last-child {
+		border-right: 0;
+	}
+}
+@media only screen and (max-width: 1025px) {
+	#home-projects a:nth-child(1),
+	#home-projects a:nth-child(2),
+	#home-projects a:nth-child(3) {
+		border-right: 0;
+	}
+}
 @media only screen and (max-width: 639px) {
 	html {
 		background: #1d2021;
@@ -190,11 +197,7 @@ code {
 	Nav {
 		backdrop-filter: blur(80px);
 	}
-	#home-projects a:nth-child(1),
-	#home-projects a:nth-child(2),
-	#home-projects a:nth-child(3) {
-		border-right: 0;
-	}
+
 	.footer-grid {
 		grid-template-areas:
 			"bbc cnn"
@@ -207,9 +210,7 @@ code {
 	#webHighlights img:nth-child(2) {
 		display: none;
 	}
-	#mac .window {
-		align-self: center;
-	}
+
 	#sidebar {
 		border-radius: 1rem 1rem 0 0;
 	}

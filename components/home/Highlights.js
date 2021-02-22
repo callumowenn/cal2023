@@ -120,7 +120,7 @@ function Highlights() {
 				<Link href={highlight.link}>
 					<a
 						key={highlight.link}
-						className="flex items-center justify-center text-white border-opacity-50 border-r border-b border-white p-12 sm:p-4"
+						className="flex items-center justify-center text-white border-opacity-50 border-r border-b border-white p-12 tab-port:p-6 sm:p-4"
 					>
 						<div className="mt-12 mb-44 flex-grow sm:mb-32">
 							<div className="h-12 flex items-end pr-4 sm:h-auto">
@@ -128,13 +128,13 @@ function Highlights() {
 									highlight.images[0].charAt(0) == "." ? (
 										highlight.images[0].charAt(9) == "b" ? (
 											<img
-												className="h-12 sm:h-8"
+												className="h-12 tab-port:h-10 sm:h-8"
 												src={highlight.images}
 												alt={highlight?.alt}
 											/>
 										) : (
 											<img
-												className="h-14 sm:h-10"
+												className="h-14 tab-port:h-12 sm:h-10"
 												src={highlight.images}
 												alt={highlight?.alt}
 											/>
@@ -158,7 +158,7 @@ function Highlights() {
 									</div>
 								)}
 							</div>
-							<h2 className="italic text-5xl opacity-50 font-light mt-4 h-24 sm:text-3xl">
+							<h2 className="italic text-5xl opacity-50 font-light mt-4 h-24 tab-land:text-4xl tab-port:h-20 sm:h-16 sm:text-3xl">
 								{highlight.heading}
 							</h2>
 							<p className="mt-4 font-sans opacity-30">

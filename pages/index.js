@@ -63,7 +63,7 @@ function Home({ sortedPosts }) {
 					</div>
 					<div className="flex row-start-1 col-start-1 sm:flex-col">
 						<div className="flex-grow"></div>
-						<div className="my-24 justify-self-end flex items-center flex-grow justify-center sm:hidden">
+						<div className="my-24 justify-self-end flex items-center flex-grow justify-center tab-port:hidden">
 							<iframe
 								src="https://my.spline.design/appscopy-ee73103f7b8c387427637cf829f1608c/"
 								frameborder="0"
