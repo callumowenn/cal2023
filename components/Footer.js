@@ -118,6 +118,26 @@ function Footer() {
 						</div>
 					</a>
 				</Link>
+				<div className="flex items-center justify-center mob">
+					<div className="not-sm:hidden mx-4 w-max">
+						<Image
+							width={50}
+							height={50}
+							src="/assets/me-flip.png"
+							loading="lazy"
+							alt="me"
+						/>
+						<p className="italic sm:text-sm">
+							<span className=" text-standout-green font-sans font-black">
+								Designed and developed <br />
+							</span>{" "}
+							by Callum Owen{" "}
+							<span className="opacity-50">
+								&copy;{date.getUTCFullYear()}
+							</span>
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	);

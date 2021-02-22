@@ -184,7 +184,7 @@ code {
 		grid-template-areas:
 			"bbc cnn"
 			"projects about"
-			"contact lost";
+			"contact mob";
 	}
 	#highlights a:nth-child(odd) {
 		border-right: 0;
