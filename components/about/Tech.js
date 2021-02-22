@@ -2,7 +2,7 @@ import TechAreas from "./TechAreas";
 
 function Tech() {
 	return (
-		<div className="flex min-h-screen">
+		<div className="flex min-h-screen sm:w-screen sm:overflow-hidden">
 			<div className="w-3/12 sticky h-screen top-0 flex bg-pink-300 overflow-hidden sm:hidden">
 				<div
 					className="flex flex-grow opacity-20"
