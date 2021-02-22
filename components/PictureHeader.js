@@ -3,12 +3,14 @@ import { parseISO, format } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import BlurUpImage from "./BlurUpImage";
 import Logo from "./projects/Logo";
 import Tags from "./projects/Tags";
 import ShareLinks from "./ShareLinks";
 
 function PictureHeader({
 	pic,
+	blurhash,
 	aspect,
 	section,
 	logo,
@@ -37,10 +39,10 @@ function PictureHeader({
 					style={{ backfaceVisibility: "hidden" }}
 				>
 					{size.width > 500 ? (
-						<Image
-							className="object-cover object-left-top"
+						<BlurUpImage
+							classes="object-cover object-left-top"
+							blurhash={blurhash}
 							src={pic}
-							// priority
 							layout="intrinsic"
 							width={coverAspects[aspect].width}
 							height={coverAspects[aspect].height}

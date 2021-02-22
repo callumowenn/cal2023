@@ -14,6 +14,7 @@ function BBC({ bbcPosts }) {
 			</Head>
 			<PictureHeader
 				pic="/assets/bbc/sound.jpeg"
+				blurhash="|HBN1hE4IA%1ROxut8WCt6~pM|Djt5RQt7W=ofj[t7t3IVjZt7WBWCt6WXMwt6%MWExuM{oJWBoKITWE%NbbWBWBWARkj@RNW=x]s.NHxZV@j?ayROWCt8M{ofofafofWBozxZWBNGt7a#fPs.R*t8oeRja}oya#WBoeWB"
 				aspect="portrait-1024"
 				section="bbc"
 				subone="Broadcast Engineering"

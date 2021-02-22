@@ -14,6 +14,7 @@ function CNN({ cnnPosts }) {
 			</Head>
 			<PictureHeader
 				pic="/assets/cnn/mcr.jpg"
+				blurhash="|FEx@Q0gIqr;xGIpM_o#V?F~^if5IpR.xZs.WXR*}j9|M}%Kt6S5tRV@xtE1%2xaShNFkBj^s9bI-:R*s.R*WBs.RjofWV-oR.Iosms:WBt6bZbII[$%j?V[R+WBayfloJn%M{bcoIk8R+WCa$n$afV?WYj?ofkDoeogWA"
 				aspect="landscape-1024"
 				section="cnn"
 				subone="Broadcast Engineering"

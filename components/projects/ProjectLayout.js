@@ -8,6 +8,7 @@ function ProjectLayout({ children, frontMatter }) {
 		<div>
 			<PictureHeader
 				pic={frontMatter.image}
+				blurhash={frontMatter.blurhash}
 				aspect={frontMatter.aspect}
 				logo={frontMatter.logo}
 				subone="Project"

@@ -8,6 +8,7 @@ function PostLayout({ children, section, frontMatter }) {
 		<div>
 			<PictureHeader
 				pic={frontMatter.image}
+				blurhash={frontMatter.blurhash}
 				aspect={frontMatter.aspect}
 				section={section}
 				subone={
