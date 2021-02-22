@@ -68,6 +68,7 @@ function Home({ sortedPosts }) {
 								src="https://my.spline.design/appscopy-ee73103f7b8c387427637cf829f1608c/"
 								frameborder="0"
 								width="100%"
+								className='pointer-events-auto'
 								height="100%"
 							></iframe>
 						</div>
