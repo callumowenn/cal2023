@@ -8,7 +8,6 @@ function CNNPost({ mdxSource, frontMatter }) {
 	const content = hydrate(mdxSource, {
 		components: MDXComponents,
 	});
-	console.log(content.props.children);
 	return (
 		<>
 			<Head>

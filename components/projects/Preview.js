@@ -1,3 +1,4 @@
+import BlurUpImage from "@components/BlurUpImage";
 import Button from "@components/Button";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,7 +16,7 @@ function Preview({ project }) {
 				<div className="flex flex-col">
 					<Link href={`/projects/${project.slug}`}>
 						<a title="Read more">
-							<h3 className="text-7xl italic mb-4 hover:underline sm:text-4xl sm:mb-0">
+							<h3 className="text-7xl italic hover:underline sm:text-4xl sm:mb-0">
 								{project.title}
 							</h3>
 						</a>
@@ -27,15 +28,23 @@ function Preview({ project }) {
 			<div className="flex">
 				<Link href={`/projects/${project.slug}`}>
 					<a className="" title="Read more">
-						<div className="w-70vw sm:w-full">
-							<Image
+						<div className="w-70vw relative overflow-hidden sm:w-full">
+							<BlurUpImage
+								src={project.image}
+								blurhash={project.blurhash}
+								width={1008}
+								height={567}
+								layout="intrinsic"
+								alt={`${project.title} cover`}
+							/>
+							{/* <Image
 								src={project.image}
 								width={1008}
 								height={567}
 								layout="intrinsic"
 								priority
 								alt={`${project.title} cover`}
-							/>
+							/> */}
 						</div>
 					</a>
 				</Link>

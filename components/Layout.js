@@ -2,9 +2,9 @@ import Head from "next/head";
 import Footer from "./Footer";
 import Nav from "@components/Nav";
 import Menu from "./Menu";
-import MobileCreds from "./MobileCreds";
 
 function Layout({ children }) {
+	console.clear();
 	return (
 		<div className="flex flex-row w-screen bg-main-bg min-h-screen bg-fixed bg-cover sm:flex-col sm:bg-none">
 			<Head>
@@ -135,7 +135,6 @@ function Layout({ children }) {
 				<Menu />
 				{children}
 				<Footer />
-				{/* <MobileCreds /> */}
 			</main>
 		</div>
 	);

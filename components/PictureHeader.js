@@ -40,7 +40,7 @@ function PictureHeader({
 				>
 					{size.width > 500 ? (
 						<BlurUpImage
-							className="object-cover object-left-top"
+							className="object-cover object-left-top "
 							blurhash={blurhash}
 							src={pic}
 							layout="intrinsic"
@@ -72,10 +72,6 @@ function PictureHeader({
 									width={section == "bbc" ? 223 : 168}
 									height={section == "bbc" ? 64 : 80}
 								/>
-								{/* <img
-									className="max-h-20 "
-									src={`/assets/${section}.png`}
-								/> */}
 							</a>
 						</Link>
 					)}

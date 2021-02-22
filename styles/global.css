@@ -115,7 +115,7 @@ code {
 .footer-grid {
 	grid-template-areas:
 		"bbc cnn projects about"
-		"cred cred contact lost";
+		"cred cred cred contact";
 }
 
 .footer-grid .cnn {

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
@@ -8,12 +9,14 @@ function Highlights() {
 			heading: "Engineering Apprentice",
 			date: "2019 -",
 			link: "/bbc",
+			alt: "BBC logo",
 		},
 		{
 			images: ["./assets/cnn.png"],
 			heading: "Engineering Placement",
 			date: "2020",
 			link: "/cnn",
+			alt: "CNN logo",
 		},
 		{
 			images: [
@@ -96,9 +99,8 @@ function Highlights() {
 			floaty.current.style.opacity = 0;
 		});
 
-		function cleanup() {}
-
 		// TODO: remove listeners
+		// function cleanup() {}
 		// return cleanup()
 	});
 
@@ -124,11 +126,19 @@ function Highlights() {
 							<div className="h-12 flex items-end pr-4 sm:h-auto">
 								{highlight.images.length == 1 ? (
 									highlight.images[0].charAt(0) == "." ? (
-										<img
-											className="max-h-12 sm:max-h-9"
-											src={highlight.images}
-											alt=""
-										/>
+										highlight.images[0].charAt(9) == "b" ? (
+											<img
+												className="h-12 sm:h-8"
+												src={highlight.images}
+												alt={highlight?.alt}
+											/>
+										) : (
+											<img
+												className="h-14 sm:h-10"
+												src={highlight.images}
+												alt={highlight?.alt}
+											/>
+										)
 									) : (
 										<span className="text-5xl sm:text-4xl sm:h-12 sm:mt-2">
 											{highlight.images}
