@@ -35,12 +35,12 @@ function PictureHeader({
 			>
 				<div className="flex-grow sm:hidden"></div>
 				<div
-					className={`flex-grow fixed flex sm:w-screen w-50vw sm:max-w-none sm:h-96 opacity-25 object-cover h-${height} object-left-top sm:static`}
+					className={`flex-grow fixed flex sm:w-screen sm:overflow-hidden w-50vw sm:max-w-none sm:h-96 opacity-25 object-cover h-${height} object-left-top sm:relative`}
 					style={{ backfaceVisibility: "hidden" }}
 				>
 					{size.width > 500 ? (
 						<BlurUpImage
-							classes="object-cover object-left-top"
+							className="object-cover object-left-top"
 							blurhash={blurhash}
 							src={pic}
 							layout="intrinsic"
@@ -48,9 +48,10 @@ function PictureHeader({
 							height={coverAspects[aspect].height}
 						/>
 					) : (
-						<Image
+						<BlurUpImage
 							className="object-cover object-left-top"
 							src={pic}
+							blurhash={blurhash}
 							// priority
 							layout="intrinsic"
 							width={coverAspects[`${aspect}-preview`].width}
