@@ -7,6 +7,7 @@ function BlurUpImage({
 	blurhash,
 	width,
 	height,
+	alt,
 	layout,
 	className,
 	mobile,
@@ -38,7 +39,7 @@ function BlurUpImage({
 			<Image
 				className={className + ` absolute top-0 sm:w-full`}
 				src={src}
-				priority
+				alt={alt}
 				width={width}
 				layout={layout}
 				height={height}

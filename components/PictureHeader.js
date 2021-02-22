@@ -43,6 +43,7 @@ function PictureHeader({
 							className="object-cover object-left-top "
 							blurhash={blurhash}
 							src={pic}
+							alt="cover photo"
 							layout="intrinsic"
 							width={coverAspects[aspect].width}
 							height={coverAspects[aspect].height}
@@ -51,6 +52,7 @@ function PictureHeader({
 						<BlurUpImage
 							className="object-cover object-left-top"
 							src={pic}
+							alt="cover photo"
 							blurhash={blurhash}
 							mobile
 							layout="intrinsic"
