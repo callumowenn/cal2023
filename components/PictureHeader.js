@@ -55,7 +55,7 @@ function PictureHeader({
 							mobile
 							layout="intrinsic"
 							width={coverAspects[`${aspect}-preview`].width}
-							height={coverAspects[`${aspect}-preview`].width}
+							height={coverAspects[`${aspect}-preview`].height}
 						/>
 					)}
 				</div>
