@@ -2,16 +2,16 @@ import Projects from "./Projects";
 
 function Scrolling() {
 	return (
-		<div className="mt-64 sm:overflow-hidden">
+		<div className="mt-64 sm:w-screen sm:overflow-hidden">
 			<div className="mx-32 flex flex-grow flex-col relative sm:mx-4">
 				<p
-					className="text-9xl font-bold italic transform translate-y-1/2 z-0 sm:text-8xl"
+					className="text-9xl font-bold italic transform translate-y-1/2 z-0 sm:translate-y-1/4 sm:text-7xl"
 					style={{ lineHeight: 0.7 }}
 				>
 					Still scrolling?
 				</p>
 				<p
-					className="outline-text text-9xl font-bold italic transform translate-y-1/2 absolute z-20 sm:text-8xl"
+					className="outline-text text-9xl font-bold italic transform translate-y-1/2 absolute z-20 sm:translate-y-1/4 sm:text-7xl"
 					style={{ lineHeight: 0.7 }}
 				>
 					Still scrolling?
