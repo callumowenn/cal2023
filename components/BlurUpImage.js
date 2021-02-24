@@ -11,54 +11,57 @@ function BlurUpImage({
 	layout,
 	className,
 	mobile,
+	next,
 }) {
 	const [loaded, setLoaded] = useState(false);
 
-	// const loadImageWithPromise = (src) =>
-	// 	new Promise((resolve) => {
-	// 		const image = document.createElement("img");
-	// 		image.onload = resolve;
-	// 		image.src = src;
-	// 	});
+	const loadImageWithPromise = (src) =>
+		new Promise((resolve) => {
+			const image = document.createElement("img");
+			image.onload = resolve;
+			image.src = src;
+		});
 
-	// const awaitImage = async () => {
-	// 	try {
-	// 		await loadImageWithPromise(src);
-	// 		setLoaded(true);
-	// 	} catch {
-	// 		console.error(`Unable to load ${src}`);
-	// 	}
-	// };
+	const awaitImage = async () => {
+		try {
+			await loadImageWithPromise(src);
+			setLoaded(true);
+		} catch {
+			console.error(`Unable to load ${src}`);
+		}
+	};
 
-	// useEffect(() => {
-	// 	awaitImage();
-	// });
-
-	// const handleLoad = () => {
-	// 	setTimeout(() => {
-	// 		setLoaded(true);
-	// 	}, 500);
-	// };
-
-	// const myLoader = ({ src }) => {
-	// 	return `https://callumowen.co.uk${src}`;
-	// };
+	useEffect(() => {
+		if (next) {
+			awaitImage();
+		}
+	});
 
 	return (
 		<>
-			<img
-				// loader={myLoader}
-				className={
-					className +
-					` absolute top-0 w-full h-full min-h-full min-w-full sm:w-full`
-				}
-				src={src}
-				alt={alt}
-				width={width}
-				layout={layout}
-				height={height}
-				onLoad={() => setLoaded(true)}
-			/>
+			{next ? (
+				<Image
+					className={className + ` absolute top-0 sm:w-full`}
+					src={src}
+					alt={alt}
+					width={width}
+					layout={layout}
+					height={height}
+				/>
+			) : (
+				<img
+					className={
+						className +
+						` absolute top-0 w-full h-full min-h-full min-w-full sm:w-full`
+					}
+					src={src}
+					alt={alt}
+					width={width}
+					layout={layout}
+					height={height}
+					onLoad={() => setLoaded(true)}
+				/>
+			)}
 			<div
 				className={`absolute top-0 ${loaded ? " opacity-0" : ""}`}
 				style={{ transition: "0.5s" }}

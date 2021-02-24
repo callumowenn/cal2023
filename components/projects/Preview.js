@@ -36,15 +36,8 @@ function Preview({ project }) {
 								height={567}
 								layout="intrinsic"
 								alt={`${project.title} cover`}
+								next
 							/>
-							{/* <Image
-								src={project.image}
-								width={1008}
-								height={567}
-								layout="intrinsic"
-								priority
-								alt={`${project.title} cover`}
-							/> */}
 						</div>
 					</a>
 				</Link>
