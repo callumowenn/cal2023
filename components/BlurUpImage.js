@@ -34,22 +34,30 @@ function BlurUpImage({
 	// 	awaitImage();
 	// });
 
-	const handleLoad = () => {
-		setTimeout(() => {
-			setLoaded(true);
-		}, 500);
-	};
+	// const handleLoad = () => {
+	// 	setTimeout(() => {
+	// 		setLoaded(true);
+	// 	}, 500);
+	// };
+
+	// const myLoader = ({ src }) => {
+	// 	return `https://callumowen.co.uk${src}`;
+	// };
 
 	return (
 		<>
-			<Image
-				className={className + ` absolute top-0 sm:w-full`}
+			<img
+				// loader={myLoader}
+				className={
+					className +
+					` absolute top-0 w-full h-full min-h-full min-w-full sm:w-full`
+				}
 				src={src}
 				alt={alt}
 				width={width}
 				layout={layout}
 				height={height}
-				onLoad={handleLoad}
+				onLoad={() => setLoaded(true)}
 			/>
 			<div
 				className={`absolute top-0 ${loaded ? " opacity-0" : ""}`}
