@@ -14,25 +14,31 @@ function BlurUpImage({
 }) {
 	const [loaded, setLoaded] = useState(false);
 
-	const loadImageWithPromise = (src) =>
-		new Promise((resolve) => {
-			const image = document.createElement("img");
-			image.onload = resolve;
-			image.src = src;
-		});
+	// const loadImageWithPromise = (src) =>
+	// 	new Promise((resolve) => {
+	// 		const image = document.createElement("img");
+	// 		image.onload = resolve;
+	// 		image.src = src;
+	// 	});
 
-	const awaitImage = async () => {
-		try {
-			await loadImageWithPromise(src);
+	// const awaitImage = async () => {
+	// 	try {
+	// 		await loadImageWithPromise(src);
+	// 		setLoaded(true);
+	// 	} catch {
+	// 		console.error(`Unable to load ${src}`);
+	// 	}
+	// };
+
+	// useEffect(() => {
+	// 	awaitImage();
+	// });
+
+	const handleLoad = () => {
+		setTimeout(() => {
 			setLoaded(true);
-		} catch {
-			console.error(`Unable to load ${src}`);
-		}
+		}, 500);
 	};
-
-	useEffect(() => {
-		awaitImage();
-	});
 
 	return (
 		<>
@@ -43,6 +49,7 @@ function BlurUpImage({
 				width={width}
 				layout={layout}
 				height={height}
+				onLoad={handleLoad}
 			/>
 			<div
 				className={`absolute top-0 ${loaded ? " opacity-0" : ""}`}
