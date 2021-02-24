@@ -58,12 +58,18 @@ function Highlights() {
 			setDivY(newY);
 		};
 
-		highlightDiv.current.addEventListener("mouseenter", () => {
+		highlightDiv.current.addEventListener("mouseenter", (e) => {
 			floaty.current.style.opacity = 1;
+
+			const { clientX: mouseX, clientY: mouseY } = e;
+
+			floaty.current.style.transform = `translate3d(${mouseX - divX}px, ${
+				mouseY - divY - scrollY
+			}px, 0)`;
 		});
 
 		highlightDiv.current.addEventListener("mousemove", (e) => {
-			const { clientX: mouseX, clientY: mouseY, target } = e;
+			const { clientX: mouseX, clientY: mouseY } = e;
 
 			floaty.current.style.transform = `translate3d(${mouseX - divX}px, ${
 				mouseY - divY - scrollY

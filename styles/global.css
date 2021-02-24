@@ -111,6 +111,13 @@ blockquote p {
 	-webkit-text-fill-color: transparent;
 }
 
+.home-project:hover .huh,
+.home-project:focus .huh {
+	transition: 0.4s;
+	transform: scale(1.02);
+	opacity: 0.5;
+}
+
 code {
 	background: #11111177;
 	padding: 2px 4px;

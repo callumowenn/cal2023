@@ -37,7 +37,9 @@ function BlurUpImage({
 	return (
 		<>
 			<img
-				className={className + `h-full absolute top-0 sm:w-full`}
+				className={
+					className + `h-full max-w-none absolute top-0 sm:w-full`
+				}
 				src={src}
 				alt={alt}
 				width={width}
