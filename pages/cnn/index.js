@@ -10,7 +10,7 @@ function CNN({ cnnPosts }) {
 	return (
 		<div className="mb-32 flex flex-col">
 			<Head>
-				<title>CNN ⚡ Callum Owen</title>
+				<title>Life at CNN - Callum Owen</title>
 			</Head>
 			<PictureHeader
 				pic="/assets/cnn/mcr.jpg"

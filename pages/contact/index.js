@@ -7,7 +7,7 @@ function Contact() {
 	return (
 		<div className="w-main h-screen grid sm:w-screen sm:h-mobile-main">
 			<Head>
-				<title>Contact ⚡ Callum Owen</title>
+				<title>Contact - Callum Owen</title>
 			</Head>
 			<div
 				className="col-start-1 row-start-1 flex flex-col items-center justify-center"

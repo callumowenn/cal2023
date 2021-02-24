@@ -6,7 +6,7 @@ function About() {
 	return (
 		<div className="flex flex-col w-full">
 			<Head>
-				<title>About ⚡ Callum Owen</title>
+				<title>About - Callum Owen</title>
 			</Head>
 			<Intro />
 			<Mac />

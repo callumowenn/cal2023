@@ -7,7 +7,7 @@ function Projects({ projects }) {
 		<div className="flex-grow w-full max-w-1600px self-center">
 			<div className="ml-16 my-24 sm:mx-4">
 				<Head>
-					<title>Projects ⚡ Callum Owen</title>
+					<title>Projects - Callum Owen</title>
 				</Head>
 				<div className="mt-48 mb-24 flex items-center sm:mt-12 sm:ml-4">
 					<h1 className="font-sans italic font-black text-9xl sm:text-6xl">

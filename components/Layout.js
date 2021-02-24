@@ -9,7 +9,8 @@ function Layout({ children }) {
 		<div className="flex flex-row w-screen bg-main-bg min-h-screen bg-fixed bg-cover sm:flex-col sm:bg-none">
 			<Head>
 				<title>
-					Callum Owen ⚡ BBC engineering apprentice and developer
+					Callum Owen - BBC engineering apprentice and self-taught web
+					developer
 				</title>
 				<meta
 					name="viewport"

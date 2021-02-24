@@ -10,7 +10,7 @@ function BBC({ bbcPosts }) {
 	return (
 		<div className="mb-32">
 			<Head>
-				<title>BBC ⚡ Callum Owen</title>
+				<title>Life in the BBC - Callum Owen</title>
 			</Head>
 			<PictureHeader
 				pic="/assets/bbc/sound.jpeg"
@@ -19,7 +19,7 @@ function BBC({ bbcPosts }) {
 				section="bbc"
 				subone="Broadcast Engineering"
 				subtwo="Degree Apprenticeship"
-				title="Life at BBC"
+				title="Life in the BBC"
 				height="screen"
 			/>
 			<Posts posts={bbcPosts} section="bbc" shift />

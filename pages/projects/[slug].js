@@ -12,7 +12,7 @@ function Project({ mdxSource, frontMatter }) {
 	return (
 		<>
 			<Head>
-				<title>{frontMatter.title} ⚡ Callum Owen</title>
+				<title>{frontMatter.title} - Callum Owen</title>
 				<meta name="author" content="Callum Owen" />
 				<meta property="og:type" content="article" />
 				<meta property="og:site_name" content="Callum Owen" />
