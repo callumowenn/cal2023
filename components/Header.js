@@ -1,5 +1,6 @@
 import Block from "./Block";
 import Image from "next/image";
+import SpotifyPlaying from "./SpotifyPlaying";
 
 function Header() {
 	return (

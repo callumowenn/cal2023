@@ -2,6 +2,7 @@ import Head from "next/head";
 import Footer from "./Footer";
 import Nav from "@components/Nav";
 import Menu from "./Menu";
+import SpotifyPlaying from "./SpotifyPlaying";
 
 function Layout({ children }) {
 	console.clear();
@@ -135,6 +136,9 @@ function Layout({ children }) {
 			<main className="flex flex-col flex-grow w-main sm:w-screen">
 				<Menu />
 				{children}
+				<div className="flex flex-grow items-center justify-center my-16">
+					<SpotifyPlaying />
+				</div>
 				<Footer />
 			</main>
 		</div>
