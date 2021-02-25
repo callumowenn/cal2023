@@ -6,7 +6,7 @@ function Mac() {
 			<div className="mac-back flex flex-grow bg-mac h-screen bg-cover sticky top-0 sm:bg-right z-10"></div>
 			<div
 				id="mac"
-				className="flex flex-col z-40 flex-grow px-24 tab-port:px-12 sm:px-0 sm:items-center"
+				className="flex flex-col z-40 flex-grow px-24 tab-port:px-0 tab-port:items-center"
 			>
 				<MacWindow />
 				<MacWindow
