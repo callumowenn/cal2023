@@ -16,7 +16,7 @@ function ShareLinks({ title, section, slug, bottom }) {
 
 	return (
 		<div
-			className={`flex mt-4 ${
+			className={`flex ${
 				bottom ? "justify-center" : ""
 			}  text-half-white`}
 		>

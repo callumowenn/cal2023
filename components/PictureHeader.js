@@ -104,9 +104,9 @@ function PictureHeader({
 						</Link>
 					)}
 
-					<p className="font-sans text-half-white tab-port:text-white tab-port:opacity-75 sm:text-half-white sm:opacity-100 text-base mt-8 mb-4 sm:text-xs sm:mb-2">
+					<p className="font-sans  mt-8 mb-4 text-half-white tab-port:text-white tab-port:opacity-75 sm:text-half-white sm:opacity-100 text-base sm:text-xs sm:mb-2">
 						{date ? (
-							<span className>
+							<span>
 								{format(parseISO(date), "MMMM dd, yyyy")} &bull;
 							</span>
 						) : (
@@ -124,12 +124,22 @@ function PictureHeader({
 						{title}
 					</h1>
 					{tags ? <Tags tags={tags} /> : ""}
-					{slug ? (
-						<ShareLinks
-							title={title}
-							section={section}
-							slug={slug}
-						/>
+					{date ? (
+						<div className="flex items-center  mt-4">
+							<div className="mr-4 h-10 w-10 rounded-full">
+								<Image
+									width={40}
+									height={40}
+									className="rounded-full"
+									src="/assets/me-flip.png"
+								/>
+							</div>
+							<ShareLinks
+								title={title}
+								section={section}
+								slug={slug}
+							/>
+						</div>
 					) : (
 						""
 					)}
