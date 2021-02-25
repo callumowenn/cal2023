@@ -4,7 +4,7 @@ import fetcher from "@lib/fetcher";
 function SpotifyPlaying({ className }) {
 	const { data } = useSWR("/api/spotify", fetcher);
 	return (
-		<div className={`flex items-center ` + className}>
+		<div className={`flex items-center mx-4 ` + className}>
 			<div className="w-24 h-24 mr-4">
 				<img className="rounded-xl" src={data?.albumImageUrl} />
 			</div>
