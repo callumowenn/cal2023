@@ -31,6 +31,8 @@ function SpotifyPlaying({ className }) {
 				</div>
 			</div>
 		);
+	} else {
+		return "";
 	}
 }
 
