@@ -31,10 +31,10 @@ function SpotifyPlaying({ className }) {
 							</p>
 						</div>
 
-						<p className="font-sans text-xl sm:text-lg mb-1">
+						<p className="font-sans text-xl sm:text-base mb-1">
 							{data?.title}
 						</p>
-						<p className="font-sans text-half-white sm:text-sm">
+						<p className="font-sans text-half-white sm:text-xs">
 							{data?.artist}
 						</p>
 					</div>
