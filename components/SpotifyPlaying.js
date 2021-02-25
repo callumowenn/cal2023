@@ -6,7 +6,12 @@ function SpotifyPlaying({ className }) {
 	if (data) {
 		return (
 			<div className="flex flex-grow items-center justify-center py-32 sm:py-16 border-b border-t bg-black bg-opacity-10 border-half-white">
-				<div className={`flex items-center mx-8 ` + className}>
+				<a
+					target="_blank"
+					rel="noopener noreferrer"
+					href="https://open.spotify.com/user/callumowen-gb?si=lGbiyYvbTUCa9rW8gCre7g"
+					className={`flex items-center mx-8 ` + className}
+				>
 					<div className="flex flex-shrink-0 self-start  mr-4">
 						<img
 							className="w-24 h-24 rounded-xl"
@@ -33,7 +38,7 @@ function SpotifyPlaying({ className }) {
 							{data?.artist}
 						</p>
 					</div>
-				</div>
+				</a>
 			</div>
 		);
 	} else {
