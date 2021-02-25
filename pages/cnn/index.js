@@ -23,8 +23,8 @@ function CNN({ cnnPosts }) {
 				height="screen"
 			/>
 			<Posts posts={cnnPosts} section="cnn" shift />
-			<div className="flex flex-grow justify-center mb-24 ml-24 tab-port:ml-0 sm:mt-24  tab-port:flex-col">
-				<div className="tab-port:mb-24 sm:w-90vw tab-port:self-center">
+			<div className="flex flex-grow justify-center mb-24 ml-24 tab-land:ml-0 sm:mt-24  tab-land:flex-col">
+				<div className="tab-land:mb-24 sm:w-90vw tab-land:self-center">
 					<blockquote
 						className="twitter-tweet"
 						data-dnt="true"

@@ -1,6 +1,5 @@
 import BlurUpImage from "@components/BlurUpImage";
 import Button from "@components/Button";
-import Image from "next/image";
 import Link from "next/link";
 import Logo from "./Logo";
 import Tags from "./Tags";
@@ -21,7 +20,6 @@ function Preview({ project }) {
 							</h3>
 						</a>
 					</Link>
-
 					<Tags tags={project.tags} />
 				</div>
 			</div>

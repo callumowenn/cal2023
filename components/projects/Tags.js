@@ -2,7 +2,7 @@ import tagData from "@lib/tags";
 
 function Tags({ tags }) {
 	return (
-		<div className="flex mt-4 sm:flex-wrap sm:mt-2">
+		<div className="flex mt-4 flex-wrap sm:mt-2">
 			{tags.map((tag) => (
 				<a
 					href={tagData[tag].link}

@@ -35,7 +35,7 @@ function PictureHeader({
 			>
 				<div className="flex-grow sm:hidden"></div>
 				<div
-					className={`flex-grow fixed flex tab-port:w-main sm:w-screen tab-port:overflow-hidden w-50vw sm:max-w-none sm:h-96  opacity-25 tab-port:opacity-15 sm:opacity-50 object-cover h-${height} object-left-top tab-port:relative`}
+					className={`flex-grow fixed flex tab-port:w-main sm:w-screen tab-port:overflow-hidden w-50vw sm:max-w-none sm:h-96  opacity-25 tab-port:opacity-10 sm:opacity-50 object-cover h-${height} object-left-top tab-port:relative`}
 					style={{ backfaceVisibility: "hidden" }}
 				>
 					{size.width > 500 ? (
