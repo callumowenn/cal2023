@@ -113,7 +113,7 @@ blockquote p {
 
 .home-project:hover .huh,
 .home-project:focus .huh {
-	transition: 0.4s;
+	transition: ease-out 0.3s;
 	transform: scale(1.02);
 	opacity: 0.5;
 }

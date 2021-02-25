@@ -2,9 +2,9 @@ import Button from "@components/Button";
 
 function Better() {
 	return (
-		<div className="grid  w-full" style={{ background: "#111" }}>
+		<div className="grid w-full" style={{ background: "#111" }}>
 			<div className="col-start-1 row-start-1 z-10 p-24 sm:p-12">
-				<p className="text-5xl italic mb-36 sm:text-4xl sm:font-extralight sm:mb-48">
+				<p className="text-5xl italic mb-36 sm:text-4xl sm:font-extralight sm:mb-64">
 					You probably deserve <br />{" "}
 					<span className="font-sans font-black text-yellow-400">
 						a better website.
@@ -17,7 +17,7 @@ function Better() {
 				</p>
 				<Button text="Hit me up" link="/contact" />
 			</div>
-			<div className="z-0 col-start-1 row-start-1 bg-doubs bg-cover bg-center opacity-20"></div>
+			<div className="z-0 col-start-1 row-start-1 bg-doubs bg-cover bg-center opacity-50"></div>
 		</div>
 	);
 }
