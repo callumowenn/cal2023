@@ -46,6 +46,7 @@ module.exports = {
 				"90vw": "90vw",
 				"95vw": "95vw",
 				"mobile-text": "270px",
+				main: "calc(100vw - 80px)",
 			},
 			height: {
 				"100px": "100px",
@@ -96,6 +97,9 @@ module.exports = {
 			},
 			"tab-port": {
 				max: "1025px",
+			},
+			"not-tab-port": {
+				min: "1026px",
 			},
 			sm: {
 				max: "639px",

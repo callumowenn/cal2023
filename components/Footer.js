@@ -7,8 +7,8 @@ function Footer() {
 	const router = useRouter();
 	let date = new Date();
 	return (
-		<div className="h-screen flex sm:flex-col sm:h-mobile-main">
-			<div className="footer-grid sm:h-mobile-main grid grid-cols-4 grid-rows-2 flex-grow text-5xl italic sm:grid-cols-2 sm:grid-rows-3 sm:text-3xl">
+		<div className="h-screen flex tab-port:flex-col sm:h-mobile-main">
+			<div className="footer-grid tab-port:h-mobile-main grid grid-cols-4 grid-rows-2 flex-grow text-5xl italic tab-port:grid-cols-2 tab-port:grid-rows-3 sm:text-3xl">
 				<Link href="/bbc">
 					<a
 						className={` ${
@@ -17,7 +17,7 @@ function Footer() {
 								: "hover:bg-standout-purple hover:bg-opacity-10"
 						} flex transition items-center h-auto border-r border-b border-half-white justify-center bbc group `}
 					>
-						<div className="flex flex-col p-8 sm:p-4 items-center">
+						<div className="flex flex-col p-8 tab-port:p-4 items-center">
 							<span className="not-italic text-7xl sm:text-6xl mb-4 w-min text-white">
 								🎬
 							</span>
@@ -33,9 +33,9 @@ function Footer() {
 							router.pathname == "/cnn"
 								? "bg-standout-red bg-opacity-20"
 								: "hover:bg-standout-red hover:bg-opacity-10"
-						} flex transition items-center border-r border-b border-half-white justify-center cnn group  sm:border-r-0`}
+						} flex transition items-center border-r border-b border-half-white justify-center cnn group  tab-port:border-r-0`}
 					>
-						<div className="flex flex-col p-8 sm:p-4 items-center">
+						<div className="flex flex-col p-8 tab-port:p-4 items-center">
 							<span className="not-italic text-7xl sm:text-6xl mb-4 w-min text-white">
 								🎥
 							</span>
@@ -53,7 +53,7 @@ function Footer() {
 								: "hover:bg-standout-orange hover:bg-opacity-10"
 						} flex transition items-center border-r border-b border-half-white justify-center projects group `}
 					>
-						<div className="flex flex-col p-8 sm:p-4 items-center">
+						<div className="flex flex-col p-8 tab-port:p-4 items-center">
 							<span className="not-italic text-7xl sm:text-6xl mb-4 w-min text-white">
 								🖥
 							</span>
@@ -71,7 +71,7 @@ function Footer() {
 								: "hover:bg-standout-blue hover:bg-opacity-10"
 						} flex transition items-center justify-center border-b border-half-white about group `}
 					>
-						<div className="flex flex-col p-8 sm:p-4 items-center">
+						<div className="flex flex-col p-8 tab-port:p-4 items-center">
 							<span className="not-italic text-7xl sm:text-6xl mb-4 w-min text-white">
 								👋🏼
 							</span>
@@ -81,15 +81,15 @@ function Footer() {
 						</div>
 					</a>
 				</Link>
-				<div className="flex items-center border-r border-half-white justify-center cred sm:hidden">
+				<div className="flex items-center border-r border-half-white justify-center cred tab-port:hidden">
 					<div>
 						<img
-							className="mb-4 w-28 sm:w-20"
+							className="mb-4 w-28 tab-port:w-20"
 							src="/assets/me-flip.png"
 							loading="lazy"
 							alt="Me"
 						/>
-						<p className="text-xl italic sm:text-lg">
+						<p className="text-xl italic tab-port:text-lg">
 							<span className=" text-pink-600 font-sans font-black">
 								Designed and developed <br />
 							</span>{" "}
@@ -106,9 +106,9 @@ function Footer() {
 							router.pathname == "/contact"
 								? "bg-standout-green bg-opacity-20"
 								: "hover:bg-standout-green hover:bg-opacity-10"
-						} flex transition items-center border-half-white sm:border-r justify-center contact group `}
+						} flex transition items-center border-half-white tab-port:border-r justify-center contact group `}
 					>
-						<div className="flex flex-col p-8 sm:p-4 items-center">
+						<div className="flex flex-col p-8 tab-port:p-4 items-center">
 							<span className="not-italic text-7xl sm:text-6xl mb-4 w-min text-white">
 								📲
 							</span>
@@ -119,7 +119,7 @@ function Footer() {
 					</a>
 				</Link>
 				<div className="flex items-center justify-center  mob">
-					<div className="not-sm:hidden mx-4 w-max">
+					<div className="not-tab-port:hidden mx-4 w-max">
 						<Image
 							width={50}
 							height={50}
@@ -127,7 +127,7 @@ function Footer() {
 							loading="lazy"
 							alt="me"
 						/>
-						<p className="italic sm:text-sm">
+						<p className="italic tab-port:text-lg sm:text-sm">
 							<span className=" text-standout-green font-sans font-black">
 								Designed and developed <br />
 							</span>{" "}

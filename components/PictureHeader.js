@@ -25,17 +25,17 @@ function PictureHeader({
 	const size = useWindowSize();
 
 	return (
-		<div className="grid">
+		<div className="grid tab-port:max-w-main tab-port:overflow-hidden sm:max-w-none">
 			<div
-				className={`col-start-1  border-b w-50vw ml-auto row-start-1 h-${height} flex z-0 sm:h-96 sm:w-screen`}
+				className={`col-start-1  border-b border-half-white w-50vw ml-auto tab-port:ml-0 row-start-1 h-${height} flex z-0 tab-port:w-main sm:h-96 sm:w-screen`}
 			></div>
 			<div
-				className={`col-start-1 row-start-1 absolute w-main h-${height} flex flex-row-reverse z-0 pointer-events-none sm:h-96 sm:w-screen`}
+				className={`col-start-1 row-start-1 absolute w-main h-${height} flex flex-row-reverse z-0 pointer-events-none tab-port:w-main sm:h-96 sm:w-screen`}
 				style={{ clipPath: " inset(0 0 0 0)" }}
 			>
 				<div className="flex-grow sm:hidden"></div>
 				<div
-					className={`flex-grow fixed flex sm:w-screen sm:overflow-hidden w-50vw sm:max-w-none sm:h-96 opacity-25 object-cover h-${height} object-left-top sm:relative`}
+					className={`flex-grow fixed flex tab-port:w-main sm:w-screen tab-port:overflow-hidden w-50vw sm:max-w-none sm:h-96  opacity-25 tab-port:opacity-15 sm:opacity-50 object-cover h-${height} object-left-top tab-port:relative`}
 					style={{ backfaceVisibility: "hidden" }}
 				>
 					{size.width > 500 ? (
@@ -62,7 +62,7 @@ function PictureHeader({
 					)}
 				</div>
 			</div>
-			<div className="col-start-1 row-start-1 m-16 mr-0 flex items-center z-10 sm:mx-4 sm:my-0 sm:row-start-2">
+			<div className="col-start-1 row-start-1 m-16 mr-0 flex items-center z-10 tab-port:mx-0 sm:mx-4 sm:my-0 sm:row-start-2">
 				<div className="mx-16 sm:ml-4 sm:mr-0 sm:transform sm:-translate-y-12">
 					{tags ? (
 						<Logo src={logo} title={title} />
@@ -78,7 +78,7 @@ function PictureHeader({
 						</Link>
 					)}
 
-					<p className="font-sans text-half-white text-base mt-8 mb-4 sm:text-xs sm:mb-2">
+					<p className="font-sans text-half-white tab-port:text-white tab-port:opacity-75 sm:text-half-white sm:opacity-100 text-base mt-8 mb-4 sm:text-xs sm:mb-2">
 						{date ? (
 							<span className>
 								{format(parseISO(date), "MMMM dd, yyyy")} &bull;
@@ -91,8 +91,8 @@ function PictureHeader({
 					<h1
 						className={`font-sans italic font-bold ${
 							tags
-								? "text-8xl sm:text-4xl"
-								: "text-9xl sm:text-4xl"
+								? "text-8xl tab-port:text-7xl sm:text-4xl"
+								: "text-9xl tab-port:text-8xl sm:text-4xl"
 						} `}
 					>
 						{title}

@@ -68,8 +68,8 @@ function BlurUpImage({
 			>
 				<Blurhash
 					hash={blurhash}
-					width={mobile ? 500 : width}
-					height={mobile ? 500 : height}
+					width={1400}
+					height={1400}
 					resolutionX={100}
 					resolutionY={100}
 					punch={1}

@@ -56,14 +56,14 @@ function Home({ sortedPosts }) {
 			<div className="flex flex-col items-center z-10">
 				<Header />
 				<Opener />
-				<div className="flex-grow flex-shrink-0 max-w-1600px w-full grid pointer-events-none">
+				<div className="flex-grow flex-shrink-0 max-w-1600px w-full tab-land:max-w-main sm:max-w-none tab-land:overflow-hidden grid tab-port:flex tab-port:items-center tab-port:justify-center pointer-events-none">
 					<div className="flex flex-row-reverse row-start-1 col-start-1 sm:flex-col z-30">
 						<div className="flex-grow "></div>
 						<Intro />
 					</div>
-					<div className="flex row-start-1 col-start-1 sm:flex-col">
+					<div className="flex row-start-1 col-start-1 sm:hidden">
 						<div className="flex-grow"></div>
-						<div className="my-24 justify-self-end flex items-center flex-grow justify-center tab-port:hidden">
+						<div className="my-24 justify-self-end flex items-center  flex-grow justify-center tab-land:transform tab-land:translate-x-24 tab-port:hidden">
 							<iframe
 								src="https://my.spline.design/appscopy-ee73103f7b8c387427637cf829f1608c/"
 								frameborder="0"

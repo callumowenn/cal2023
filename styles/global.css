@@ -196,6 +196,12 @@ code {
 	#home-projects a:nth-child(3) {
 		border-right: 0;
 	}
+	.footer-grid {
+		grid-template-areas:
+			"bbc cnn"
+			"projects about"
+			"contact mob";
+	}
 }
 @media only screen and (max-width: 639px) {
 	html {
@@ -205,12 +211,6 @@ code {
 		backdrop-filter: blur(80px);
 	}
 
-	.footer-grid {
-		grid-template-areas:
-			"bbc cnn"
-			"projects about"
-			"contact mob";
-	}
 	#highlights a:nth-child(odd) {
 		border-right: 0;
 	}
