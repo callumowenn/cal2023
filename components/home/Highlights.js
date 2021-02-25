@@ -164,7 +164,7 @@ function Highlights() {
 									</div>
 								)}
 							</div>
-							<h2 className="italic text-5xl opacity-50 font-light mt-4 h-24 tab-land:text-4xl tab-port:h-20 sm:h-16 sm:text-3xl">
+							<h2 className="italic text-5xl opacity-50 font-light mt-4 h-24 tab-land:text-4xl tab-port:h-20 sm:h-16 tab-port:text-3xl">
 								{highlight.heading}
 							</h2>
 							<p className="mt-4 font-sans opacity-30">
