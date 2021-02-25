@@ -12,7 +12,7 @@ function Posts({ posts, section, shift }) {
 				""
 			)}
 			<div
-				className={`flex flex-wrap px-16 justify-center tab-port:px-4 sm:w-screen sm:px-8 ${
+				className={`flex flex-wrap px-16 justify-center tab-land:px-4 sm:w-screen sm:px-8 ${
 					shift ? "transform -translate-y-24 sm:transform-none" : ""
 				} ${section == "all" ? "mb-24" : ""}`}
 			>

@@ -65,7 +65,33 @@ function PictureHeader({
 			<div className="col-start-1 row-start-1 m-16 mr-0 flex items-center z-10 tab-port:mx-0 sm:mx-4 sm:my-0 sm:row-start-2">
 				<div className="mx-16 sm:ml-4 sm:mr-0 sm:transform sm:-translate-y-12">
 					{tags ? (
-						<Logo src={logo} title={title} />
+						<>
+							<Link href={`/projects`}>
+								<a className="flex opacity-40 transition items-center w-max sm:hidden mb-8 hover:opacity-100 focus:opacity-100">
+									<div className="h-3 w-3  mr-2">
+										<svg
+											aria-hidden="true"
+											focusable="false"
+											data-prefix="fas"
+											data-icon="long-arrow-alt-left"
+											class="svg-inline--fa fa-long-arrow-alt-left fa-w-14"
+											role="img"
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 448 512"
+										>
+											<path
+												fill="#ffffff"
+												d="M134.059 296H436c6.627 0 12-5.373 12-12v-56c0-6.627-5.373-12-12-12H134.059v-46.059c0-21.382-25.851-32.09-40.971-16.971L7.029 239.029c-9.373 9.373-9.373 24.569 0 33.941l86.059 86.059c15.119 15.119 40.971 4.411 40.971-16.971V296z"
+											></path>
+										</svg>
+									</div>
+									<p className="font-sans italic text-xs">
+										projects
+									</p>
+								</a>
+							</Link>
+							<Logo src={logo} title={title} />
+						</>
 					) : (
 						<Link href={`/${section}`}>
 							<a className="flex w-max">
