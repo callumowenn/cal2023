@@ -67,8 +67,8 @@ function PictureHeader({
 					{tags ? (
 						<>
 							<Link href={`/projects`}>
-								<a className="flex opacity-40 transition items-center w-max sm:hidden mb-8 hover:opacity-100 focus:opacity-100">
-									<div className="h-3 w-3  mr-2">
+								<a className="flex opacity-40 transition items-center w-max sm:hidden mb-4 p-4 rounded-full bg-white bg-opacity-0 hover:bg-opacity-10 focus:bg-opacity-10 hover:opacity-100 focus:opacity-100">
+									<div className="h-4 w-4">
 										<svg
 											aria-hidden="true"
 											focusable="false"
@@ -85,9 +85,6 @@ function PictureHeader({
 											></path>
 										</svg>
 									</div>
-									<p className="font-sans italic text-xs">
-										projects
-									</p>
 								</a>
 							</Link>
 							<Logo src={logo} title={title} />
