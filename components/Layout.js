@@ -136,9 +136,7 @@ function Layout({ children }) {
 			<main className="flex flex-col flex-grow w-main sm:w-screen">
 				<Menu />
 				{children}
-				<div className="flex flex-grow items-center justify-center my-16">
-					<SpotifyPlaying />
-				</div>
+				<SpotifyPlaying />
 				<Footer />
 			</main>
 		</div>
