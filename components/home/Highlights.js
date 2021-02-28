@@ -125,7 +125,7 @@ function Highlights() {
 				<Link href={highlight.link}>
 					<a
 						key={highlight.link}
-						className="flex items-center justify-center text-white border-opacity-50 border-r border-b border-white p-12 tab-port:p-6 sm:p-4"
+						className="flex items-center justify-center text-white border-opacity-50 border-r border-b border-white p-12 tab-port:p-4"
 					>
 						<div className="mt-12 mb-44 flex-grow sm:mb-32">
 							<div className="h-12 flex items-end pr-4 sm:h-auto">

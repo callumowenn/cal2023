@@ -86,8 +86,10 @@ const Picture = ({ pic, caption, alt, portrait }) => {
 	return (
 		<div className="flex flex-col items-center my-4">
 			<img
-				className={`max-w-950px max-h-550px sm:max-w-none sm:max-h-full ${
-					portrait ? "sm:w-60vw" : "tab-land:w-main sm:w-screen"
+				className={`max-w-950px max-h-550px  tab-port:max-h-full ${
+					portrait
+						? "tab-port:max-w-sm sm:w-60vw"
+						: " tab-port:w-main sm:w-screen"
 				}`}
 				loading="lazy"
 				src={pic}
