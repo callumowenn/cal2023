@@ -88,7 +88,7 @@ module.exports = {
 			animation: {
 				wave: "wave 0.5s linear infinite",
 				rotate: "rotate 8s linear infinite",
-				scrolling: "scrolling 8s linear infinite",
+				scrolling: "scrolling 20s linear infinite",
 			},
 		},
 		screens: {
