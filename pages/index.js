@@ -7,6 +7,7 @@ import Better from "@components/home/Better";
 import Posts from "@components/work/Posts";
 import { getAllFilesFrontMatter } from "@lib/mdx";
 import Head from "next/head";
+import BlurUpImage from "@components/BlurUpImage";
 
 function Home({ sortedPosts }) {
 	return (
@@ -56,23 +57,29 @@ function Home({ sortedPosts }) {
 			<div className="flex flex-col items-center z-10">
 				<Header />
 				<Opener />
-				<div className="flex-grow flex-shrink-0 max-w-1600px w-full tab-land:max-w-main sm:max-w-none tab-land:overflow-hidden grid tab-port:flex tab-port:items-center tab-port:justify-center pointer-events-none">
-					<div className="flex flex-row-reverse row-start-1 col-start-1 sm:flex-col z-30">
-						<div className="flex-grow "></div>
-						<Intro />
+				<div className="flex-grow my-12 sm:mb-0 max-w-1600px w-full tab-land:max-w-main sm:max-w-none tab-land:overflow-hidden flex tab-port:flex-col-reverse tab-port:items-center tab-port:justify-center pointer-events-none">
+					{/* <div className="flex flex-grow row-start-1 col-start-1 sm:flex-col z-30"> */}
+					<Intro />
+					<div className="flex-grow opacity-75 flex-1 flex items-center justify-end">
+						<img
+							loading="lazy"
+							src="/assets/collage-gradient.png"
+							alt="collage of my favourites pictures from broadcast work"
+						/>
 					</div>
-					<div className="flex row-start-1 col-start-1 sm:hidden">
+					{/* </div> */}
+					{/* <div className="flex row-start-1 col-start-1 sm:hidden">
 						<div className="flex-grow"></div>
-						<div className="my-24 justify-self-end flex items-center  flex-grow justify-center tab-land:transform tab-land:translate-x-24 tab-port:hidden">
-							<iframe
+						<div className="my-24 max-w-50vw justify-self-end flex items-center  flex-grow justify-end tab-land:transform tab-land:translate-x-24 tab-port:hidden"> */}
+					{/* <iframe
 								src="https://my.spline.design/appscopy-ee73103f7b8c387427637cf829f1608c/"
 								frameborder="0"
 								width="100%"
 								className="pointer-events-auto"
 								height="100%"
-							></iframe>
-						</div>
-					</div>
+							></iframe> */}
+					{/* </div>
+					</div> */}
 				</div>
 				<Posts posts={sortedPosts} section="all" />
 				<Mac />
