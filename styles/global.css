@@ -225,8 +225,8 @@ code {
 		-webkit-text-stroke: 1px white;
 	}
 	blockquote p {
-		font-size: 2rem !important;
-		line-height: 2rem !important;
+		font-size: 1.8rem !important;
+		line-height: 1.8rem !important;
 	}
 	input,
 	textarea {
