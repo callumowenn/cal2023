@@ -9,7 +9,7 @@ function Intro() {
 					I’ve been lucky enough to get involved with some pretty
 					amazing projects.
 				</h3>
-				<p className="text-2xl sm:text-xl text-half-white sm:mb-8 font-light sm:pl-4 sm:border-l-2 sm:border-half-white">
+				<p className="text-2xl sm:text text-half-white sm:mb-8 font-light sm:pl-4 sm:border-l-2 sm:border-half-white">
 					As a BBC apprentice, I'm able to explore all corners of
 					broadcast production and software. Having always been drawn
 					to software by the combination of functionality and design,

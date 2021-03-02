@@ -157,6 +157,13 @@ code {
 	grid-area: lost;
 }
 
+@media (max-width: 639px) {
+	.sm\:text {
+		font-size: 1.4rem /* 20px */;
+		line-height: 1.8rem /* 28px */;
+	}
+}
+
 @keyframes emoji-spin {
 	0% {
 		transform: rotate(0);

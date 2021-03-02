@@ -63,7 +63,7 @@ const CustomBlockquote = (props) => {
 const CustomText = (props) => {
 	return (
 		<p
-			className="text-2xl sm:text-xl my-4 font-light text-half-white"
+			className="text-2xl sm:text my-4 font-light text-half-white"
 			{...props}
 		></p>
 	);
