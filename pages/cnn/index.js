@@ -54,7 +54,7 @@ function CNN({ cnnPosts }) {
 						Despite the pandemic, my time with CNN was both
 						inspiring and enlightening.
 					</h3>
-					<p className="text-2xl text-half-white font-light">
+					<p className="text-2xl sm:text text-half-white font-light">
 						It's hard to put into words all the experience I gained
 						from my time with CNN. Out of pure luck, I'd be working
 						there just as they were moving into their{" "}

@@ -28,7 +28,7 @@ function BBC({ bbcPosts }) {
 					Combining tech, software, media, a free degree and three
 					years experience.
 				</h3>
-				<p className="text-2xl font-light text-half-white">
+				<p className="text-2xl sm:text font-light text-half-white">
 					Where do I start? This apprenticeship's been a rollercoaster
 					from day one. I've had the chance to travel all around the
 					UK - from installing studios at New Broadcasting House in
