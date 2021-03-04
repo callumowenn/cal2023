@@ -5,7 +5,7 @@ function Menu() {
 	const menu = useMenu();
 	return (
 		<div
-			className={`fixed w-main sm:w-screen z-50 ${
+			className={`fixed w-main transition bg-black bg-opacity-20 sm:w-screen z-50 ${
 				menu.open ? "block" : "hidden"
 			}`}
 			style={{

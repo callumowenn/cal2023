@@ -5,7 +5,7 @@ function Intro() {
 	return (
 		<div className="tab-land:mx-16 z-10 flex-1 flex flex-grow items-center tab-port:transform tab-port:-translate-y-32  pointer-events-auto  justify-center sm:mx-8 sm:mt-12 sm:mb-0 ">
 			<div className="flex flex-col max-w-500px my-28 tab-port:my-0">
-				<h3 className=" font-sans text-3xl italic font-bold mb-8 ">
+				<h3 className=" font-sans text-3xl sm:text-2xl italic font-bold mb-8 ">
 					I’ve been lucky enough to get involved with some pretty
 					amazing projects.
 				</h3>
