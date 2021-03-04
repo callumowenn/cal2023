@@ -55,7 +55,7 @@ const CustomHeadingThree = (props) => {
 const CustomBlockquote = (props) => {
 	return (
 		<blockquote
-			className="border-l-4 border-white border-opacity-50 italic px-4 my-8"
+			className="border-l-4 border-white border-opacity-50 italic px-4 my-4"
 			{...props}
 		></blockquote>
 	);
