@@ -5,13 +5,13 @@ function FooterApp({ slug, img, text, className, emoji }) {
 	const router = useRouter();
 	return (
 		<div
-			className={` flex transition items-center h-auto justify-center  ${slug} `}
+			className={`app flex transition items-center h-auto justify-center  ${slug} `}
 		>
 			<Link href={`/${slug}`}>
 				<a className="flex group flex-col items-center">
 					<div className="w-3 h-3 mt-2 rounded-full bg-none"></div>
 					<div
-						className={`w-32 h-32 sm:w-24 sm:h-24 mb-2 shadow-2xl ${className} flex items-center justify-center rounded-3xl`}
+						className={`app-back transition w-32 h-32 sm:w-24 sm:h-24 mb-2 shadow-2xl ${className} flex items-center justify-center rounded-3xl`}
 					>
 						{img ? (
 							<img className="w-24 sm:w-16" src={img} alt="" />

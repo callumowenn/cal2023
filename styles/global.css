@@ -217,6 +217,24 @@ code {
 	Nav {
 		backdrop-filter: blur(80px);
 	}
+	.the-menu,
+	.the-menu .inner-menu {
+		transition: 0.3s;
+	}
+	.the-menu.closed {
+		/* transform: translateY(-100px); */
+		visibility: hidden;
+	}
+	.the-menu.open {
+		/* transform: translateY(0); */
+		visibility: visible;
+	}
+	.the-menu.closed .inner-menu {
+		transform: translateY(-50px);
+	}
+	.the-menu.open .inner-menu {
+		transform: translateY(0);
+	}
 
 	#highlights a:nth-child(odd) {
 		border-right: 0;

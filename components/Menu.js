@@ -5,15 +5,15 @@ function Menu() {
 	const menu = useMenu();
 	return (
 		<div
-			className={`fixed w-main transition bg-black bg-opacity-20 sm:w-screen z-50 ${
-				menu.open ? "block" : "hidden"
+			className={`fixed w-main the-menu bg-black bg-opacity-20 sm:w-screen z-40 ${
+				menu.open ? "opacity-100 open" : "opacity-0 closed"
 			}`}
 			style={{
 				backdropFilter: "blur(80px)",
 				WebkitBackdropFilter: "blur(80px)",
 			}}
 		>
-			<Footer />
+			<Footer menu />
 		</div>
 	);
 }
