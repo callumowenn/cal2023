@@ -8,6 +8,10 @@ function Contact() {
 		<div className="w-main h-screen grid sm:w-screen sm:h-mobile-main">
 			<Head>
 				<title>Contact - Callum Owen</title>
+				<meta
+					name="description"
+					content="Hit me up by email, LinkedIn, Instagram or leave a message using the form right here on the site."
+				/>
 			</Head>
 			<div
 				className="col-start-1 row-start-1 flex flex-col items-center justify-center"

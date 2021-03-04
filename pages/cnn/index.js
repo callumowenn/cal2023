@@ -11,6 +11,13 @@ function CNN({ cnnPosts }) {
 		<div className="mb-32 flex flex-col">
 			<Head>
 				<title>Life at CNN - Callum Owen</title>
+				<meta
+					name="description"
+					content="Despite the pandemic, my time with CNN was both
+						inspiring and enlightening. It's hard to put into words all the experience I gained
+						from my time with CNN. Out of pure luck, I'd be working
+						there just as they were moving into their shiny, new London bureau."
+				/>
 			</Head>
 			<PictureHeader
 				pic="/assets/cnn/mcr.jpg"

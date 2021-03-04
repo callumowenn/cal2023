@@ -11,6 +11,15 @@ function BBC({ bbcPosts }) {
 		<div className="mb-32">
 			<Head>
 				<title>Life in the BBC - Callum Owen</title>
+				<meta
+					name="description"
+					content="Combining tech, software, media, a free degree and three
+					years experience. Where do I start? This apprenticeship's been a rollercoaster
+					from day one. I've had the chance to travel all around the
+					UK - from installing studios at New Broadcasting House in
+					London, to getting hands-on with cutting-edge tech in
+					Salford."
+				/>
 			</Head>
 			<PictureHeader
 				pic="/assets/bbc/sound.jpeg"

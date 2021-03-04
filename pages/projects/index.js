@@ -7,6 +7,10 @@ function Projects({ projects }) {
 		<div className="flex-grow w-full max-w-1600px self-center">
 			<Head>
 				<title>Projects - Callum Owen</title>
+				<meta
+					name="description"
+					content="Check out my web development projects, and read a bit about how and why I built them. These projects range from client work to side projects and random experiments. 🧪 🖥"
+				/>
 			</Head>
 			<div className="ml-16 my-24 tab-land:ml-4 sm:mx-4">
 				<div className="mt-48 mb-24 flex items-center sm:mt-12 sm:ml-4">

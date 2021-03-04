@@ -11,7 +11,11 @@ function CNNPost({ mdxSource, frontMatter }) {
 	return (
 		<>
 			<Head>
-				<title>{frontMatter.title} 🎥 CNN ⚡ Callum Owen</title>
+				<title>{frontMatter.title} - Life at CNN - Callum Owen</title>
+				<meta
+					name="description"
+					content={`${frontMatter.readingTime.text} - ${frontMatter.snippet}`}
+				/>
 				<meta name="author" content="Callum Owen" />
 				<meta property="og:type" content="article" />
 				<meta property="og:site_name" content="Callum Owen" />
