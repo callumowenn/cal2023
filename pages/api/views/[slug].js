@@ -4,8 +4,8 @@ const db = admin.firestore();
 
 export default async (req, res) => {
 	if (req.method === "GET") {
+		console.log("getting views for: " + req.query.slug);
 		var docRef = await db.collection("views").doc(req.query.slug);
-
 		return new Promise((resolve, reject) => {
 			docRef
 				.get()
@@ -24,6 +24,7 @@ export default async (req, res) => {
 		});
 	}
 	if (req.method === "POST") {
+		console.log("adding view to: " + req.query.slug);
 		var docRef = await db.collection("views").doc(req.query.slug);
 		return new Promise((resolve, reject) => {
 			docRef
