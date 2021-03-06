@@ -1,12 +1,15 @@
 import coverAspects from "@lib/coverAspects";
+import fetcher from "@lib/fetcher";
 import { parseISO, format } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import useSWR from "swr";
 import BlurUpImage from "./BlurUpImage";
 import Logo from "./projects/Logo";
 import Tags from "./projects/Tags";
 import ShareLinks from "./ShareLinks";
+import formatViews from "comma-number";
 
 function PictureHeader({
 	pic,
@@ -23,6 +26,11 @@ function PictureHeader({
 	height,
 }) {
 	const size = useWindowSize();
+	let views;
+	if (section == "cnn" || section == "bbc") {
+		const { data } = useSWR(`/api/views/${slug}`, fetcher);
+		views = data?.value;
+	}
 
 	return (
 		<div className="grid tab-port:max-w-main tab-port:overflow-hidden sm:max-w-none">
@@ -110,6 +118,7 @@ function PictureHeader({
 							""
 						)}
 						{subone} &bull; {subtwo}{" "}
+						{views ? <>&bull; {formatViews(views)} views</> : ""}
 					</p>
 					<h1
 						className={`font-sans italic font-bold ${

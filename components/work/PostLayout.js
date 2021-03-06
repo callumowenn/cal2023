@@ -1,9 +1,17 @@
 import PictureHeader from "@components/PictureHeader";
 import ProjectContent from "@components/projects/ProjectContent";
 import ShareLinks from "@components/ShareLinks";
+import { useEffect } from "react";
 
 function PostLayout({ children, section, frontMatter }) {
 	console.log(frontMatter);
+	useEffect(() => {
+		const registerView = () =>
+			fetch(`/api/views/${frontMatter.slug}`, {
+				method: "POST",
+			});
+		registerView();
+	}, [frontMatter]);
 	return (
 		<div>
 			<PictureHeader
