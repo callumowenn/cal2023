@@ -28,6 +28,7 @@ function PictureHeader({
 	const size = useWindowSize();
 	let views;
 	if (section == "cnn" || section == "bbc") {
+		console.log("fetching views");
 		const { data } = useSWR(`/api/views/${slug}`, fetcher);
 		views = data?.value;
 	}

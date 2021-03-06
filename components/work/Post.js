@@ -7,6 +7,7 @@ import useSWR from "swr";
 import format from "comma-number";
 
 function Post({ post, section }) {
+	console.log("fetching views");
 	const { data } = useSWR(`/api/views/${post.slug}`, fetcher);
 	const views = data?.value;
 	return (
