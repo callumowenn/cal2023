@@ -4,10 +4,20 @@ import Nav from "@components/Nav";
 import Menu from "./Menu";
 import SpotifyPlaying from "./SpotifyPlaying";
 import { useViews } from "@lib/views";
+import useSWR from "swr";
+import fetcher from "@lib/fetcher";
+import { useEffect, useState } from "react";
 
 function Layout({ children }) {
 	const views = useViews();
-	views.data ?? views.fetchData();
+	const [mounted, setMounted] = useState(false);
+	const { data } = useSWR(mounted ? "/api/views" : null, fetcher);
+	views.data ?? views.setData(data);
+
+	useEffect(() => {
+		setMounted(true);
+	}, []);
+
 	return (
 		<div className="flex flex-row w-screen bg-main-bg min-h-screen bg-fixed bg-cover sm:flex-col sm:bg-none">
 			<Head>

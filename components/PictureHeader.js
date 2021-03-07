@@ -115,11 +115,20 @@ function PictureHeader({
 						{subone} &bull; {subtwo}{" "}
 						{views ? (
 							<>
-								&bull;{" "}
-								{views.data && height == "90vh"
-									? formatViews(views.data[slug])
-									: "-"}{" "}
-								views
+								{views.data ? (
+									views.data[slug] ? (
+										<>
+											&bull;{" "}
+											{`${formatViews(
+												views?.data[slug]
+											)} views`}
+										</>
+									) : (
+										""
+									)
+								) : (
+									""
+								)}
 							</>
 						) : (
 							""
