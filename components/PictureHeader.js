@@ -116,7 +116,7 @@ function PictureHeader({
 						{views ? (
 							<>
 								&bull;{" "}
-								{views.data
+								{views.data && height == "90vh"
 									? formatViews(views.data[slug])
 									: "-"}{" "}
 								views
