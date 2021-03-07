@@ -27,10 +27,10 @@ export default function handler(req, res) {
 	transporter.sendMail(mailOptions, function (error) {
 		if (error) {
 			console.log("oops");
-			res.status(400).send({ message: "this is an error!" });
+			return res.status(400).send({ message: "this is an error!" });
 		} else {
-			res.status(200).json(req.body);
 			console.log("Message sent");
+			return res.status(200).json(req.body);
 		}
 	});
 }

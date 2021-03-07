@@ -3,8 +3,11 @@ import Footer from "./Footer";
 import Nav from "@components/Nav";
 import Menu from "./Menu";
 import SpotifyPlaying from "./SpotifyPlaying";
+import { useViews } from "@lib/views";
 
 function Layout({ children }) {
+	const views = useViews();
+	views.data ?? views.fetchData();
 	return (
 		<div className="flex flex-row w-screen bg-main-bg min-h-screen bg-fixed bg-cover sm:flex-col sm:bg-none">
 			<Head>

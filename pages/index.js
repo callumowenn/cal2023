@@ -7,7 +7,6 @@ import Better from "@components/home/Better";
 import Posts from "@components/work/Posts";
 import { getAllFilesFrontMatter } from "@lib/mdx";
 import Head from "next/head";
-import BlurUpImage from "@components/BlurUpImage";
 
 function Home({ sortedPosts }) {
 	return (

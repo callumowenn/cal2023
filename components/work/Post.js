@@ -2,14 +2,12 @@ import coverAspects from "@lib/coverAspects";
 import Image from "next/image";
 import Link from "next/link";
 import { formatDistance } from "date-fns";
-import fetcher from "@lib/fetcher";
-import useSWR from "swr";
 import format from "comma-number";
+import { useViews } from "@lib/views";
 
 function Post({ post, section }) {
-	console.log("fetching views");
-	const { data } = useSWR(`/api/views/${post.slug}`, fetcher);
-	const views = data?.value;
+	const views = useViews();
+
 	return (
 		<Link
 			href={`/${
@@ -62,7 +60,9 @@ function Post({ post, section }) {
 						</h1>
 						<p className="text-half-white font-sans">
 							{formatDistance(new Date(post.date), new Date())}{" "}
-							ago &bull; {format(views) ?? "-"} views
+							ago &bull;{" "}
+							{views.data ? format(views.data[post.slug]) : "-"}{" "}
+							views
 						</p>
 					</div>
 				</div>

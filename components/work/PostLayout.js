@@ -13,7 +13,7 @@ function PostLayout({ children, section, frontMatter }) {
 			});
 		};
 		registerView();
-	}, [frontMatter]);
+	}, []);
 	return (
 		<div>
 			<PictureHeader
