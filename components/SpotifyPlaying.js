@@ -1,6 +1,5 @@
 import useSWR from "swr";
 import fetcher from "@lib/fetcher";
-import Image from "next/image";
 
 function SpotifyPlaying({ className }) {
 	const { data } = useSWR("/api/spotify", fetcher);
@@ -15,10 +14,9 @@ function SpotifyPlaying({ className }) {
 							rel="noopener noreferrer"
 							className="flex flex-shrink-0 self-start  mr-4 hover:opacity-80"
 						>
-							<Image
-								width={96}
-								height={96}
+							<img
 								className="w-24 h-24 rounded-xl"
+								loading="lazy"
 								src={data?.albumImageUrl}
 								alt={`Artwork for ${data?.title} by ${data?.artist}`}
 							/>
