@@ -2,7 +2,7 @@ function Socials({ show }) {
 	let socials = [
 		{
 			name: "Instagram",
-			link: "https://www.instagram.com/calthenerd",
+			link: "https://www.instagram.com/calllumowen",
 			svg: (
 				<svg
 					aria-hidden="true"
