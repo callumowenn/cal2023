@@ -2,7 +2,7 @@ function MacText({ me, text }) {
 	return (
 		<div
 			className={` max-w-xs h-auto my-3 px-4 text-white rounded-3xl w-max sm:max-w-mobile-text ${
-				me ? "self-end bg-blue-500" : "bg-incoming"
+				me ? "self-end bg-bg-text" : "bg-incoming"
 			}`}
 			style={{
 				lineHeight: "1.2rem",

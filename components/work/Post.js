@@ -44,6 +44,9 @@ function Post({ post, section }) {
 									8,
 									11
 								)}.png`}
+								alt={`${post.image
+									.substring(8, 11)
+									.toUpperCase()} logo`}
 							/>
 						</div>
 					) : (

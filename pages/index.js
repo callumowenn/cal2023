@@ -7,8 +7,10 @@ import Better from "@components/home/Better";
 import Posts from "@components/work/Posts";
 import { getAllFilesFrontMatter } from "@lib/mdx";
 import Head from "next/head";
+import useWindowSize from "@lib/window";
 
 function Home({ sortedPosts }) {
+	const size = useWindowSize();
 	return (
 		<>
 			<Head>
@@ -47,11 +49,15 @@ function Home({ sortedPosts }) {
 					property="twitter:image"
 					content="http://callumowen.co.uk/assets/sc.png"
 				/>
-				<link
-					rel="preload"
-					as="image"
-					href="/assets/blur-fade.png"
-				></link>
+				{size > 500 ? (
+					<link
+						rel="preload"
+						as="image"
+						href="/assets/blur-fade.png"
+					></link>
+				) : (
+					""
+				)}
 			</Head>
 			<div className="flex flex-col items-center z-10">
 				<Header />

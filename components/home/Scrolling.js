@@ -20,8 +20,8 @@ function Scrolling() {
 					<div></div>
 					<div></div>
 					<div></div>
-					<div className="pr-16 text-3xl font-bold italic opacity-20 sm:text-xl">
-						* check out some of my projects
+					<div className="pr-16 text-3xl font-thin italic opacity-50  sm:text-xl">
+						// check out some of my projects
 					</div>
 				</div>
 			</div>

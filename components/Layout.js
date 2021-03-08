@@ -7,6 +7,7 @@ import { useViews } from "@lib/views";
 import useSWR from "swr";
 import fetcher from "@lib/fetcher";
 import { useEffect, useState } from "react";
+import log from "@lib/log";
 
 function Layout({ children }) {
 	const views = useViews();
@@ -19,6 +20,7 @@ function Layout({ children }) {
 
 	useEffect(() => {
 		setMounted(true);
+		log();
 	}, []);
 
 	return (

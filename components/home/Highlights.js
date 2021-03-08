@@ -19,9 +19,18 @@ function Highlights() {
 		},
 		{
 			images: [
-				"./assets/projects/watchwhere/watchwhere-alt.png",
-				"./assets/projects/lightbulb/lightbulb-alt.png",
-				"./assets/projects/anculo/anculo.png",
+				{
+					src: "./assets/projects/watchwhere/watchwhere-alt.png",
+					alt: "WatchWhere logo",
+				},
+				{
+					src: "./assets/projects/lightbulb/lightbulb-alt.png",
+					alt: "Lightbulb logo",
+				},
+				{
+					src: "./assets/projects/anculo/anculo.png",
+					alt: "Anculo logo",
+				},
 			],
 			heading: "Web Design + Development",
 			date: "2020 -",
@@ -157,7 +166,8 @@ function Highlights() {
 										{highlight.images.map((image) => (
 											<img
 												className="max-h-12 mr-2 rounded-lg sm:mt-2"
-												src={image}
+												src={image.src}
+												alt={image.alt}
 											/>
 										))}
 									</div>

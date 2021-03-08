@@ -16,9 +16,9 @@ function Project({ data }) {
 					/>
 				</div>
 				<div className="col-start-1 row-start-1 flex items-center z-10 justify-center tab-port:h-80 tab-port:pb-8 sm:h-60 sm:pb-4">
-					<h3 className="italic text-5xl group-hover:underline font-light">
+					<p className="italic text-5xl group-hover:underline font-light">
 						{data.title}
-					</h3>
+					</p>
 				</div>
 			</a>
 		</Link>

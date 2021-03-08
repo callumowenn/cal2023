@@ -3,7 +3,6 @@ import fetcher from "@lib/fetcher";
 
 function SpotifyPlaying({ className }) {
 	const { data } = useSWR("/api/spotify", fetcher);
-	console.log(data);
 	return (
 		<div className="flex flex-grow items-center justify-center py-32 sm:py-16 border-b border-t bg-black bg-opacity-10 border-half-white">
 			<div className={`flex items-center mx-8 ` + className}>
@@ -18,6 +17,7 @@ function SpotifyPlaying({ className }) {
 							<img
 								className="w-24 h-24 rounded-xl"
 								src={data?.albumImageUrl}
+								alt={`Artwork for ${data?.title} by ${data?.artist}`}
 							/>
 						</a>
 						<div className="flex flex-col">
