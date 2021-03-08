@@ -11,7 +11,10 @@ import { useEffect, useState } from "react";
 function Layout({ children }) {
 	const views = useViews();
 	const [mounted, setMounted] = useState(false);
-	const { data } = useSWR(mounted ? "/api/views" : null, fetcher);
+	const { data } = useSWR(
+		mounted && !views.data ? "/api/views" : null,
+		fetcher
+	);
 	views.data ?? views.setData(data);
 
 	useEffect(() => {
