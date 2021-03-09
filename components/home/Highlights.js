@@ -134,7 +134,7 @@ function Highlights() {
 				<Link href={highlight.link}>
 					<a
 						key={highlight.link}
-						className="flex items-center justify-center text-white border-opacity-50 border-r border-b border-white p-12 tab-port:p-4"
+						className="flex items-center justify-center text-white border-opacity-50 border-r border-b group border-white p-12 tab-port:p-4"
 					>
 						<div className="mt-12 mb-44 flex-grow sm:mb-32">
 							<div className="h-12 flex items-end pr-4 sm:h-auto">
@@ -173,7 +173,7 @@ function Highlights() {
 									</div>
 								)}
 							</div>
-							<h2 className="italic text-5xl opacity-50 font-light mt-4 h-24 tab-land:text-4xl tab-port:h-20 sm:h-16 tab-port:text-3xl">
+							<h2 className="italic text-5xl opacity-50 font-light mt-4 h-24 tab-land:text-4xl tab-port:h-20 sm:h-16 tab-port:text-3xl group-hover:underline transition group-hover:opacity-100">
 								{highlight.heading}
 							</h2>
 							<p className="mt-4 font-sans opacity-30">
