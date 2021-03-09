@@ -39,7 +39,7 @@ function MacWindow({ pic, aspect, alt }) {
 						background: "#11111180",
 					}}
 				>
-					<p className="text-gray-200 my-4 mx-24 sm:mx-8 font-apple">
+					<p className="text-gray-200 py-4 px-24 sm:px-8 font-apple">
 						{alt}
 					</p>
 				</div>
