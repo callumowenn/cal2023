@@ -12,7 +12,7 @@ function Highlights() {
 		},
 		{
 			images: ["./assets/cnn.png"],
-			heading: "Engineering Placement",
+			heading: "Engineering Placements",
 			date: "2020",
 			link: "/cnn",
 			alt: "CNN logo",

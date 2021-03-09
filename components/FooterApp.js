@@ -11,15 +11,15 @@ function FooterApp({ slug, img, text, className, emoji }) {
 				<a className="flex group flex-col items-center">
 					<div className="w-3 h-3 mt-2 rounded-full bg-none"></div>
 					<div
-						className={`app-back transition w-32 h-32 sm:w-24 sm:h-24 mb-2 shadow-2xl ${className} flex items-center justify-center rounded-3xl`}
+						className={`app-back transition w-40 h-40 sm:w-24 sm:h-24 mb-2 shadow-2xl ${className} flex items-center justify-center rounded-full sm:rounded-3xl`}
 					>
 						{img ? (
-							<img className="w-24 sm:w-16" src={img} alt="" />
+							<img className=" w-28 sm:w-16" src={img} alt="" />
 						) : (
 							""
 						)}
 						{emoji ? (
-							<span className="not-italic text-6xl sm:text-5xl w-min text-white">
+							<span className="not-italic text-7xl sm:text-5xl w-min text-white">
 								{emoji}
 							</span>
 						) : (
@@ -28,7 +28,7 @@ function FooterApp({ slug, img, text, className, emoji }) {
 					</div>
 					<p className="flex font-apple sm:text-base items-center text-xl font-light not-italic group-hover:text-white group-hover:underline">
 						{text}
-						<div className="w-4 opacity-50 h-4 ml-2 sm:w-3 sm:h-3">
+						<div className="w-4 h-4 ml-2 sm:w-3 sm:h-3">
 							<svg
 								version="1.1"
 								id="Capa_1"
