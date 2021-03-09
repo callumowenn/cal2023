@@ -33,7 +33,7 @@ I got the idea for WatchWhere while on my second placement with [CNN](/cnn "Read
 
 ### Universal streaming service search
 
-Very often with these side projects, I find myself trying to solve my own problems. A few days earlier, Sander - my sister's boyfriend - was trying to find a show that he swore was on Dutch Netflix before realising it must have been taken down. Oh, he's Dutch by the way - should've said. As insignificant as this sounds, it would lay the seeds for the idea of WatchWhere. So as I sat there thinking about what kind of data would actually be useful in a Node.js app - staying away from just making a weather app - the answer was right there in front of me.
+Very often with these side projects, I find myself trying to solve my own problems. A few days earlier, Sander - my sister's boyfriend - was trying to find a show that he swore was on Dutch Netflix before realising it must have been taken down. Oh, he's Dutch by the way - could've mentioned that. As insignificant as this sounds, it would lay the seeds for the idea of WatchWhere. So as I sat there thinking about what kind of data would actually be useful in a Node.js app - trying to avoid just making a weather app - the answer was right there in front of me.
 
 > People like streaming!
 
@@ -52,10 +52,10 @@ But every major corporation wants a slice of the streaming pie - Netflix, Amazon
 
 Not quite. Excitedly, this was my first proper project using [React](https://reactjs.org), as well as Node.js - perhaps a recipe for disaster. Initially I had to get my head around props and state - the worst part was flicking between old [StackOverflow](https://stackoverflow.com/) posts before knowing [the difference between class components and functional components](https://reactjs.org/docs/components-and-props.html#function-and-class-components). But, YouTube would come to the rescue again and, with plenty of tinkering, I'd come out the other side a better man. Call it character building.
 
-The Node.js stuff comes to play when connecting to these APIs. I used [Axios](https://www.npmjs.com/package/axios) to make the calls, which can actually be done from the front-end react code. But, determined to use Node.js, I did a bit of research into deploying a Node.js server and figured there are some massive benefits to doing so. First, the API calls required a secret key. Turns out there's no way to do this in the front-end without leaking the key. So, by making it an environment variable on the Node.js server, the secret key is safe and sound. You can also do incredibly useful things like rate-limiting and slow-down to prevent spammers going crazy at your server.
+> "Excitedly, this was my first proper project using [React](https://reactjs.org)"
 
-> Excitedly, this was my first proper project using [React](https://reactjs.org)
+The Node.js stuff comes to play when connecting to these APIs. I used [Axios](https://www.npmjs.com/package/axios) to make the calls, which can actually be done from the front-end react code. But, determined to use Node.js, I did a bit of research into deploying a Node.js server and figured there are some massive benefits to doing so. First, the API calls required a secret key. Turns out there's no way to do this in the front-end without leaking the key. So, by making it an environment variable on the Node.js server, the secret key is safe and sound. You can also do incredibly useful things like rate-limiting and slow-down to prevent spammers going crazy at your server.
 
 ### What's next for WatchWhere?
 
-I've been using WatchWhere regularly since I made it - it's just as useful as I imagined! There's a couple things I need to iron-out before I start shouting about it to the world, but I'm so happy with how it turned out. If you're reading this, maybe you'd like to [check it out for yourself](https://watchwhere.web.app).
+I've been using WatchWhere regularly since I made it - it's just as useful as I imagined! It's not perfect, but I'm so happy with how it turned out and I learnt a lot about React and Node.js. If you're reading this, maybe you'd like to [check it out for yourself](https://watchwhere.web.app).
