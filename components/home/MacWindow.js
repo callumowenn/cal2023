@@ -32,14 +32,16 @@ function MacWindow({ pic, aspect, alt }) {
 			</div>
 			{pic ? (
 				<div
-					className="shadow-xl rounded-2xl py-4 px-24  flex items-center justify-center w-max self-center overflow-hidden max-w-90vw sm:px-8"
+					className="shadow-xl rounded-2xl  flex items-center justify-center w-max self-center max-w-90vw "
 					style={{
-						backdropFilter: "blur(80px)",
-						WebkitBackdropFilter: "blur(80px)",
+						backdropFilter: "blur(50px)",
+						WebkitBackdropFilter: "blur(50px)",
 						background: "#11111180",
 					}}
 				>
-					<p className="text-gray-200  font-apple">{alt}</p>
+					<p className="text-gray-200 my-4 mx-24 sm:mx-8 font-apple">
+						{alt}
+					</p>
 				</div>
 			) : (
 				""
