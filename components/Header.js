@@ -1,15 +1,14 @@
 import Block from "./Block";
 import Image from "next/image";
-import Link from "next/link";
 
 function Header() {
 	return (
 		<Block>
-			<div className="flex items-center sm:flex-col sm:items-start">
-				<div className="flex mr-20 tab-port:w-52 sm:mr-0 sm:w-28 sm:mb-8">
+			<div className=" my-8 flex flex-col items-start">
+				<div className="flex mb-4 tab-port:w-52 sm:w-28">
 					<Image
-						width={300}
-						height={300}
+						width={120}
+						height={120}
 						priority
 						layout="intrinsic"
 						src="/assets/me-flip.png"
@@ -18,7 +17,7 @@ function Header() {
 				</div>
 				<div className="flex flex-col w-392px sm:w-auto">
 					<p className=" sub-intro font-apple font-light text-2xl sm:text-xl">
-						👋🏼 <span className="opacity-50 ">hi, i'm</span>
+						👋🏼 <span className="opacity-50 ">hello, i'm</span>
 					</p>
 					<h1 className="main-intro font-apple font-black italic text-6xl sm:text-5xl">
 						Callum Owen

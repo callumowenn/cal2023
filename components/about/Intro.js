@@ -5,7 +5,7 @@ function Intro() {
 	return (
 		<div className="flex max-w-1500px self-center flex-col py-8 px-32 tab-port:px-16 sm:px-4">
 			<div className="mt-16 flex items-center justify-between">
-				<div className="flex items-center  bg-white bg-opacity-10 rounded-full p-6 w-max sm:p-5">
+				<div className="flex items-center  bg-white bg-opacity-10 rounded-full p-3 w-max sm:p-5">
 					<div className="w-20 flex items-center mr-4 sm:w-12">
 						<Image
 							width={70}

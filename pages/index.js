@@ -62,7 +62,7 @@ function Home({ sortedPosts }) {
 			<div className="flex flex-col items-center z-10">
 				<Header />
 				<Opener />
-				<div className="flex-grow my-12 sm:mb-0 max-w-1600px w-full tab-land:max-w-main sm:max-w-none tab-land:overflow-hidden flex tab-port:flex-col-reverse tab-port:items-center tab-port:justify-center pointer-events-none">
+				<div className="flex-grow sm:mb-0 max-w-1600px w-full tab-land:max-w-main sm:max-w-none tab-land:overflow-hidden flex tab-port:flex-col-reverse tab-port:items-center tab-port:justify-center pointer-events-none">
 					{/* <div className="flex flex-grow row-start-1 col-start-1 sm:flex-col z-30"> */}
 					<Intro />
 					<div className="flex-grow opacity-75 flex-1 flex items-center justify-end">
